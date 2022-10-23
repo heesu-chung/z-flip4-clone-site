@@ -1,0 +1,78 @@
+@import "../scss/abstract/fonts";
+@import "../scss/abstract/mixins";
+
+.content-o {
+    padding: 60px 0 60px 0;
+    position: relative;
+    overflow-x: hidden;
+    .block {
+        width: calc(100% - 90px);
+        margin: 0 auto;
+    }
+    .feature-image {
+        width: 100%;
+        margin: 40px 0 80px;
+        display: flex;
+        justify-content: center;
+        img {
+        }
+    }
+    .feature-content {
+        .contents {
+            padding-bottom: 0;
+        }
+        .links {
+            margin-top: 20px;
+            .link {
+                font-size: 12px;
+                font-family: $so;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@include screen {
+    .content-o {
+        width: calc(100% - 212px);
+        min-width: 988px;
+        @include desktop {
+            max-width: 988px;
+        }
+        padding: 120px 20px;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        overflow-x: visible;
+        .feature-image {
+            margin: 0;
+            flex: 1;
+            transform: translateX(60px);
+        }
+        .feature-content {
+            margin-top: 15px;
+            flex: 1;
+            // padding-left: 20px;
+            .titles {
+                .title {
+                    width: 100%;
+                }
+            }
+            .contents {
+                width: calc(100% - 20px);
+            }
+            .links {
+                .link {
+                    font-size: 16px;
+                }
+                margin-top: 28px;
+            }
+        }
+    }
+    .flex-end {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,62 @@
+@import "../scss/abstract/fonts";
+@import "../scss/abstract/mixins";
+
+.content-e {
+    padding: 60px 0 60px 0;
+    width: 100%;
+    @include mobile {
+        overflow-x: hidden;
+    }
+    .block {
+        width: calc(100% - 90px);
+        margin: 0 auto;
+        .contents {
+            padding-bottom: 0;
+        }
+    }
+    .feature-image {
+        width: 100%;
+        margin: 40px 0 50px;
+        display: flex;
+        justify-content: center;
+        img {
+        }
+    }
+}
+
+@include screen {
+    .content-e {
+        min-width: 988px;
+        @include desktop {
+            max-width: 988px;
+        }
+        @include laptop {
+            padding: 70px 20px 90px;
+            overflow-x: hidden;
+        }
+        margin: 0 auto;
+        transform: translateX(-28px);
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        .feature-image {
+            margin: 0;
+            flex: 1;
+            @include desktop {
+                margin-left: -100px;
+            }
+        }
+        .feature-content {
+            margin-top: 15px;
+            margin-left: 64px;
+            flex: 1;
+            .contents {
+                width: 85%;
+                @include desktop {
+                    width: 105%;
+                }
+            }
+        }
+    }
+}

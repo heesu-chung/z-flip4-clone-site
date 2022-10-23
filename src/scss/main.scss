@@ -1,0 +1,30 @@
+@import "base/reset";
+@import "./abstract/fonts", "./abstract/mixins";
+* {
+    width: 100%;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.scroll {
+    position: fixed;
+    z-index: 1000;
+    left: 90%;
+    top: 3%;
+    width: 40px;
+    height: 30px;
+    background: black;
+    margin: 0;
+    border: 1px solid white;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    span {
+        text-align: center;
+        width: 100%;
+    }
+}

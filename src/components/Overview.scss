@@ -1,0 +1,155 @@
+@import "../scss/abstract/fonts";
+@import "../scss/abstract/mixins";
+
+.overview-wrapper {
+    background: black;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0 20px;
+    ul {
+        width: calc(100% - 90px);
+        margin: 0 auto;
+        li {
+            margin: 0 0 48px;
+            font-size: 28px;
+            font-family: $sssB;
+            color: white;
+            line-height: 40px;
+            opacity: 40%;
+
+            transition: 0.7s all ease;
+            cursor: pointer;
+            &:hover {
+                transition: 0.3s all ease;
+                // text-decoration: underline;
+                opacity: 100%;
+            }
+        }
+    }
+}
+.intro-video {
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    .video-container {
+        width: 315px;
+        .video {
+        }
+    }
+    @include mobile {
+        .transforms {
+            // background: red;
+            position: absolute;
+            z-index: 10;
+            // width: 100%;
+            height: 550px;
+
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            overflow-x: hidden;
+            .transform {
+                height: 275px;
+                transition: 0.7s all ease;
+            }
+            .transform-left {
+                background: white;
+                height: auto;
+            }
+            .transform-right {
+                background: white;
+                bottom: 0;
+                height: auto;
+            }
+        }
+    }
+}
+
+@include screen {
+    .overview-wrapper {
+        // height: 3000px;
+        ul {
+            width: calc(100% - 212px);
+
+            // padding: 130px 20px 20px;
+            padding: 20px 20px 20px;
+            margin: 0 auto;
+            li {
+                margin-bottom: 60px;
+                font-size: 40px;
+                line-height: 1.3;
+            }
+        }
+    }
+    .intro-video {
+        width: 100%;
+        overflow: hidden;
+        background: white;
+        display: flex;
+        justify-content: center;
+        .video-container {
+            width: 315px;
+            .video {
+            }
+        }
+        .transforms {
+            width: 100%;
+            height: 600px;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            z-index: 5;
+            .transform {
+                background: white;
+                width: 100%;
+                transition: 0.7s all ease;
+            }
+        }
+    }
+}
+
+@include desktop {
+    .overview-wrapper {
+        // height: 3000px;
+        ul {
+            max-width: 988px;
+            // padding: 130px 20px 20px;
+            padding: 20px 20px 20px;
+            margin: 0 auto;
+            li {
+                margin-bottom: 60px;
+                font-size: 40px;
+                line-height: 1.3;
+            }
+        }
+    }
+    .intro-video {
+        width: 100%;
+        overflow: hidden;
+        background: white;
+        display: flex;
+        justify-content: center;
+        .video-container {
+            display: flex;
+            justify-content: center;
+            .video {
+                width: 440px;
+            }
+        }
+        .transforms {
+            width: 100%;
+            height: 720px;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            z-index: 5;
+            .transform {
+                background: white;
+                width: 100%;
+                transition: 0.7s all ease;
+            }
+        }
+    }
+}

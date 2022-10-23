@@ -1,0 +1,65 @@
+@import "../scss/abstract/fonts";
+@import "../scss/abstract/mixins";
+
+.banners {
+    background: #f5f6f8;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    margin-top: -80px;
+    article {
+        padding-bottom: 30px;
+
+        .list-item {
+            width: 100%;
+
+            margin-bottom: 20px;
+            padding: 30px 8px 0;
+
+            .sect {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+        .intro {
+            width: 100%;
+        }
+    }
+}
+
+@include screen {
+    .banners {
+        background: #f5f6f8;
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        margin-top: -50px;
+        padding: 0;
+        article {
+            padding-bottom: 20px;
+            @include desktop {
+                max-width: 93%;
+                margin: 0 auto 30px;
+            }
+            .list-item {
+                width: calc(100% - 84px);
+                margin: 0 auto;
+                margin-bottom: 0px;
+                padding: 30px 0px 0;
+                display: flex;
+                flex-direction: row;
+                .sect {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+            .intro {
+                width: calc(100% - 84px);
+                margin: 0 auto;
+            }
+        }
+    }
+}

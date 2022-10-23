@@ -1,0 +1,78 @@
+@import "../../scss/abstract/fonts";
+@import "../../scss/abstract/mixins";
+
+.better-together {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 80px 0 30px;
+    .descs {
+        text-align: center;
+        .cate-title {
+            font-size: 12px;
+            font-family: $so;
+            margin-bottom: 8px;
+            color: #767676;
+            font-weight: 700;
+        }
+        .title {
+            font-size: 20px;
+            font-family: $sssB;
+            margin-bottom: 24px;
+        }
+        .img-container {
+            img {
+                object-fit: cover;
+            }
+        }
+        .desc {
+            font-size: 12px;
+            font-family: $so;
+            margin-top: 24px;
+        }
+        .links {
+            margin-top: 20px;
+            .link {
+                font-size: 14px;
+                font-family: $so;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@include screen {
+    .better-together {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+
+        width: 90%;
+        .image-container {
+            margin-right: 20px;
+        }
+        .descs {
+            text-align: left;
+            padding-bottom: 5px;
+            .cate-title {
+                font-size: 16px;
+                margin-bottom: 8px;
+            }
+            .title {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            .desc {
+                font-size: 16px;
+                margin-top: 10px;
+            }
+            .links {
+                .link {
+                    font-size: 16px;
+                }
+                margin-top: 28px;
+            }
+        }
+    }
+}

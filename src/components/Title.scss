@@ -1,0 +1,111 @@
+@import "../scss/abstract/fonts";
+@import "../scss/abstract/mixins";
+
+.category {
+    margin-top: 120px;
+    padding-bottom: 60px;
+    width: calc(100% - 90px);
+    margin: 120px auto 0;
+    .menu {
+        cursor: pointer;
+        margin-bottom: 30px;
+        text-align: left;
+
+        .menu-title {
+            font-family: $so;
+            font-size: 14px;
+            letter-spacing: 3px;
+
+            margin-right: 5px;
+            margin-top: 3px;
+            font-weight: 700;
+        }
+        .dir {
+            background-color: black;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+
+            img {
+                object-fit: cover;
+                width: 22px;
+                height: 10px;
+                transform: scale(0.5);
+            }
+        }
+    }
+    .feature-title {
+        width: 100%;
+        line-height: 50px;
+        font-size: 44px;
+        font-family: $sssB;
+    }
+    .small {
+        width: 75%;
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .navigation-bar {
+        width: 222px;
+        height: 0;
+        border: 1px solid black;
+    }
+}
+
+@include screen {
+    .category {
+        width: calc(100% - 212px);
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        .menu {
+            .menu-title {
+                letter-spacing: 4px;
+                font-size: 18px;
+                margin-bottom: 10px;
+                margin-right: 13px;
+            }
+            .dir {
+                img {
+                }
+            }
+        }
+        .feature-title {
+            font-size: 110px;
+            line-height: 1.2;
+        }
+        .small {
+            font-size: 52px;
+        }
+    }
+}
+
+@include desktop {
+    .category {
+        width: calc(100% - 212px);
+        max-width: 988px;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        .menu {
+            .menu-title {
+                letter-spacing: 4px;
+                font-size: 18px;
+                margin-bottom: 10px;
+                margin-right: 13px;
+            }
+            .dir {
+                img {
+                }
+            }
+        }
+        .feature-title {
+            font-size: 110px;
+            line-height: 1.2;
+        }
+        .small {
+            font-size: 52px;
+        }
+    }
+}

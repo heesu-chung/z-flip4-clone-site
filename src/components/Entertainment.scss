@@ -1,0 +1,58 @@
+@import "../scss/abstract/fonts";
+@import "../scss/abstract/mixins";
+
+@include screen {
+    .entertainment {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 936px;
+        background-color: black;
+        margin-top: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .entertain-container {
+            position: relative;
+            z-index: 2;
+            width: 988px;
+            margin: 0 auto;
+            // width: calc(100% - 212px);
+            .contents {
+                color: white;
+                padding: 0 20px;
+                .cate {
+                    font-size: 18px;
+                    letter-spacing: 4px;
+                    font-family: $so;
+                    font-weight: 700;
+                    line-height: 22px;
+                    margin-bottom: 32px;
+                }
+                .feature-title {
+                    font-family: $sssB;
+                    font-size: 110px;
+                    line-height: 130px;
+                }
+            }
+        }
+        .enter-img {
+            position: absolute;
+
+            width: 320px;
+            height: 320px;
+        }
+        .e1 {
+            transform: translate3d(-125%, -400px, 0);
+        }
+        .e2 {
+            transform: translate3d(100%, -355px, 0);
+        }
+        .e3 {
+            transform: translate3d(-98%, 390px, 0);
+        }
+        .e4 {
+            transform: translate3d(131%, 430px, 0);
+        }
+    }
+}

@@ -1,0 +1,196 @@
+@import "../../scss/abstract/fonts";
+@import "../../scss/abstract/mixins";
+
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-family: $sssB;
+    background-color: white;
+
+    z-index: 100;
+    opacity: 0.9;
+
+    .upper-bar {
+        width: calc(100% - 22px);
+        height: 44px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #aaa;
+
+        @include tablet {
+            margin: 0;
+            height: 59px;
+        }
+        @include laptop {
+            height: 55px;
+            width: calc(100% - 60px);
+            margin: 0 auto;
+        }
+        @include desktop {
+            width: calc(100% - 60px);
+            height: 55px;
+            margin: 0 auto;
+        }
+
+        .logo-container {
+            display: none;
+
+            @include laptop {
+                display: inline;
+                margin-top: 10px;
+                img {
+                    width: 114px;
+                    height: 17px;
+                }
+            }
+            @include desktop {
+                display: inline;
+                margin-top: 10px;
+                img {
+                    width: 140px;
+                }
+            }
+        }
+        .product-container {
+            font-size: 14px;
+            margin: 8px 0 0 3px;
+            .product {
+                padding-right: 5px;
+                @include tablet {
+                    padding-right: 18px;
+                }
+                @include laptop {
+                    padding-right: 18px;
+                }
+                @include desktop {
+                    padding-right: 18px;
+                }
+            }
+            .arrow {
+                // display: none;
+
+                img {
+                    width: 13px;
+                    height: 9px;
+                    @include tablet {
+                        width: 20px;
+                        height: 15px;
+                    }
+                    @include laptop {
+                        width: 20px;
+                        height: 15px;
+                    }
+                    @include desktop {
+                        width: 20px;
+                        height: 15px;
+                    }
+                }
+            }
+
+            @include tablet {
+                font-size: 20px;
+                margin: 12px 0 0 32px;
+            }
+            @include laptop {
+                font-size: 20px;
+                margin: 12px 0 0 -11.3%;
+            }
+            @include desktop {
+                font-size: 20px;
+                margin: 12px 0 0 -11.3%;
+            }
+        }
+        .menu-bar {
+            width: 11%;
+            padding-left: 5px;
+            margin-bottom: 7px;
+            .string {
+                width: 20px;
+                height: 2px;
+                background: black;
+                margin: 5px 0 0 0;
+
+                @include tablet {
+                    width: 26px;
+                    height: 2px;
+                    margin: 7px 0 0 0;
+                }
+                @include laptop {
+                    width: 26px;
+                    height: 2px;
+                    margin: 7px 0 0 0;
+                }
+                @include desktop {
+                    width: 26px;
+                    height: 2px;
+                    margin: 7px 0 0 0;
+                }
+            }
+            @include tablet {
+                margin-right: 30px;
+                margin-bottom: 5px;
+            }
+            @include laptop {
+                width: 5%;
+                margin-bottom: 3px;
+            }
+            @include desktop {
+                width: 5%;
+                margin-right: 0px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+    .lower-bar {
+        font-size: 10px;
+        padding: 0 0 3px;
+
+        .select-link {
+            margin-left: 7px;
+            span {
+                text-align: center;
+                padding: 0 8px;
+                line-height: 32px;
+            }
+        }
+
+        @include tablet {
+            margin-top: 4px;
+            font-size: 13px;
+            .select-link {
+                margin-left: 23px;
+                span {
+                    line-height: 42px;
+                }
+            }
+        }
+        @include laptop {
+            font-size: 13px;
+            margin-left: -7px;
+            margin-top: 1px;
+            text-align: center;
+            .select-link {
+                span {
+                    padding: 0 12px;
+                    line-height: 37px;
+                }
+            }
+        }
+        @include desktop {
+            font-size: 13px;
+            margin-left: -7px;
+            margin-top: 1px;
+            text-align: center;
+            .select-link {
+                span {
+                    padding: 0 20px;
+                    line-height: 37px;
+                }
+            }
+        }
+    }
+}

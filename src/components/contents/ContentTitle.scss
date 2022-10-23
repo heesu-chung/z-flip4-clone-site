@@ -1,0 +1,38 @@
+@import "../../scss/abstract/fonts";
+@import "../../scss/abstract/mixins";
+
+.titles {
+    .category {
+        font-size: 12px;
+        font-family: $so;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 18px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        line-height: 14px;
+    }
+    .title {
+        font-size: 34px;
+        line-height: 40px;
+        font-family: $sssB;
+    }
+}
+
+@include screen {
+    .titles {
+        .category {
+            width: 100%;
+            font-size: 16px;
+            letter-spacing: 3px;
+            margin-bottom: 24px;
+        }
+        .title {
+            width: 90%;
+            font-size: 52px;
+            // padding-right: 30px;
+
+            line-height: 58px;
+        }
+    }
+}

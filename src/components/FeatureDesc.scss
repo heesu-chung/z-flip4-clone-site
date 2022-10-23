@@ -1,0 +1,42 @@
+@import "../scss/abstract/fonts";
+@import "../scss/abstract/mixins";
+
+section {
+    padding: 40px 0px 38px;
+    .section {
+        margin: 0 18px;
+        width: calc(100% - 50px);
+        text-align: left !important;
+        ol {
+            padding-left: 20px;
+            font-family: $so;
+            list-style: decimal;
+            white-space: normal;
+            word-wrap: break-word;
+            li {
+                font-family: $so;
+                color: #666;
+                font-size: 13px;
+                line-height: 1.6;
+            }
+            ::marker {
+                color: #666;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@include screen {
+    section {
+        padding: 42px 0 40px;
+        .section {
+            max-width: 1024px;
+            @include desktop {
+                max-width: 1440px;
+            }
+            margin: 0 auto;
+        }
+    }
+}

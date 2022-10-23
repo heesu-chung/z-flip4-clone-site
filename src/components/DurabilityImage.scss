@@ -1,0 +1,138 @@
+@import "../scss/abstract/fonts";
+@import "../scss/abstract/mixins";
+
+@include mobile {
+    .durability-image {
+        width: 100%;
+        position: relative;
+        // border: 1px solid black;
+        // max-width: 375px;
+        height: 1500px;
+        overflow-x: hidden;
+        margin: 100px 0 -250px;
+        padding: 0;
+        .blank {
+            width: 100%;
+            height: 300px;
+        }
+        .image-container {
+            position: absolute;
+            display: block;
+            width: 100%;
+            // border: 1px solid red;
+            z-index: -1;
+            transition: 0.4s all ease;
+            img {
+                object-fit: cover;
+                transition: 0.3s all ease;
+            }
+        }
+        .d-1 {
+            transform: translate(20px, 100px);
+        }
+        .d-2 {
+            width: 70%;
+            transform: translate(225px, -200px);
+        }
+        .d-3 {
+            width: 79%;
+            transform: translate(-130px, -100px);
+        }
+        .d-4 {
+            z-index: -5;
+            width: 67%;
+            transform: translate(50px, 200px);
+        }
+
+        .d-b {
+            z-index: -6;
+            width: 54%;
+            transform: translate(120px, 0px);
+        }
+        .d-w {
+            z-index: -4;
+            width: 130%;
+            transform: translate(40px, 10px);
+        }
+    }
+}
+
+@include screen {
+    .durability-image {
+        width: 100%;
+        position: relative;
+
+        // border: 1px solid black;
+
+        height: 1900px;
+        overflow-x: hidden;
+        margin: 0px 0 -50px;
+        padding: 0;
+
+        .category {
+            .feature-title {
+                width: 80%;
+            }
+        }
+        .blank {
+            width: 100%;
+            height: 500px;
+        }
+        .image-container {
+            position: absolute;
+            display: block;
+            width: 100%;
+            transition: 0.3s all ease-in-out;
+            z-index: -1;
+            img {
+                object-fit: cover;
+            }
+        }
+        .d-1 {
+            width: 608px;
+            transform: translate(75%, 200px);
+            @include desktop {
+                transform: translate(40vw, 200px);
+            }
+        }
+        .d-2 {
+            width: 375px;
+            transform: translate(200%, -140px);
+            @include desktop {
+                transform: translate(59vw, 200px);
+            }
+        }
+        .d-3 {
+            width: 324px;
+            transform: translate(53%, 00px);
+            @include desktop {
+                transform: translate(21vw, 200px);
+            }
+        }
+        .d-4 {
+            z-index: -5;
+            width: 400px;
+            transform: translate(105%, 350px);
+            @include desktop {
+                transform: translate(38vw, 200px);
+            }
+        }
+
+        .d-b {
+            z-index: -6;
+            width: 420px;
+            transform: translate(136%, -460px);
+            @include desktop {
+                transform: translate(38vw, 200px);
+            }
+        }
+        .d-w {
+            z-index: -4;
+            width: 866px;
+            transform: translate(43%, 00px);
+            @include desktop {
+                transform: translate(34.5vw, -50px);
+            }
+        }
+    }
+}

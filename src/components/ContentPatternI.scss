@@ -1,0 +1,60 @@
+@import "../scss/abstract/fonts";
+@import "../scss/abstract/mixins";
+
+.content-i {
+    padding: 60px 0 60px 0;
+    overflow-x: hidden;
+    .block {
+        width: calc(100% - 90px);
+        margin: 50px auto 0;
+        .contents {
+            padding-bottom: 0;
+        }
+    }
+    .feature-image {
+        width: 100%;
+        margin: 40px 0 50px;
+        display: flex;
+        justify-content: center;
+        width: calc(100% - 90px);
+        margin: 0 auto;
+        img {
+        }
+    }
+    .feature-content {
+        .image-block {
+            margin-top: 35px;
+        }
+    }
+}
+
+@include screen {
+    .content-i {
+        width: calc(100% - 212px);
+        min-width: 988px;
+        padding: 120px 20px 60px;
+        margin: 0 auto;
+
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+
+        .feature-image {
+            margin: 0 20px 0 -20px;
+
+            flex: 1;
+        }
+        .feature-content {
+            margin-left: 37px;
+            margin-top: 0;
+            flex: 1;
+            .titles {
+                .title {
+                    width: 400px;
+                }
+            }
+            .contents {
+            }
+        }
+    }
+}

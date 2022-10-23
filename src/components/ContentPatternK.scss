@@ -1,0 +1,102 @@
+@import "../scss/abstract/fonts";
+@import "../scss/abstract/mixins";
+
+.content-k {
+    padding: 90px 0 60px;
+    .titles {
+        width: calc(100% - 90px);
+        margin: 0 auto;
+
+        padding: 0 0 60px;
+        .category {
+            font-size: 12px;
+            font-family: $so;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 18px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            line-height: 14px;
+        }
+        .feature-title {
+            width: 100%;
+            line-height: 50px;
+            font-size: 44px;
+            font-family: $sssB;
+        }
+    }
+    .cover-contents {
+        width: 100%;
+        overflow-x: hidden;
+        .screen-row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 8px;
+
+            @include mobile {
+                .cover-image-container {
+                    width: 236px;
+
+                    .cover1,
+                    .cover3,
+                    .cover6 {
+                        transform: translateX(-140%);
+                    }
+                    .cover2,
+                    .cover4,
+                    .cover5,
+                    .cover6 {
+                        transform: translateX(140%);
+                    }
+                    .cover-image,
+                    .cover-video {
+                        width: 236px;
+                        // margin-right: 8px;
+                        padding: 0 4px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include screen {
+    .content-k {
+        .titles {
+            width: calc(100% - 212px);
+            @include desktop {
+                max-width: 988px;
+            }
+            margin: 0 auto;
+            padding: 0 20px 120px;
+            .category {
+                font-size: 16px;
+                letter-spacing: 3px;
+                margin-bottom: 32px;
+            }
+            .feature-title {
+                font-size: 110px;
+                line-height: 1.2;
+            }
+        }
+        .cover-contents {
+            .screen-row {
+                margin-bottom: 40px;
+                .cover-image-container {
+                    width: 520px;
+                    margin-right: 40px;
+                    transition: 0.5s all ease;
+                    .cover-image {
+                        width: 520px;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .lower {
+                transform: translateX(-18%);
+            }
+        }
+    }
+}

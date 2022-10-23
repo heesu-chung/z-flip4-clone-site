@@ -1,0 +1,183 @@
+@import "../scss/abstract/fonts";
+@import "../scss/abstract/mixins";
+
+.slide-list {
+    @include mobile {
+        width: calc(100% - 45px);
+        position: relative;
+        overflow-x: hidden;
+        margin-left: 45px;
+    }
+    ul {
+        width: 1452px;
+        display: flex;
+        flex-direction: row;
+        transition: 0.5s all ease;
+        li {
+            width: 270px;
+            margin-right: 20px;
+            .slide-item {
+            }
+        }
+    }
+    .scroll-bar-container {
+        margin-top: 45px;
+        width: 100%;
+        height: 1px;
+        background: #d8d8d8;
+        .scroll-bar {
+            height: 1px;
+            width: 30%;
+            background: #000;
+            transition: 0.5s all ease;
+        }
+    }
+}
+
+.btns-container {
+    .btns {
+        position: absolute;
+        z-index: 2;
+        width: calc(100% - 45px);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        transform: translate(25px, 80px);
+
+        .btn {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+            img {
+                object-fit: cover;
+            }
+        }
+        .left {
+            opacity: 0;
+        }
+    }
+}
+
+@include screen {
+    .btns-container {
+        position: absolute;
+        z-index: 5;
+        width: calc(100% - 120px);
+        margin-left: 60px;
+        transform: translate(0, 25px);
+
+        .btns {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .btn {
+                width: 52px;
+                height: 52px;
+                cursor: pointer;
+                opacity: 0.6;
+            }
+            .left {
+                opacity: 0;
+            }
+        }
+    }
+    .slide-list {
+        width: calc(100% - 106px);
+        position: relative;
+        overflow-x: hidden;
+        margin-left: 106px;
+        padding-bottom: 80px;
+        ul {
+            transition: 0.5s all ease;
+            width: 1800px;
+            display: flex;
+            flex-direction: row;
+            li {
+                width: 340px;
+                margin-right: 10px;
+                .slide-item {
+                }
+            }
+        }
+
+        .scroll-bar-container {
+            margin-top: 45px;
+            width: 100%;
+            height: 2px;
+            background: #d8d8d8;
+
+            .scroll-bar {
+                transition: 0.5s all ease;
+                height: 2px;
+                width: 60%;
+                background: #000;
+            }
+        }
+    }
+}
+
+@include desktop {
+    .btns-container {
+        // border: 1px solid black;
+        position: absolute;
+        z-index: 5;
+        width: calc(100% - 28vw);
+        margin-left: 14vw;
+        transform: translate(0, 25px);
+
+        .btns {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .btn {
+                width: 52px;
+                height: 52px;
+                cursor: pointer;
+                opacity: 0.6;
+            }
+            .left {
+                opacity: 0;
+            }
+        }
+    }
+    .slide-list {
+        width: calc(100% - 17.5vw);
+        position: relative;
+        overflow-x: hidden;
+        margin-left: 17.5vw;
+        padding-bottom: 80px;
+        ul {
+            transition: 0.5s all ease;
+            width: 1800px;
+            display: flex;
+            flex-direction: row;
+            li {
+                width: 340px;
+                margin-right: 10px;
+                .slide-item {
+                }
+            }
+        }
+
+        .scroll-bar-container {
+            margin-top: 45px;
+            width: 100%;
+            height: 2px;
+            background: #d8d8d8;
+
+            .scroll-bar {
+                transition: 0.5s all ease;
+                height: 2px;
+                width: 60%;
+                background: #000;
+            }
+        }
+    }
+}

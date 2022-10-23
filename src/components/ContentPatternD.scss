@@ -1,0 +1,106 @@
+@import "../scss/abstract/fonts";
+@import "../scss/abstract/mixins";
+
+.content-d {
+    padding: 60px 0 0px 0;
+    width: 100%;
+    // overflow-x: hidden;
+    .block {
+        width: calc(100% - 90px);
+        margin: 0 auto;
+    }
+    .feature-image {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 50px 0 80px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        .exterior {
+            transform: translateX(45px);
+        }
+        .glass {
+            position: absolute;
+            z-index: 3;
+        }
+        .upper {
+            transform: translate(45px, -60px);
+            transition: 0.7s all ease-in-out;
+        }
+        .lower {
+            transform: translate(45px, -30px);
+            transition: 0.7s all ease-in-out;
+        }
+    }
+    .feature-content {
+        .contents {
+            padding-bottom: 0;
+        }
+    }
+}
+.flex-end {
+    .feature-image {
+        width: calc(100% - 48px);
+        margin: 0 auto 50px;
+    }
+}
+
+@include screen {
+    .content-d {
+        width: calc(100% - 212px);
+        min-width: 988px;
+        @include desktop {
+            max-width: 988px;
+        }
+        padding: 120px 20px;
+        margin: 0 auto;
+        // transform: translateX(-20px);
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        .feature-image {
+            width: 100%;
+            margin: 0;
+            flex: 1;
+            overflow: visible;
+
+            .exterior {
+            }
+            .glass {
+                position: absolute;
+                z-index: 3;
+            }
+            .upper {
+                transform: translate(45px, -60px);
+            }
+            .lower {
+                transform: translate(45px, -30px);
+            }
+        }
+        .feature-content {
+            margin-top: 15px;
+            flex: 1;
+            padding-left: 20px;
+            .titles {
+                .title {
+                    width: 100%;
+                }
+            }
+            .contents {
+                width: 85%;
+            }
+        }
+    }
+    .flex-end {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row;
+        .feature-image {
+            transform: translateX(20px);
+        }
+        .feature-content {
+            padding-left: 0;
+        }
+    }
+}

@@ -1,0 +1,346 @@
+@import "../scss/abstract/fonts";
+@import "../scss/abstract/mixins";
+
+.content-f {
+    padding: 0;
+    .scroll-bg {
+        width: 100%;
+        height: 800px;
+        position: absolute;
+
+        background: black;
+        transition: 0.3s all ease-in-out;
+        @include mobile {
+        }
+    }
+    .content-container {
+        padding: 60px 0 60px 0;
+        @include mobile {
+            padding-bottom: 0;
+            .image-container {
+                position: relative;
+            }
+        }
+        background: black;
+        overflow: hidden;
+        .feature-title {
+            width: 70%;
+            margin-left: 45px;
+            color: white;
+            font-size: 44px;
+            font-family: $sssB;
+            position: absolute;
+            z-index: 5;
+            transform: translateY(80px);
+        }
+        .block {
+            width: calc(100% - 90px);
+            margin: 50px auto 0;
+            color: white;
+            .contents {
+                padding-bottom: 0;
+            }
+        }
+        .feature-image {
+            position: relative;
+            z-index: 2;
+            margin: 40px 0 50px;
+            display: flex;
+            justify-content: flex-start;
+            margin: 0 auto;
+
+            @include mobile {
+                img {
+                    width: 245px;
+                    padding-top: 60px;
+                }
+            }
+        }
+        .feature-desc {
+            width: 30%;
+            color: white;
+            position: absolute;
+            .spec {
+            }
+        }
+        .feature-multicamera {
+            display: flex;
+            flex-direction: column;
+
+            @include mobile {
+                padding-top: 120px;
+                position: relative;
+                z-index: 3;
+                .image {
+                }
+                .camera-back {
+                    width: 130%;
+                    transform: translate(31%, 0px);
+                }
+                .camera-front-container {
+                    width: 80%;
+                    transform: translate(50%, -140px);
+                    height: 100px;
+                    .camera-front {
+                    }
+                }
+            }
+        }
+
+        @include mobile {
+            .content-flex {
+                z-index: 3;
+            }
+            .feature-desc {
+                // width: 30%;
+                padding-left: 50px;
+                color: white;
+                position: absolute;
+                z-index: 300;
+                .spec {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    transition: 0.5s all ease-in-out;
+                    opacity: 0;
+                    .image {
+                        margin-bottom: 8px;
+                        img {
+                            width: 28px;
+                            height: 28px;
+                        }
+                    }
+                    .t-mp {
+                        font-size: 24px;
+                        line-height: 32px;
+                        font-family: $sssB;
+                    }
+                    .t-camera {
+                        margin-top: 2px;
+                        font-family: $so;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 18px;
+                        width: 60%;
+                    }
+                }
+                .camera1 {
+                    transform: translateY(140px);
+                    .spec-1 {
+                        position: absolute;
+
+                        width: 95%;
+                        transform: translate(80px, 60px);
+
+                        border-bottom: 1px solid white;
+                    }
+                }
+                .camera2 {
+                    transform: translateY(300px);
+                    .spec-2 {
+                        position: absolute;
+
+                        width: 95%;
+                        height: 70px;
+                        transform: translate(80px, 0px);
+
+                        border-bottom: 1px solid white;
+                        border-right: 1px solid white;
+                    }
+                }
+                .camera3 {
+                    transform: translateY(500px);
+                    .spec-3 {
+                        position: absolute;
+
+                        width: 150%;
+                        height: 68px;
+                        transform: translate(80px, 0px);
+
+                        border-bottom: 1px solid white;
+                        border-right: 1px solid white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include screen {
+    .content-f {
+        width: 100%;
+
+        padding: 60px 0 60px 0;
+        background: black;
+        .scroll-bg {
+            height: 600px;
+            transform: translateY(300px);
+        }
+        .content-container {
+            width: calc(100% - 212px);
+            @include desktop {
+                max-width: 988px;
+            }
+            margin: 0 auto;
+            .feature-title {
+                position: absolute;
+                z-index: 2;
+                width: 60%;
+                margin-left: 0px;
+                padding-left: 20px;
+                font-size: 110px;
+                @include desktop {
+                    width: 50%;
+                    line-height: 130px;
+                }
+            }
+            .image-container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 692px;
+                    transform: translate3d(10%, -80px, 0);
+                }
+            }
+            .block {
+                width: calc(100% - 90px);
+                margin: 50px auto 0;
+                color: white;
+                .contents {
+                    padding-bottom: 0;
+                }
+            }
+
+            .content-flex {
+                display: flex;
+                flex-direction: row;
+
+                .feature-image {
+                    width: 100%;
+                    margin: 40px 0 50px;
+                    display: flex;
+                    justify-content: flex-start;
+
+                    img {
+                        width: 504px;
+                    }
+                }
+
+                .feature-content {
+                    margin: 76px 0 0 84px;
+                    padding-right: 20px;
+                    @include desktop {
+                        margin-top: 100px;
+                    }
+                    .titles {
+                        p {
+                            width: 100%;
+                        }
+                    }
+                    .contents {
+                        .content {
+                            margin-bottom: -15px;
+                        }
+                    }
+                }
+            }
+            .feature-desc {
+                // width: 30%;
+                padding-left: 20px;
+                color: white;
+                position: absolute;
+                z-index: 300;
+                .spec {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    transition: 0.5s all ease-in-out;
+                    opacity: 0;
+                    .image {
+                        margin-bottom: 8px;
+                        img {
+                            width: 28px;
+                            height: 28px;
+                        }
+                    }
+                    .t-mp {
+                        font-size: 36px;
+                        line-height: 52px;
+                        font-family: $sssB;
+                    }
+                    .t-camera {
+                        margin-top: 2px;
+                        font-family: $so;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 27px;
+                    }
+                }
+                .camera1 {
+                    transform: translateY(480px);
+                    .spec-1 {
+                        position: absolute;
+
+                        width: 13.7vw;
+                        transform: translate(180px, 60px);
+
+                        border-bottom: 1px solid white;
+                    }
+                }
+                .camera2 {
+                    transform: translateY(680px);
+                    .spec-2 {
+                        position: absolute;
+
+                        width: 13.7vw;
+                        height: 70px;
+                        transform: translate(180px, 0px);
+
+                        border-bottom: 1px solid white;
+                        border-right: 1px solid white;
+                    }
+                }
+                .camera3 {
+                    transform: translateY(970px);
+                    .spec-3 {
+                        position: absolute;
+
+                        width: 28.5vw;
+                        height: 68px;
+                        transform: translate(180px, 0px);
+
+                        border-bottom: 1px solid white;
+                        border-right: 1px solid white;
+                    }
+                }
+            }
+
+            .feature-multicamera {
+                padding-top: 200px;
+                position: relative;
+
+                .camera-back-container {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    transform: translateY(230px);
+
+                    .camera-back {
+                        width: 700px;
+                    }
+                }
+                .camera-front-container {
+                    position: relative;
+                    z-index: 2;
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    .camera-front {
+                        width: 700px;
+                    }
+                }
+            }
+        }
+    }
+}

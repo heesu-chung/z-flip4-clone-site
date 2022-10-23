@@ -1,0 +1,48 @@
+@import "../scss/abstract/fonts";
+@import "../scss/abstract/mixins";
+
+.content-c {
+    padding: 60px 0 60px 0;
+    width: 100%;
+    overflow-x: hidden;
+    .block {
+        width: calc(100% - 90px);
+        margin: 0 auto;
+    }
+    .feature-image {
+        width: 100%;
+        margin: 40px 0 80px;
+        display: flex;
+        justify-content: flex-start;
+
+        img {
+        }
+    }
+}
+
+@include screen {
+    .content-c {
+        width: calc(100% - 212px);
+        min-width: 988px;
+        @include desktop {
+            max-width: 988px;
+        }
+        padding: 120px 20px;
+        margin: 0 auto;
+        transform: translateX(-20px);
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+
+        .feature-image {
+            margin: 0;
+
+            flex: 1;
+        }
+        .feature-content {
+            margin-top: 15px;
+            margin-left: 64px;
+            flex: 1;
+        }
+    }
+}

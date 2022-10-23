@@ -1,0 +1,34 @@
+@import "../../scss/abstract/fonts";
+@import "../../scss/abstract/mixins";
+
+.image-block {
+    margin-top: -30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    img {
+        margin-right: 20px;
+    }
+    .bv {
+        margin-top: -12px;
+    }
+    .samsung-care {
+        margin-top: 80px;
+    }
+}
+
+@include screen {
+    .image-block {
+        margin-top: 10px;
+        img {
+            margin-right: 43px;
+        }
+        .bv {
+            margin-top: -10px;
+        }
+        .samsung-care {
+            margin-left: 10px;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@import "../scss/abstract/fonts";
+@import "../scss/abstract/mixins";
+
+@include mobile {
+    .overview-nav {
+        text-align: center;
+        overflow: visible !important;
+        padding: 60px 0;
+        ul {
+            li {
+                display: inline-block;
+                width: auto;
+                padding: 8px 6px 6px;
+                span {
+                    padding: 7px 15px 5px 15px;
+                    line-height: 20px;
+                    font-size: 12px;
+                    letter-spacing: 1.2px;
+                    font-family: $sssB;
+                    border-radius: 20px;
+                    border: 1px solid black;
+                }
+            }
+        }
+    }
+}
+
+@include screen {
+    .overview-nav {
+        text-align: center;
+        padding: 120px 0;
+        ul {
+            li {
+                display: inline-block;
+                width: auto;
+                padding: 10px 12px 6px;
+                span {
+                    padding: 12px 28px 10px;
+                    line-height: 16px;
+                    border-radius: 25px;
+                    font-size: 16px;
+                    letter-spacing: 1.2px;
+                    font-family: $sssB;
+                    border: 1px solid black;
+                    cursor: pointer;
+
+                    transition: 0.3s all ease;
+                    &:hover {
+                        background: black;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
