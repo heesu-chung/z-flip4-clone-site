@@ -1,8 +1,10 @@
 ## Demo Link
 [https://z-flip4-clone.web.app/](https://z-flip4-clone.web.app/)
+배포시 insecured fonts 이슈로 다른 폰트로 대체하였습니다.  
+README gif 이미지 및 github 업로드 된 클론 소스코드에는 테스트 용도로 samsung one / samsung sharp sans 폰트를 사용했습니다. 
 
 ## 제작 기간
-9월 28일 ~ 10월 21일  
+9월 24일 ~ 10월 21일  
 1인 개발
 
 ## 프로젝트 개요  
@@ -11,7 +13,7 @@
   
 반응형 웹 개발(mobile, laptop, desktop)을 적용한 마크업과 인터랙티브 요소 프로그래밍을 진행한 프로젝트입니다.
   
-SCSS를 이용한 스타일링과 자바스크립트 내 직접적 DOM 접근을 통한 스타일링 속성 변경을 통해 인터랙티브 요소를 구현하였고, 프레임워크로 React를 사용하였습니다. 
+SCSS를 이용한 스타일링과 자바스크립트 내 직접적인 DOM 접근을 통한 스타일링 속성 변경을 통해 인터랙티브 요소를 구현하였고, 프레임워크로는 React를 사용하였습니다. 
   
 세부적인 기능 구현들은 다음과 같습니다.
 
