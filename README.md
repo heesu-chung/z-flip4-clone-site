@@ -1,5 +1,6 @@
 ## Demo Link
 [https://z-flip4-clone.web.app/](https://z-flip4-clone.web.app/)
+  
 배포시 insecured fonts 이슈로 다른 폰트로 대체하였습니다.  
 README gif 이미지 및 github 업로드 된 클론 소스코드에는 테스트 용도로 samsung one / samsung sharp sans 폰트를 사용했습니다. 
 
