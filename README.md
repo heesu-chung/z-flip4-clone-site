@@ -5,15 +5,14 @@
 9월 28일 ~ 10월 21일  
 1인 개발
 
-
 ## 프로젝트 개요  
-
-### Z Flip4 랜딩 페이지 클론 구현
-
+  
+### Z Flip4 랜딩 페이지 클론 구현  
+  
 반응형 웹 개발(mobile, laptop, desktop)을 적용한 마크업과 인터랙티브 요소 프로그래밍을 진행한 프로젝트입니다.
-
+  
 SCSS를 이용한 스타일링과 자바스크립트 내 직접적 DOM 접근을 통한 스타일링 속성 변경을 통해 인터랙티브 요소를 구현하였고, 프레임워크로 React를 사용하였습니다. 
-
+  
 세부적인 기능 구현들은 다음과 같습니다.
 
 - 스크린 너비에 따른 반응형 마크업
@@ -26,7 +25,7 @@ SCSS를 이용한 스타일링과 자바스크립트 내 직접적 DOM 접근을
 - 버튼 입력에 대한 모달 구현
 - sticky 요소 구현
 - 버튼 입력에 대한 텍스트 슬라이드
-
+  
 ![clone_01](https://user-images.githubusercontent.com/68191058/197408191-21266c1d-841a-4c18-a07e-cc3ef6e5e43f.gif)  
 ![clone_02](https://user-images.githubusercontent.com/68191058/197408202-e606996f-5964-4d2d-ae73-3c6c23dc5ebc.gif)  
 ![clone_03](https://user-images.githubusercontent.com/68191058/197408207-9f92cf37-2f20-4a59-b375-7529bd84655b.gif)  
@@ -43,5 +42,10 @@ SCSS를 이용한 스타일링과 자바스크립트 내 직접적 DOM 접근을
 ![clone_14](https://user-images.githubusercontent.com/68191058/197408340-d57a6c1b-a2ca-4da9-b44a-257dfc1c179f.gif)  
 ![clone_15](https://user-images.githubusercontent.com/68191058/197408356-26ddbb71-fa43-4306-9b6b-0099f71a8846.gif)  
 ![clone_16](https://user-images.githubusercontent.com/68191058/197408370-976eed69-b2d9-4c75-9018-4c54aaf6b8a9.gif)  
-
+  
+  
+## 성능 비교표
+![comparision](https://user-images.githubusercontent.com/68191058/197410522-5170b341-356f-4568-ad17-eb14d2988d1a.jpg)  
+  
+  
 ## 회고
