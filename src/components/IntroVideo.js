@@ -3,14 +3,37 @@ import "./IntroVideo.scss";
 import thumb1 from "../assets/video-thumb-1.jpg";
 import thumb2 from "../assets/video-thumb-2.jpg";
 import YoutubeBtn from "../assets/youtube_btn.png";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const IntroVideo = () => {
+    const [video, setVideo] = useState(0);
     useEffect(() => {}, []);
 
-    const onClick = (e) => {};
+    const onClick = (e) => {
+        if (e === 4) {
+            setVideo(0);
+            return;
+        }
+        setVideo(e);
+    };
     return (
         <section className="intro-video-wrapper">
+            {video === 1 && (
+                <div
+                    className="youtube-video-container"
+                    onClick={() => onClick(4)}
+                >
+                    <div className="player"></div>
+                </div>
+            )}
+            {video === 2 && (
+                <div
+                    className="youtube-video-container"
+                    onClick={() => onClick(4)}
+                >
+                    <div className="player"></div>
+                </div>
+            )}
             <div className="intro-video-container">
                 <div className="title">Stand up to the standard</div>
                 <div className="video-container">
