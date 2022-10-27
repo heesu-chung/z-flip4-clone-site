@@ -30,7 +30,7 @@ SCSS를 이용한 스타일링과 자바스크립트 내 직접적인 DOM 접근
 - sticky 요소 구현
 - 버튼 입력에 대한 텍스트 슬라이드
   
-![clone_00](https://user-images.githubusercontent.com/68191058/198263901-66a34447-0d4e-4bdc-9cd4-a2589a249fff.gif)
+![clone_00](https://user-images.githubusercontent.com/68191058/198264294-1655eb05-38ca-44ff-878b-729f0924b23d.gif)
 ![clone_01](https://user-images.githubusercontent.com/68191058/197408191-21266c1d-841a-4c18-a07e-cc3ef6e5e43f.gif)  
 ![clone_02](https://user-images.githubusercontent.com/68191058/197408202-e606996f-5964-4d2d-ae73-3c6c23dc5ebc.gif)  
 ![clone_03](https://user-images.githubusercontent.com/68191058/197408207-9f92cf37-2f20-4a59-b375-7529bd84655b.gif)  
