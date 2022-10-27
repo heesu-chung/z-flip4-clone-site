@@ -23,7 +23,20 @@ const IntroVideo = () => {
                     className="youtube-video-container"
                     onClick={() => onClick(4)}
                 >
-                    <div className="player"></div>
+                    <div className="player">
+                        <iframe
+                            src="https://www.youtube.com/embed/lqP87f9lZ2M"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            className="iframe-youtube-1 iframe-youtube"
+                        ></iframe>
+                    </div>
+                    <div className="quit-btn">
+                        <span className="left quit-line"></span>
+                        <span className="right quit-line"></span>
+                    </div>
                 </div>
             )}
             {video === 2 && (
@@ -31,7 +44,20 @@ const IntroVideo = () => {
                     className="youtube-video-container"
                     onClick={() => onClick(4)}
                 >
-                    <div className="player"></div>
+                    <div className="player">
+                        <iframe
+                            src="https://www.youtube.com/embed/0n253lWq9GY"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            className="iframe-youtube-2 iframe-youtube"
+                        ></iframe>
+                    </div>
+                    <div className="quit-btn">
+                        <span className="left quit-line"></span>
+                        <span className="right quit-line"></span>
+                    </div>
                 </div>
             )}
             <div className="intro-video-container">
