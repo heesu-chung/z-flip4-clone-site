@@ -27,9 +27,9 @@ const IntroVideo = () => {
                         <iframe
                             src="https://www.youtube.com/embed/lqP87f9lZ2M"
                             title="YouTube video player"
-                            frameborder="0"
+                            frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
+                            allowFullScreen
                             className="iframe-youtube-1 iframe-youtube"
                         ></iframe>
                     </div>
@@ -48,9 +48,9 @@ const IntroVideo = () => {
                         <iframe
                             src="https://www.youtube.com/embed/0n253lWq9GY"
                             title="YouTube video player"
-                            frameborder="0"
+                            frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
+                            allowFullScreen
                             className="iframe-youtube-2 iframe-youtube"
                         ></iframe>
                     </div>
