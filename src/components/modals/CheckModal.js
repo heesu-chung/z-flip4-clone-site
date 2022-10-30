@@ -53,14 +53,18 @@ const CheckModal = () => {
                         </div>
                     )}
                     <div className="play-block">
-                        <img src={Play} alt="" />
+                        <div className="play-img">
+                            <img src={Play} className="play-btn btn" alt="" />
+                        </div>
                         <span className="play play-desc">Play</span>
                     </div>
                 </div>
                 {screenX < 1024 && (
                     <div className="info-modal-container">
                         <div className="info-modal">
-                            <img src={Info} alt="" />
+                            <div className="info-img">
+                                <img src={Info} alt="" />
+                            </div>
                             <span className="info-category">{category}</span>
                         </div>
                     </div>

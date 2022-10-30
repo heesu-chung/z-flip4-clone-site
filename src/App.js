@@ -41,6 +41,7 @@ import Entertainment from "./components/Entertainment";
 import NavigationBar from "./components/global/NavigationBar";
 import ContentPatternA_sub from "./components/ContentPatternA_sub";
 import CheckModal from "./components/modals/CheckModal";
+import ScrollToTopBtn from "./components/global/ScrollToTopBtn";
 
 const content = [
     "Choose a color that goes with everything — but looks like nothing else. A hazy finish on the glass creates a soft contrast to the high-shine, glossy metal frame. Select from four shades: Bora Purple, Graphite, Pink Gold and Blue.",
@@ -118,7 +119,8 @@ function App() {
             {/* <div className="scroll">
                 <span>{scroll}</span>
             </div> */}
-            <CheckModal />
+            {/* <CheckModal /> */}
+            <ScrollToTopBtn />
             <Header />
 
             <FrontCoverImg />

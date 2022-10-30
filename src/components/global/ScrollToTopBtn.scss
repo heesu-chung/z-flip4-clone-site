@@ -1,0 +1,45 @@
+@import "../../scss/abstract/fonts";
+@import "../../scss/abstract/mixins";
+
+.global-scroll-btn {
+    width: 36px;
+    height: 36px;
+    position: fixed;
+    z-index: 1500;
+    top: 90vh;
+    left: 87vw;
+    cursor: pointer;
+    .scroll-btn-container {
+        width: 36px;
+        height: 36px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        img {
+            object-fit: cover;
+            transform: rotate(180deg);
+        }
+    }
+}
+
+@include screen {
+    .global-scroll-btn {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        top: 94vh;
+        left: 95vw;
+
+        .scroll-btn-container {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            img {
+                object-fit: cover;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
