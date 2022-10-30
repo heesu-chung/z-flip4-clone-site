@@ -19,6 +19,7 @@ SCSS를 이용한 스타일링과 자바스크립트 내 직접적인 DOM 접근
 세부적인 기능 구현들은 다음과 같습니다.
 
 - 스크린 너비에 따른 반응형 마크업
+- ScrollToTop 버튼 애니메이션 구현
 - 비디오 모달 구현(유튜브)
 - 네비게이션 버튼 클릭 시 스크롤 값 변경
 - 스크롤 위치에 따른 1회성 비디오 재생 메서드
@@ -30,6 +31,7 @@ SCSS를 이용한 스타일링과 자바스크립트 내 직접적인 DOM 접근
 - sticky 요소 구현
 - 버튼 입력에 대한 텍스트 슬라이드
   
+![clone_000](https://user-images.githubusercontent.com/68191058/198890891-3b086de2-adb2-44e8-8d2c-4e8324b212d8.gif)
 ![clone_00](https://user-images.githubusercontent.com/68191058/198264294-1655eb05-38ca-44ff-878b-729f0924b23d.gif)
 ![clone_01](https://user-images.githubusercontent.com/68191058/198293456-59f7032e-42f4-4f75-ab61-4fbecda0fcdd.gif)
 ![clone_02](https://user-images.githubusercontent.com/68191058/198293463-8060cb9c-0ee2-4bff-aff0-29bc635838f2.gif)
