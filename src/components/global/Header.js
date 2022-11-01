@@ -1,3 +1,4 @@
+/* styles */
 import "./Header_sub.scss";
 
 /* assets */
