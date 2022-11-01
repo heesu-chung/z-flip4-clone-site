@@ -1,12 +1,7 @@
-import { useEffect, useState } from "react";
+/* styles */
 import "./Button.scss";
 
 const Button = ({ btnContent, navigation, screenX }) => {
-    const btn = document.querySelector(".btn");
-    const content = document.querySelector(".content");
-
-    useEffect(() => {}, []);
-
     const onMouseOver = () => {};
     const onNavigate = (e) => {
         switch (e) {
