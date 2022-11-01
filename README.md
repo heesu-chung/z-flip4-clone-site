@@ -19,59 +19,96 @@ SCSS를 이용한 스타일링과 자바스크립트 내 직접적인 DOM 접근
 세부적인 기능 구현들은 다음과 같습니다.  
   
   
+###ScrollToTop 버튼 애니메이션 구현    
 ![clone_000](https://user-images.githubusercontent.com/68191058/198890891-3b086de2-adb2-44e8-8d2c-4e8324b212d8.gif)  
-- ScrollToTop 버튼 애니메이션 구현  
-  
-![clone_00](https://user-images.githubusercontent.com/68191058/198264294-1655eb05-38ca-44ff-878b-729f0924b23d.gif)  
-- 비디오 모달 및 버튼 구현(iframe - youtube)  
-  
-![clone_01](https://user-images.githubusercontent.com/68191058/198293456-59f7032e-42f4-4f75-ab61-4fbecda0fcdd.gif)  
-- 스크롤 위치에 대한 텍스트 인터랙션 구현  
-  
-![clone_02](https://user-images.githubusercontent.com/68191058/198293463-8060cb9c-0ee2-4bff-aff0-29bc635838f2.gif)  
-- 스크롤 위치에 대한 비디오 재생 구현  
-  
-![clone_03](https://user-images.githubusercontent.com/68191058/198293467-419748bb-0e11-4e6b-af8d-f7d001cac79a.gif)  
-- 스크롤 네비게이션 구현  
-  
-![clone_04](https://user-images.githubusercontent.com/68191058/198293472-e79da29e-32ba-42c8-9930-1f2e7c566216.gif)  
-- 버튼 입력에 대한 이미지 변환 구현  
-  
-![clone_05](https://user-images.githubusercontent.com/68191058/198293479-ff6ac174-1855-4f88-bf94-e4f1e596de0c.gif)  
-- 이미지 슬라이드 인터랙션 구현  
-  
-![clone_06](https://user-images.githubusercontent.com/68191058/198293492-da998448-6069-4ab4-8a0b-117c5c6d1521.gif)  
-- Parallax 스크롤 이미지 인터랙션 구현  
-  
-![clone_07](https://user-images.githubusercontent.com/68191058/198293518-79210a92-c5d9-4a31-9f01-c30bdb959deb.gif)  
-- 애니메이션 구현(setTimeout)  
-  
-![clone_08](https://user-images.githubusercontent.com/68191058/198293522-fadd4064-07e9-4bbd-bc7a-04c9a9afa62c.gif)  
-- 이미지 스케일, Parallax 인터랙션 구현  
-  
-![clone_09](https://user-images.githubusercontent.com/68191058/198293555-4bb7a24a-65d9-4a8f-8e9e-1cbbf2a9416d.gif)  
-- 텍스트 투명도 변환  
-  
-![clone_10](https://user-images.githubusercontent.com/68191058/198293564-210d89d2-c9d4-412b-b9e5-2aa4d92f3b1c.gif)  
-- 이미지, 텍스트 인터랙션 구현  
-  
-![clone_11](https://user-images.githubusercontent.com/68191058/198293576-5c7dab4f-0184-4630-9e76-9376a2a1fb8a.gif)  
-- 마스크 이미지 인터랙션 구현  
-  
-![clone_12](https://user-images.githubusercontent.com/68191058/198293585-9e22c947-b94d-4475-a611-b61efee3e627.gif)  
-- 스크롤 위치에 대한 비디오 재생 구현  
-  
-![clone_13](https://user-images.githubusercontent.com/68191058/198293596-d3c89b1e-245c-44fe-a72e-3fba08ea1bfe.gif)  
-- 이미지 위치 변환 인터랙션  
 
+
+
+###비디오 모달 및 버튼 구현(iframe - youtube)    
+![clone_00](https://user-images.githubusercontent.com/68191058/198264294-1655eb05-38ca-44ff-878b-729f0924b23d.gif)  
+
+
+
+###스크롤 위치에 대한 텍스트 인터랙션 구현    
+![clone_01](https://user-images.githubusercontent.com/68191058/198293456-59f7032e-42f4-4f75-ab61-4fbecda0fcdd.gif)  
+
+
+
+###스크롤 위치에 대한 비디오 재생 구현    
+![clone_02](https://user-images.githubusercontent.com/68191058/198293463-8060cb9c-0ee2-4bff-aff0-29bc635838f2.gif)  
+
+
+
+###스크롤 네비게이션 구현    
+![clone_03](https://user-images.githubusercontent.com/68191058/198293467-419748bb-0e11-4e6b-af8d-f7d001cac79a.gif)  
+
+
+
+###버튼 입력에 대한 이미지 변환 구현    
+![clone_04](https://user-images.githubusercontent.com/68191058/198293472-e79da29e-32ba-42c8-9930-1f2e7c566216.gif)  
+
+
+
+###이미지 슬라이드 인터랙션 구현    
+![clone_05](https://user-images.githubusercontent.com/68191058/198293479-ff6ac174-1855-4f88-bf94-e4f1e596de0c.gif)  
+
+
+
+###Parallax 스크롤 이미지 인터랙션 구현    
+![clone_06](https://user-images.githubusercontent.com/68191058/198293492-da998448-6069-4ab4-8a0b-117c5c6d1521.gif)  
+
+
+
+###애니메이션 구현(setTimeout)    
+![clone_07](https://user-images.githubusercontent.com/68191058/198293518-79210a92-c5d9-4a31-9f01-c30bdb959deb.gif)  
+
+
+
+###이미지 스케일, Parallax 인터랙션 구현    
+![clone_08](https://user-images.githubusercontent.com/68191058/198293522-fadd4064-07e9-4bbd-bc7a-04c9a9afa62c.gif)  
+
+
+
+###텍스트 투명도 변환    
+![clone_09](https://user-images.githubusercontent.com/68191058/198293555-4bb7a24a-65d9-4a8f-8e9e-1cbbf2a9416d.gif)  
+
+
+
+###이미지, 텍스트 인터랙션 구현    
+![clone_10](https://user-images.githubusercontent.com/68191058/198293564-210d89d2-c9d4-412b-b9e5-2aa4d92f3b1c.gif)  
+
+
+
+###마스크 이미지 인터랙션 구현    
+![clone_11](https://user-images.githubusercontent.com/68191058/198293576-5c7dab4f-0184-4630-9e76-9376a2a1fb8a.gif)  
+
+
+
+###스크롤 위치에 대한 비디오 재생 구현    
+![clone_12](https://user-images.githubusercontent.com/68191058/198293585-9e22c947-b94d-4475-a611-b61efee3e627.gif)  
+
+
+
+###이미지 위치 변환 인터랙션    
+![clone_13](https://user-images.githubusercontent.com/68191058/198293596-d3c89b1e-245c-44fe-a72e-3fba08ea1bfe.gif)  
+
+
+
+###Parallax 스크롤 이미지, 모달 구현  
 ![clone_14](https://user-images.githubusercontent.com/68191058/198293614-7309d9d1-b56f-4072-9902-717af9263aea.gif)  
-- Parallax 스크롤 이미지, 모달 구현  
-  
+
+
+
+###Sticky 이미지    
 ![clone_15](https://user-images.githubusercontent.com/68191058/198293632-dca802a7-10b3-4ec4-ac95-697d52b2d6ec.gif)  
-- Sticky 이미지  
-  
+
+
+
+###텍스트 인터랙션 및 네비게이션 구현    
 ![clone_16](https://user-images.githubusercontent.com/68191058/198293677-cd34abae-2ec6-40cc-89e5-b58381808433.gif)  
-- 텍스트 인터랙션 및 네비게이션 구현  
+
+
+
   
   
   
