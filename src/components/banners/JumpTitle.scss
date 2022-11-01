@@ -10,13 +10,14 @@
     overflow: hidden;
     margin: 0 7px 15px;
     .banner-title {
-        position: absolute;
         width: 0px;
+        position: absolute;
 
         font-size: 13px;
         font-family: $so;
         letter-spacing: 1px;
         font-weight: 700;
+
         transform: translate(15px, 18px);
     }
     .image-container {
