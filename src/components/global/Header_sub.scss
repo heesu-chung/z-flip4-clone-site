@@ -4,9 +4,9 @@
 .nav {
     width: 100%;
     position: fixed;
+    overflow: hidden;
     background: white;
     z-index: 500;
-    overflow: hidden;
     opacity: 0.9;
     .upper-bar {
         width: 100%;
@@ -30,7 +30,6 @@
                 padding-left: 14px;
                 transform: translateY(4px);
             }
-            // height: 100%;
             .product {
                 font-size: 14px;
                 line-height: 44px;
@@ -53,10 +52,12 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
+
             margin-right: 12px;
             .menu-bar-block {
                 position: relative;
                 overflow: hidden;
+
                 width: 36px;
                 height: 36px;
 
@@ -64,6 +65,7 @@
                 flex-direction: column;
                 justify-content: center;
                 cursor: pointer;
+
                 .string {
                     width: 20px;
                     height: 2px;

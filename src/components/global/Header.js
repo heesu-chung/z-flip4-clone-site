@@ -1,11 +1,8 @@
 import Logo from "../../assets/black-samsung-logo.png";
-// import "./Header.scss";
 import "./Header_sub.scss";
 import ArrowBlack from "../../assets/arrow-black.png";
 
 const Header = () => {
-    const screenX = window.innerWidth;
-
     return (
         <div className="nav">
             <div className="upper-bar">
