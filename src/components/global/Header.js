@@ -1,5 +1,5 @@
 /* styles */
-import "./Header_sub.scss";
+import "./Header.scss";
 
 /* assets */
 import ArrowBlack from "../../assets/arrow-black.png";
