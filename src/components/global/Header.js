@@ -1,6 +1,9 @@
-import Logo from "../../assets/black-samsung-logo.png";
+/* styles */
 import "./Header_sub.scss";
+
+/* assets */
 import ArrowBlack from "../../assets/arrow-black.png";
+import Logo from "../../assets/black-samsung-logo.png";
 
 const Header = () => {
     return (
