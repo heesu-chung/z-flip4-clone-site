@@ -1,7 +1,9 @@
-import { useEffect, useState } from "react";
+/* styles */
 import "./NavigationBar.scss";
 
-const NavigationBar = ({ number, title, active }) => {
+import { useEffect } from "react";
+
+const NavigationBar = ({ title, active }) => {
     const screenX = window.innerWidth;
 
     const navigation = [
