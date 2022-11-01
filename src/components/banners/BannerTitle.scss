@@ -3,19 +3,20 @@
 
 .intro-header {
     width: calc(100% - 30px);
-    background-color: white;
-    border-radius: 19px;
     position: relative;
     overflow: hidden;
+
+    background-color: white;
+    border-radius: 19px;
     margin: 15px auto;
+
     display: flex;
     flex-direction: column;
 
     .contents {
-        // position: absolute;
         padding: 38px 20px 0;
-
         z-index: 11;
+
         .category {
             margin: 0;
             padding: 0;
@@ -79,47 +80,28 @@
         width: calc(100% - 10px);
         min-height: 38.9vw;
         border-radius: 2.8vw;
-        position: relative;
-        overflow: hidden;
-        margin: 15px auto;
         display: flex;
         flex-direction: row;
         align-items: center;
+
         .contents {
-            // position: absolute;
             padding: 4.2vw 6vw;
 
-            z-index: 11;
             .category {
                 margin: 0;
                 padding: 0;
-                font-size: 12px;
-                color: white;
-                font-family: $so;
-                letter-spacing: 2px;
-                line-height: 18px;
             }
             .title {
                 margin: 0;
                 font-size: 2.8vw;
                 line-height: 1.2;
-                font-family: $sssB;
             }
             .banner-3 {
                 font-size: 3.9vw;
             }
-            .desc {
-                margin-top: 10px;
-                max-width: 350px;
-                font-size: 15px;
-                line-height: 1.5;
-                font-family: $so;
-            }
             .btn {
                 margin-top: 24px;
                 .content {
-                    border: 1px solid black;
-                    background: none;
                     font-size: 13px;
                     font-weight: 700;
                     .btn-slider {
@@ -130,19 +112,14 @@
             .qr {
                 width: 127px;
                 height: 127px;
-                margin: 20px 10px 0;
             }
         }
         .image-container {
             position: absolute;
-            width: 100%;
             img {
-                object-fit: cover;
                 @include desktop {
                     transform: scale(1.07);
                 }
-            }
-            .b-4 {
             }
         }
     }

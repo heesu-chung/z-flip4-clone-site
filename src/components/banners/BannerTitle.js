@@ -1,6 +1,10 @@
+/* styles */
 import "./BannerTitle.scss";
+
+/* components */
 import Button from "../contents/Button";
 
+/* assets */
 import Banner1 from "../../assets/galaxy_banner_big_1.jpg";
 import Banner2 from "../../assets/galaxy_banner_big_2.jpg";
 import Banner3 from "../../assets/galaxy_banner_big_3.jpg";
@@ -18,9 +22,7 @@ const BannerTitle = ({
     button,
     desc,
     image,
-    imageSize,
     screenX,
-    height,
     background,
     color,
     fontSize,
