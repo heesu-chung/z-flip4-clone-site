@@ -1,8 +1,8 @@
 import "./ScrollToTopBtn.scss";
 import Arrow from "../../assets/scroll_arrow.png";
 import { useRecoilValue } from "recoil";
-import { scrollValue } from "./ScrollChecker";
 import { useEffect, useState } from "react";
+import { scrollValue } from "../../App";
 
 const ScrollToTopBtn = () => {
     const [active, setActive] = useState(false);

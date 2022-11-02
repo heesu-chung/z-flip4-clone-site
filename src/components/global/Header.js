@@ -33,10 +33,10 @@ const Header = () => {
             <div className="lower-bar">
                 <div className="selected-bar"></div>
                 <span className="select-link">
-                    <span>HIGHLIGHTS</span>
-                    <span>SHOWROOM</span>
-                    <span>ACCESSORIES</span>
-                    <span>SPECS</span>
+                    <span className="highlights">HIGHLIGHTS</span>
+                    <span className="showroom">SHOWROOM</span>
+                    <span className="accessories">ACCESSORIES</span>
+                    <span className="specs">SPECS</span>
                 </span>
             </div>
         </div>
