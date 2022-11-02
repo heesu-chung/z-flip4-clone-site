@@ -14,6 +14,7 @@
     left: 50%;
     transform: translate(-50%, 500px);
     box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.2);
     .eco-image-container {
         .eco-image {
             width: 100%;
@@ -277,6 +278,7 @@
         left: 50%;
         transform: translate(-50%, 500px);
         box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.2);
         .eco-image-container {
             .eco-image {
                 width: 100%;
