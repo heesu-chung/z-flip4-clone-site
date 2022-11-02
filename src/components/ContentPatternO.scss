@@ -49,6 +49,10 @@
             margin: 0;
             flex: 1;
             transform: translateX(60px);
+            -moz-transform: translateX(60px);
+            -webkit-transform: translateX(60px);
+            -o-transform: translateX(60px);
+            -ms-transform: translateX(60px);
         }
         .feature-content {
             margin-top: 15px;
