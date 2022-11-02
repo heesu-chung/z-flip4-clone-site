@@ -1,7 +1,7 @@
 ## Demo Link
-[https://z-flip4-clone.web.app/](https://z-flip4-clone.web.app/)
-
 Samsung Galaxy Z Flip4 랜딩 페이지 클론 프로젝트입니다.  
+클론 사이트 : [https://z-flip4-clone.web.app/](https://z-flip4-clone.web.app/)
+
 사이트 : [https://www.samsung.com/global/galaxy/galaxy-z-flip4/](https://www.samsung.com/global/galaxy/galaxy-z-flip4/)
 
 배포시 insecured fonts 이슈가 발생하여 다른 폰트로 대체하였습니다.  
@@ -17,7 +17,7 @@ README gif 이미지 및 github 업로드 된 클론 소스코드에는 테스�
   
 반응형 웹 개발(mobile, laptop, desktop)을 적용한 마크업과 인터랙티브 요소를 구현한 프로젝트입니다.
   
-SCSS를 이용한 스타일링과 자바스크립트 내 직접적인 DOM 접근을 통한 스타일링 속성 변경을 통해 인터랙티브 요소를 구현하였고, 프레임워크로는 React를 사용하였습니다. 
+SCSS를 이용한 스타일링과 자바스크립트 내 직접적인 DOM 접근을 통한 스타일링 속성 변경을 통해 인터랙티브 요소를 구현하였고, 프레임워크로는 React를 사용하였습니다. 크로스 브라우징-벤더 프리픽스 작업하였습니다.
   
 세부적인 기능 구현들은 다음과 같습니다.  
   
