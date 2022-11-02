@@ -41,12 +41,20 @@
                     .cover3,
                     .cover6 {
                         transform: translateX(-140%);
+                        -moz-transform: translateX(-140%);
+                        -webkit-transform: translateX(-140%);
+                        -o-transform: translateX(-140%);
+                        -ms-transform: translateX(-140%);
                     }
                     .cover2,
                     .cover4,
                     .cover5,
                     .cover6 {
                         transform: translateX(140%);
+                        -moz-transform: translateX(140%);
+                        -webkit-transform: translateX(140%);
+                        -o-transform: translateX(140%);
+                        -ms-transform: translateX(140%);
                     }
                     .cover-image,
                     .cover-video {
@@ -100,6 +108,10 @@
 
             .lower {
                 transform: translateX(-18%);
+                -moz-transform: translateX(-18%);
+                -webkit-transform: translateX(-18%);
+                -o-transform: translateX(-18%);
+                -ms-transform: translateX(-18%);
             }
         }
     }
