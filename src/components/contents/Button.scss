@@ -12,6 +12,7 @@
         border: 1px solid black;
 
         padding: 12px 20px;
+        -webkit-border-radius: 8px;
         border-radius: 8px;
         text-transform: uppercase;
 
@@ -45,6 +46,7 @@
                 z-index: -1;
                 background: black;
                 border: none;
+                -webkit-border-radius: 8px;
                 border-radius: 8px;
                 transition: 0.25s all ease-in-out;
             }
