@@ -102,10 +102,10 @@
                         position: relative;
                         img {
                             transition: 0.3s all ease-in-out;
-                            -webkit-transition: all 0.3s ease-out;
-                            -moz-transition: all 0.3s ease-out;
-                            -ms-transition: all 0.3s ease-out;
-                            -o-transition: all 0.3s ease-out;
+                            -webkit-transition: all 0.3s ease-in-out;
+                            -moz-transition: all 0.3s ease-in-out;
+                            -ms-transition: all 0.3s ease-in-out;
+                            -o-transition: all 0.3s ease-in-out;
                             position: absolute;
 
                             opacity: 1;
@@ -142,10 +142,10 @@
 
                 img {
                     transition: 0.3s all ease-in-out;
-                    -webkit-transition: all 0.3s ease-out;
-                    -moz-transition: all 0.3s ease-out;
-                    -ms-transition: all 0.3s ease-out;
-                    -o-transition: all 0.3s ease-out;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -moz-transition: all 0.3s ease-in-out;
+                    -ms-transition: all 0.3s ease-in-out;
+                    -o-transition: all 0.3s ease-in-out;
                     position: absolute;
                     max-width: 484px;
                     opacity: 0;
@@ -194,10 +194,10 @@
                 .desc-set {
                     .desc {
                         transition: 0.3s all ease-in-out;
-                        -webkit-transition: all 0.3s ease-out;
-                        -moz-transition: all 0.3s ease-out;
-                        -ms-transition: all 0.3s ease-out;
-                        -o-transition: all 0.3s ease-out;
+                        -webkit-transition: all 0.3s ease-in-out;
+                        -moz-transition: all 0.3s ease-in-out;
+                        -ms-transition: all 0.3s ease-in-out;
+                        -o-transition: all 0.3s ease-in-out;
                         text-align: center;
                         position: absolute;
                         display: block;
@@ -208,10 +208,10 @@
                     }
                     img {
                         transition: 0.3s all ease-in-out;
-                        -webkit-transition: all 0.3s ease-out;
-                        -moz-transition: all 0.3s ease-out;
-                        -ms-transition: all 0.3s ease-out;
-                        -o-transition: all 0.3s ease-out;
+                        -webkit-transition: all 0.3s ease-in-out;
+                        -moz-transition: all 0.3s ease-in-out;
+                        -ms-transition: all 0.3s ease-in-out;
+                        -o-transition: all 0.3s ease-in-out;
                         max-width: 484px;
                         position: absolute;
                         opacity: 0;
