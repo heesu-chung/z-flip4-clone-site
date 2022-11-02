@@ -36,6 +36,10 @@
                             -ms-transition: all 1.5s ease-out;
                             -o-transition: all 1.5s ease-out;
                             transform: scale(1.2);
+                            -moz-transform: scale(1.2);
+                            -webkit-transform: scale(1.2);
+                            -o-transform: scale(1.2);
+                            -ms-transform: scale(1.2);
                         }
                         .video-play-btn {
                             .youtube-pause {
@@ -55,12 +59,20 @@
                         left: 50%;
                         top: 50%;
                         transform: translate(-50%, -50%);
+                        -moz-transform: translate(-50%, -50%);
+                        -webkit-transform: translate(-50%, -50%);
+                        -o-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
                         .youtube-btn {
                             object-fit: none;
                             object-position: 10px 6px;
                             width: 172px;
                             height: 86px;
                             transform: scale(1.1);
+                            -moz-transform: scale(1.1);
+                            -webkit-transform: scale(1.1);
+                            -o-transform: scale(1.1);
+                            -ms-transform: scale(1.1);
                         }
                         .youtube-pause {
                         }
@@ -99,6 +111,10 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
             display: flex;
             justify-content: center;
 
@@ -117,6 +133,10 @@
             top: 70%;
             left: 50%;
             transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
             width: 25px;
             height: 25px;
             @include screen {
@@ -140,9 +160,17 @@
             }
             .left {
                 transform: translate(-50%, -50%) rotate(-45deg);
+                -moz-transform: translate(-50%, -50%) rotate(-45deg);
+                -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+                -o-transform: translate(-50%, -50%) rotate(-45deg);
+                -ms-transform: translate(-50%, -50%) rotate(-45deg);
             }
             .right {
                 transform: translate(-50%, -50%) rotate(45deg);
+                -moz-transform: translate(-50%, -50%) rotate(45deg);
+                -webkit-transform: translate(-50%, -50%) rotate(45deg);
+                -o-transform: translate(-50%, -50%) rotate(45deg);
+                -ms-transform: translate(-50%, -50%) rotate(45deg);
             }
             transition: 0.3s all ease;
             -webkit-transition: all 0.3s ease;
@@ -152,6 +180,10 @@
             cursor: pointer;
             &:hover {
                 transform: translate(-50%, -50%) rotate(90deg);
+                -moz-transform: translate(-50%, -50%) rotate(90deg);
+                -webkit-transform: translate(-50%, -50%) rotate(90deg);
+                -o-transform: translate(-50%, -50%) rotate(90deg);
+                -ms-transform: translate(-50%, -50%) rotate(90deg);
             }
         }
     }
@@ -168,6 +200,10 @@
                 font-size: 52px;
                 width: 40%;
                 transform: translateX(-34%);
+                -moz-transform: translateX(-34%);
+                -webkit-transform: translateX(-34%);
+                -o-transform: translateX(-34%);
+                -ms-transform: translateX(-34%);
             }
             .video-container {
                 .video-block {
