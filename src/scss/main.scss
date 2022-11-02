@@ -5,6 +5,8 @@
     margin: 0 auto;
     scroll-behavior: smooth;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 .scroll {
