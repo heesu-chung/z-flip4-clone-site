@@ -51,6 +51,10 @@
         flex-direction: row;
         justify-content: space-between;
         transform: translate(25px, 80px);
+        -moz-transform: translate(25px, 80px);
+        -webkit-transform: translate(25px, 80px);
+        -o-transform: translate(25px, 80px);
+        -ms-transform: translate(25px, 80px);
 
         .btn {
             position: relative;
@@ -77,6 +81,10 @@
         width: calc(100% - 120px);
         margin-left: 60px;
         transform: translate(0, 25px);
+        -moz-transform: translate(0, 25px);
+        -webkit-transform: translate(0, 25px);
+        -o-transform: translate(0, 25px);
+        -ms-transform: translate(0, 25px);
 
         .btns {
             margin: 0 auto;
@@ -146,6 +154,10 @@
         width: calc(100% - 28vw);
         margin-left: 14vw;
         transform: translate(0, 25px);
+        -moz-transform: translate(0, 25px);
+        -webkit-transform: translate(0, 25px);
+        -o-transform: translate(0, 25px);
+        -ms-transform: translate(0, 25px);
 
         .btns {
             margin: 0 auto;
