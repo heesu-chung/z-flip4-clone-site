@@ -37,30 +37,54 @@
         }
         .d-1 {
             transform: translate(20px, 100px);
+            -moz-transform: translate(20px, 100px);
+            -webkit-transform: translate(20px, 100px);
+            -o-transform: translate(20px, 100px);
+            -ms-transform: translate(20px, 100px);
         }
         .d-2 {
             width: 70%;
             transform: translate(225px, -200px);
+            -moz-transform: translate(225px, -200px);
+            -webkit-transform: translate(225px, -200px);
+            -o-transform: translate(225px, -200px);
+            -ms-transform: translate(225px, -200px);
         }
         .d-3 {
             width: 79%;
             transform: translate(-130px, -100px);
+            -moz-transform: translate(-130px, -100px);
+            -webkit-transform: translate(-130px, -100px);
+            -o-transform: translate(-130px, -100px);
+            -ms-transform: translate(-130px, -100px);
         }
         .d-4 {
             z-index: -5;
             width: 67%;
             transform: translate(50px, 200px);
+            -moz-transform: translate(50px, 200px);
+            -webkit-transform: translate(50px, 200px);
+            -o-transform: translate(50px, 200px);
+            -ms-transform: translate(50px, 200px);
         }
 
         .d-b {
             z-index: -6;
             width: 54%;
             transform: translate(120px, 0px);
+            -moz-transform: translate(120px, 0px);
+            -webkit-transform: translate(120px, 0px);
+            -o-transform: translate(120px, 0px);
+            -ms-transform: translate(120px, 0px);
         }
         .d-w {
             z-index: -4;
             width: 130%;
             transform: translate(40px, 10px);
+            -moz-transform: translate(40px, 10px);
+            -webkit-transform: translate(40px, 10px);
+            -o-transform: translate(40px, 10px);
+            -ms-transform: translate(40px, 10px);
         }
     }
 }
@@ -103,30 +127,62 @@
         .d-1 {
             width: 608px;
             transform: translate(75%, 200px);
+            -moz-transform: translate(75%, 200px);
+            -webkit-transform: translate(75%, 200px);
+            -o-transform: translate(75%, 200px);
+            -ms-transform: translate(75%, 200px);
             @include desktop {
                 transform: translate(40vw, 200px);
+                -moz-transform: translate(40vw, 200px);
+                -webkit-transform: translate(40vw, 200px);
+                -o-transform: translate(40vw, 200px);
+                -ms-transform: translate(40vw, 200px);
             }
         }
         .d-2 {
             width: 375px;
             transform: translate(200%, -140px);
+            -moz-transform: translate(200%, -140px);
+            -webkit-transform: translate(200%, -140px);
+            -o-transform: translate(200%, -140px);
+            -ms-transform: translate(200%, -140px);
             @include desktop {
                 transform: translate(59vw, 200px);
+                -moz-transform: translate(59vw, 200px);
+                -webkit-transform: translate(59vw, 200px);
+                -o-transform: translate(59vw, 200px);
+                -ms-transform: translate(59vw, 200px);
             }
         }
         .d-3 {
             width: 324px;
             transform: translate(53%, 00px);
+            -moz-transform: translate(53%, 00px);
+            -webkit-transform: translate(53%, 00px);
+            -o-transform: translate(53%, 00px);
+            -ms-transform: translate(53%, 00px);
             @include desktop {
                 transform: translate(21vw, 200px);
+                -moz-transform: translate(21vw, 200px);
+                -webkit-transform: translate(21vw, 200px);
+                -o-transform: translate(21vw, 200px);
+                -ms-transform: translate(21vw, 200px);
             }
         }
         .d-4 {
             z-index: -5;
             width: 400px;
             transform: translate(105%, 350px);
+            -moz-transform: translate(105%, 350px);
+            -webkit-transform: translate(105%, 350px);
+            -o-transform: translate(105%, 350px);
+            -ms-transform: translate(105%, 350px);
             @include desktop {
                 transform: translate(38vw, 200px);
+                -moz-transform: translate(38vw, 200px);
+                -webkit-transform: translate(38vw, 200px);
+                -o-transform: translate(38vw, 200px);
+                -ms-transform: translate(38vw, 200px);
             }
         }
 
@@ -134,16 +190,32 @@
             z-index: -6;
             width: 420px;
             transform: translate(136%, -460px);
+            -moz-transform: translate(136%, -460px);
+            -webkit-transform: translate(136%, -460px);
+            -o-transform: translate(136%, -460px);
+            -ms-transform: translate(136%, -460px);
             @include desktop {
                 transform: translate(38vw, 200px);
+                -moz-transform: translate(38vw, 200px);
+                -webkit-transform: translate(38vw, 200px);
+                -o-transform: translate(38vw, 200px);
+                -ms-transform: translate(38vw, 200px);
             }
         }
         .d-w {
             z-index: -4;
             width: 866px;
             transform: translate(43%, 00px);
+            -moz-transform: translate(43%, 00px);
+            -webkit-transform: translate(43%, 00px);
+            -o-transform: translate(43%, 00px);
+            -ms-transform: translate(43%, 00px);
             @include desktop {
                 transform: translate(34.5vw, -50px);
+                -moz-transform: translate(34.5vw, -50px);
+                -webkit-transform: translate(34.5vw, -50px);
+                -o-transform: translate(34.5vw, -50px);
+                -ms-transform: translate(34.5vw, -50px);
             }
         }
     }
