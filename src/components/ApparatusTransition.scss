@@ -59,11 +59,13 @@
                 width: 34px;
                 height: 34px;
                 margin-bottom: 10px;
+                -webkit-border-radius: 50%;
                 border-radius: 50%;
                 .btn {
                     margin: 0;
                     width: 28px;
                     height: 28px;
+                    -webkit-border-radius: 50%;
                     border-radius: 50%;
                 }
             }
@@ -168,6 +170,7 @@
                     .btn-container {
                         margin: 0;
                         padding: 0;
+                        -webkit-border-radius: 50%;
                         border-radius: 50%;
                     }
                 }
