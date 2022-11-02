@@ -7,6 +7,7 @@
     overflow: hidden;
 
     background-color: white;
+    -webkit-border-radius: 19px;
     border-radius: 19px;
     margin: 15px auto;
 
@@ -79,6 +80,7 @@
     .intro-header {
         width: calc(100% - 10px);
         min-height: 38.9vw;
+        -webkit-border-radius: 2.8vw;
         border-radius: 2.8vw;
         display: flex;
         flex-direction: row;
