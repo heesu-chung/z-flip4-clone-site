@@ -13,6 +13,10 @@
 
     left: 50%;
     transform: translate(-50%, 500px);
+    -moz-transform: translate(-50%, 500px);
+    -webkit-transform: translate(-50%, 500px);
+    -o-transform: translate(-50%, 500px);
+    -ms-transform: translate(-50%, 500px);
     box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.2);
     .eco-image-container {
@@ -45,12 +49,20 @@
             top: 4%;
             left: 83%;
             transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
             cursor: pointer;
             .btn-left {
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
                 width: 10px;
                 height: 1px;
                 background-color: white;
@@ -62,6 +74,10 @@
                 width: 1px;
                 height: 10px;
                 transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
                 background-color: white;
             }
             &:hover {
@@ -71,6 +87,10 @@
                 -ms-transition: all 0.3s ease-in-out;
                 -o-transition: all 0.3s ease-in-out;
                 transform: rotate(135deg);
+                -moz-transform: rotate(135deg);
+                -webkit-transform: rotate(135deg);
+                -o-transform: rotate(135deg);
+                -ms-transform: rotate(135deg);
             }
         }
     }
@@ -132,6 +152,10 @@
         z-index: -1;
         @include mobile {
             transform: translate(-5px, -100px);
+            -moz-transform: translate(-5px, -100px);
+            -webkit-transform: translate(-5px, -100px);
+            -o-transform: translate(-5px, -100px);
+            -ms-transform: translate(-5px, -100px);
         }
         .image-2 {
             width: 63%;
@@ -206,6 +230,10 @@
                         left: 50%;
 
                         transform: translate(-50%, -50%);
+                        -moz-transform: translate(-50%, -50%);
+                        -webkit-transform: translate(-50%, -50%);
+                        -o-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
                         background-color: white;
                         width: 1px;
                         height: 12px;
@@ -215,6 +243,10 @@
                         top: 50%;
                         left: 50%;
                         transform: translate(-50%, -50%);
+                        -moz-transform: translate(-50%, -50%);
+                        -webkit-transform: translate(-50%, -50%);
+                        -o-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
                         background-color: white;
                         width: 12px;
                         height: 1px;
@@ -226,6 +258,10 @@
                         -ms-transition: all 0.3s ease;
                         -o-transition: all 0.3s ease;
                         transform: rotate(90deg);
+                        -moz-transform: rotate(90deg);
+                        -webkit-transform: rotate(90deg);
+                        -o-transform: rotate(90deg);
+                        -ms-transform: rotate(90deg);
                     }
                 }
             }
@@ -235,8 +271,16 @@
                 width: 260px;
                 height: 325px;
                 transform: translate(5vw, 30px);
+                -moz-transform: translate(5vw, 30px);
+                -webkit-transform: translate(5vw, 30px);
+                -o-transform: translate(5vw, 30px);
+                -ms-transform: translate(5vw, 30px);
                 .btn-1 {
                     transform: translate(18vw, 30px);
+                    -moz-transform: translate(18vw, 30px);
+                    -webkit-transform: translate(18vw, 30px);
+                    -o-transform: translate(18vw, 30px);
+                    -ms-transform: translate(18vw, 30px);
                 }
 
                 .image-1 {
@@ -247,8 +291,16 @@
                 width: 131px;
                 height: 160px;
                 transform: translate(55vw, 150px);
+                -moz-transform: translate(55vw, 150px);
+                -webkit-transform: translate(55vw, 150px);
+                -o-transform: translate(55vw, 150px);
+                -ms-transform: translate(55vw, 150px);
                 .btn-2 {
                     transform: translate(24vw, 145px);
+                    -moz-transform: translate(24vw, 145px);
+                    -webkit-transform: translate(24vw, 145px);
+                    -o-transform: translate(24vw, 145px);
+                    -ms-transform: translate(24vw, 145px);
                 }
 
                 .image-2 {
@@ -259,9 +311,17 @@
                 width: 126px;
                 height: 150px;
                 transform: translate(15vw, 370px);
+                -moz-transform: translate(15vw, 370px);
+                -webkit-transform: translate(15vw, 370px);
+                -o-transform: translate(15vw, 370px);
+                -ms-transform: translate(15vw, 370px);
 
                 .btn-3 {
                     transform: translate(24vw, -20px);
+                    -moz-transform: translate(24vw, -20px);
+                    -webkit-transform: translate(24vw, -20px);
+                    -o-transform: translate(24vw, -20px);
+                    -ms-transform: translate(24vw, -20px);
                 }
 
                 .image-3 {
@@ -276,6 +336,10 @@
             height: 400px;
             left: 50%;
             transform: translate(-50%, -20px);
+            -moz-transform: translate(-50%, -20px);
+            -webkit-transform: translate(-50%, -20px);
+            -o-transform: translate(-50%, -20px);
+            -ms-transform: translate(-50%, -20px);
         }
     }
 }
@@ -293,6 +357,10 @@
 
         left: 50%;
         transform: translate(-50%, 500px);
+        -moz-transform: translate(-50%, 500px);
+        -webkit-transform: translate(-50%, 500px);
+        -o-transform: translate(-50%, 500px);
+        -ms-transform: translate(-50%, 500px);
         box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.2);
         -webkit-box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.2);
         .eco-image-container {
@@ -324,11 +392,19 @@
                 top: 4%;
                 left: 83%;
                 transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
                 .btn-left {
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                    -moz-transform: translate(-50%, -50%);
+                    -webkit-transform: translate(-50%, -50%);
+                    -o-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
                     width: 20px;
                     height: 2px;
                     background-color: white;
@@ -340,6 +416,10 @@
                     width: 2px;
                     height: 20px;
                     transform: translate(-50%, -50%);
+                    -moz-transform: translate(-50%, -50%);
+                    -webkit-transform: translate(-50%, -50%);
+                    -o-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
                     background-color: white;
                 }
             }
@@ -374,12 +454,24 @@
     }
     .popup-1 {
         transform: translate(-19vw, 500px);
+        -moz-transform: translate(-19vw, 500px);
+        -webkit-transform: translate(-19vw, 500px);
+        -o-transform: translate(-19vw, 500px);
+        -ms-transform: translate(-19vw, 500px);
     }
     .popup-2 {
         transform: translate(0vw, 980px);
+        -moz-transform: translate(0vw, 980px);
+        -webkit-transform: translate(0vw, 980px);
+        -o-transform: translate(0vw, 980px);
+        -ms-transform: translate(0vw, 980px);
     }
     .popup-3 {
         transform: translate(-19vw, 1180px);
+        -moz-transform: translate(-19vw, 1180px);
+        -webkit-transform: translate(-19vw, 1180px);
+        -o-transform: translate(-19vw, 1180px);
+        -ms-transform: translate(-19vw, 1180px);
     }
 
     .camera-image-container {
@@ -439,6 +531,10 @@
             .image-2 {
                 width: 569px;
                 transform: translate3d(-22%, -60%, 0);
+                -moz-transform: translate3d(-22%, -60%, 0);
+                -webkit-transform: translate3d(-22%, -60%, 0);
+                -o-transform: translate3d(-22%, -60%, 0);
+                -ms-transform: translate3d(-22%, -60%, 0);
                 object-fit: cover;
             }
         }
@@ -454,6 +550,10 @@
             .image-3 {
                 width: 544px;
                 transform: translate3d(20%, 0, 0);
+                -moz-transform: translate3d(20%, 0, 0);
+                -webkit-transform: translate3d(20%, 0, 0);
+                -o-transform: translate3d(20%, 0, 0);
+                -ms-transform: translate3d(20%, 0, 0);
             }
         }
     }
@@ -500,6 +600,10 @@
                             position: absolute;
                             left: 50%;
                             transform: translate(-50%, -50%);
+                            -moz-transform: translate(-50%, -50%);
+                            -webkit-transform: translate(-50%, -50%);
+                            -o-transform: translate(-50%, -50%);
+                            -ms-transform: translate(-50%, -50%);
                             background-color: white;
                             width: 2px;
                             height: 20px;
@@ -508,6 +612,10 @@
                             position: absolute;
                             left: 50%;
                             transform: translate(-50%, -50%);
+                            -moz-transform: translate(-50%, -50%);
+                            -webkit-transform: translate(-50%, -50%);
+                            -o-transform: translate(-50%, -50%);
+                            -ms-transform: translate(-50%, -50%);
                             background-color: white;
                             width: 20px;
                             height: 2px;
@@ -519,13 +627,29 @@
                 width: 641px;
                 height: 800px;
                 transform: translate(13vw, 70px);
+                -moz-transform: translate(13vw, 70px);
+                -webkit-transform: translate(13vw, 70px);
+                -o-transform: translate(13vw, 70px);
+                -ms-transform: translate(13vw, 70px);
                 @include desktop {
                     transform: translate(23vw, 70px);
+                    -moz-transform: translate(23vw, 70px);
+                    -webkit-transform: translate(23vw, 70px);
+                    -o-transform: translate(23vw, 70px);
+                    -ms-transform: translate(23vw, 70px);
                 }
                 .btn-1 {
                     transform: translate(13vw, 200px);
+                    -moz-transform: translate(13vw, 200px);
+                    -webkit-transform: translate(13vw, 200px);
+                    -o-transform: translate(13vw, 200px);
+                    -ms-transform: translate(13vw, 200px);
                     @include desktop {
                         transform: translate(10vw, 200px);
+                        -moz-transform: translate(10vw, 200px);
+                        -webkit-transform: translate(10vw, 200px);
+                        -o-transform: translate(10vw, 200px);
+                        -ms-transform: translate(10vw, 200px);
                     }
                 }
                 .image-1 {
@@ -536,13 +660,29 @@
                 width: 300px;
                 height: 362px;
                 transform: translate(55vw, 500px);
+                -moz-transform: translate(55vw, 500px);
+                -webkit-transform: translate(55vw, 500px);
+                -o-transform: translate(55vw, 500px);
+                -ms-transform: translate(55vw, 500px);
                 @include desktop {
                     transform: translate(52vw, 500px);
+                    -moz-transform: translate(52vw, 500px);
+                    -webkit-transform: translate(52vw, 500px);
+                    -o-transform: translate(52vw, 500px);
+                    -ms-transform: translate(52vw, 500px);
                 }
                 .btn-2 {
                     transform: translate(16.5vw, 365px);
+                    -moz-transform: translate(16.5vw, 365px);
+                    -webkit-transform: translate(16.5vw, 365px);
+                    -o-transform: translate(16.5vw, 365px);
+                    -ms-transform: translate(16.5vw, 365px);
                     @include desktop {
                         transform: translate(12vw, 350px);
+                        -moz-transform: translate(12vw, 350px);
+                        -webkit-transform: translate(12vw, 350px);
+                        -o-transform: translate(12vw, 350px);
+                        -ms-transform: translate(12vw, 350px);
                     }
                 }
                 .image-2 {
@@ -553,13 +693,29 @@
                 width: 323px;
                 height: 380px;
                 transform: translate(21vw, 950px);
+                -moz-transform: translate(21vw, 950px);
+                -webkit-transform: translate(21vw, 950px);
+                -o-transform: translate(21vw, 950px);
+                -ms-transform: translate(21vw, 950px);
                 @include desktop {
                     transform: translate(30vw, 950px);
+                    -moz-transform: translate(30vw, 950px);
+                    -webkit-transform: translate(30vw, 950px);
+                    -o-transform: translate(30vw, 950px);
+                    -ms-transform: translate(30vw, 950px);
                 }
                 .btn-3 {
                     transform: translate(18vw, -50px);
+                    -moz-transform: translate(18vw, -50px);
+                    -webkit-transform: translate(18vw, -50px);
+                    -o-transform: translate(18vw, -50px);
+                    -ms-transform: translate(18vw, -50px);
                     @include desktop {
                         transform: translate(12vw, -40px);
+                        -moz-transform: translate(12vw, -40px);
+                        -webkit-transform: translate(12vw, -40px);
+                        -o-transform: translate(12vw, -40px);
+                        -ms-transform: translate(12vw, -40px);
                     }
                 }
 
@@ -575,6 +731,10 @@
                 height: 1175px;
                 left: 50%;
                 transform: translate(-50%, 0px);
+                -moz-transform: translate(-50%, 0px);
+                -webkit-transform: translate(-50%, 0px);
+                -o-transform: translate(-50%, 0px);
+                -ms-transform: translate(-50%, 0px);
             }
         }
     }
