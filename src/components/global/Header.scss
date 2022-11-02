@@ -29,6 +29,10 @@
             @include mobile {
                 padding-left: 14px;
                 transform: translateY(4px);
+                -moz-transform: translateY(4px);
+                -webkit-transform: translateY(4px);
+                -o-transform: translateY(4px);
+                -ms-transform: translateY(4px);
             }
             .product {
                 font-size: 14px;
@@ -43,6 +47,10 @@
                     width: 17px;
                     height: 17px;
                     transform: translateY(3px);
+                    -moz-transform: translateY(3px);
+                    -webkit-transform: translateY(3px);
+                    -o-transform: translateY(3px);
+                    -ms-transform: translateY(3px);
                 }
                 cursor: pointer;
             }
@@ -90,6 +98,10 @@
             border-bottom: 1px solid #00b3e3;
 
             transform: translate(2.5vw, -2px);
+            -moz-transform: translate(2.5vw, -2px);
+            -webkit-transform: translate(2.5vw, -2px);
+            -o-transform: translate(2.5vw, -2px);
+            -ms-transform: translate(2.5vw, -2px);
         }
         .select-link {
             padding-left: 7px;
@@ -118,6 +130,10 @@
                 margin: 0;
 
                 transform: translate(2.5vw, 23px);
+                -moz-transform: translate(2.5vw, 23px);
+                -webkit-transform: translate(2.5vw, 23px);
+                -o-transform: translate(2.5vw, 23px);
+                -ms-transform: translate(2.5vw, 23px);
                 img {
                     width: 114px;
                     height: 17px;
@@ -130,6 +146,10 @@
                 text-align: center;
                 .product-block {
                     transform: translate(7px, 6px);
+                    -moz-transform: translate(7px, 6px);
+                    -webkit-transform: translate(7px, 6px);
+                    -o-transform: translate(7px, 6px);
+                    -ms-transform: translate(7px, 6px);
                     .product {
                         font-size: 20px;
                         line-height: 56px;
@@ -141,6 +161,10 @@
                             width: 23px;
                             height: 23px;
                             transform: translateY(5px);
+                            -moz-transform: translateY(5px);
+                            -webkit-transform: translateY(5px);
+                            -o-transform: translateY(5px);
+                            -ms-transform: translateY(5px);
                         }
                     }
                 }
@@ -155,6 +179,10 @@
 
                 .menu-bar-block {
                     transform: translate(-1.7vw, 3px);
+                    -moz-transform: translate(-1.7vw, 3px);
+                    -webkit-transform: translate(-1.7vw, 3px);
+                    -o-transform: translate(-1.7vw, 3px);
+                    -ms-transform: translate(-1.7vw, 3px);
                     position: relative;
                     overflow: hidden;
                     width: 48px;
@@ -188,6 +216,10 @@
                 width: 72px;
                 border-bottom: 3px solid #00b3e3;
                 transform: translate(-11.3vw, -1px);
+                -moz-transform: translate(-11.3vw, -1px);
+                -webkit-transform: translate(-11.3vw, -1px);
+                -o-transform: translate(-11.3vw, -1px);
+                -ms-transform: translate(-11.3vw, -1px);
             }
             .select-link {
                 text-align: center;
@@ -219,6 +251,10 @@
                 margin: 0;
 
                 transform: translate(2vw, 20px);
+                -moz-transform: translate(2vw, 20px);
+                -webkit-transform: translate(2vw, 20px);
+                -o-transform: translate(2vw, 20px);
+                -ms-transform: translate(2vw, 20px);
                 img {
                     width: 140px;
                     height: 21px;
@@ -231,6 +267,10 @@
                 text-align: center;
                 .product-block {
                     transform: translate(7px, 6px);
+                    -moz-transform: translate(7px, 6px);
+                    -webkit-transform: translate(7px, 6px);
+                    -o-transform: translate(7px, 6px);
+                    -ms-transform: translate(7px, 6px);
                     .product {
                         font-size: 20px;
                         line-height: 56px;
@@ -242,6 +282,10 @@
                             width: 23px;
                             height: 23px;
                             transform: translateY(5px);
+                            -moz-transform: translateY(5px);
+                            -webkit-transform: translateY(5px);
+                            -o-transform: translateY(5px);
+                            -ms-transform: translateY(5px);
                         }
                     }
                 }
@@ -256,6 +300,10 @@
 
                 .menu-bar-block {
                     transform: translate(-1.3vw, 3px);
+                    -moz-transform: translate(-1.3vw, 3px);
+                    -webkit-transform: translate(-1.3vw, 3px);
+                    -o-transform: translate(-1.3vw, 3px);
+                    -ms-transform: translate(-1.3vw, 3px);
                     position: relative;
                     overflow: hidden;
                     width: 48px;
@@ -289,6 +337,10 @@
                 width: 72px;
                 border-bottom: 3px solid #00b3e3;
                 transform: translate(-10.5vw, -1px);
+                -moz-transform: translate(-10.5vw, -1px);
+                -webkit-transform: translate(-10.5vw, -1px);
+                -o-transform: translate(-10.5vw, -1px);
+                -ms-transform: translate(-10.5vw, -1px);
             }
             .select-link {
                 text-align: center;
