@@ -63,11 +63,11 @@
 
             button::after {
                 background-image: url("../assets/icon_arrow.jpg");
-                transform: rotate(180);
-                -moz-transform: rotate(180);
-                -webkit-transform: rotate(180);
-                -o-transform: rotate(180);
-                -ms-transform: rotate(180);
+                transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
             }
 
             .item {
@@ -176,11 +176,11 @@
 
                 button::after {
                     background-image: url("../assets/icon_arrow.jpg");
-                    transform: rotate(180);
-                    -moz-transform: rotate(180);
-                    -webkit-transform: rotate(180);
-                    -o-transform: rotate(180);
-                    -ms-transform: rotate(180);
+                    transform: rotate(180deg);
+                    -moz-transform: rotate(180deg);
+                    -webkit-transform: rotate(180deg);
+                    -o-transform: rotate(180deg);
+                    -ms-transform: rotate(180deg);
                 }
 
                 .item {
