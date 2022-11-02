@@ -30,6 +30,10 @@
         padding: 120px 20px;
         margin: 0 auto;
         transform: translateX(-20px);
+        -moz-transform: translateX(-20px);
+        -webkit-transform: translateX(-20px);
+        -o-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
         display: flex;
         align-items: flex-start;
         flex-direction: row;
