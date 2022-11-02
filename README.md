@@ -1,5 +1,5 @@
 ## Demo Link
-[https://z-flip4-clone.web.app/](https://z-flip4-clone.web.app/)
+클론 사이트 : [https://z-flip4-clone.web.app/](https://z-flip4-clone.web.app/)
 
 Samsung Galaxy Z Flip4 랜딩 페이지 클론 프로젝트입니다.  
 사이트 : [https://www.samsung.com/global/galaxy/galaxy-z-flip4/](https://www.samsung.com/global/galaxy/galaxy-z-flip4/)
