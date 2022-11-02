@@ -31,6 +31,10 @@
                     &:hover {
                         .thumb-nail {
                             transition: 1.5s all ease-out;
+                            -webkit-transition: all 1.5s ease-out;
+                            -moz-transition: all 1.5s ease-out;
+                            -ms-transition: all 1.5s ease-out;
+                            -o-transition: all 1.5s ease-out;
                             transform: scale(1.2);
                         }
                         .video-play-btn {
@@ -141,6 +145,10 @@
                 transform: translate(-50%, -50%) rotate(45deg);
             }
             transition: 0.3s all ease;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
             cursor: pointer;
             &:hover {
                 transform: translate(-50%, -50%) rotate(90deg);
