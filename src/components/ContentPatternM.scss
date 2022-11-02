@@ -34,6 +34,10 @@
         padding: 120px 20px;
         margin: 0 auto;
         transform: translateX(-28px);
+        -moz-transform: translateX(-28px);
+        -webkit-transform: translateX(-28px);
+        -o-transform: translateX(-28px);
+        -ms-transform: translateX(-28px);
         display: flex;
         align-items: flex-start;
         flex-direction: row;
