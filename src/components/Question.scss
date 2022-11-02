@@ -17,6 +17,10 @@
         .item-container {
             border-top: 1px solid #eee;
             transition: 0.3s all ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
             height: 90px;
             .btn-container {
                 display: flex;
@@ -62,6 +66,10 @@
                 transform: translateY(20px);
                 opacity: 0;
                 transition: 0.3s all ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
                 .content {
                     font-size: 12px;
                     line-height: 1.58;
@@ -105,6 +113,10 @@
                 background: white;
                 padding-top: 16px;
                 transition: 0.3s all ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
                 .btn-container {
                     display: flex;
                     flex-direction: row;
@@ -151,6 +163,10 @@
                     transform: translateY(30px);
                     opacity: 0;
                     transition: 0.3s all ease-in-out;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -moz-transition: all 0.3s ease-in-out;
+                    -ms-transition: all 0.3s ease-in-out;
+                    -o-transition: all 0.3s ease-in-out;
                     .content {
                         font-size: 18px;
                         line-height: 1.44;
