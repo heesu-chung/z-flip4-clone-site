@@ -25,6 +25,7 @@
                 .video {
                     position: relative;
                     border-radius: 10px;
+                    -webkit-border-radius: 10px;
                     overflow: hidden;
                     cursor: pointer;
                     &:hover {
@@ -85,7 +86,7 @@
         z-index: 1200;
         top: 0;
         left: 0;
-        overflow: hidden;
+
         width: 100vw;
         height: 100vh;
         background: black;
@@ -121,6 +122,7 @@
             }
             background: white;
             border-radius: 50%;
+            -webkit-border-radius: 50%;
             .quit-line {
                 background: black;
                 position: absolute;
@@ -164,6 +166,7 @@
                     max-width: 272px;
                     .video {
                         border-radius: 20px;
+                        -webkit-border-radius: 20px;
                     }
                     strong {
                         margin-top: 28px;
