@@ -27,10 +27,18 @@
         .upper {
             transform: translate(45px, -60px);
             transition: 0.7s all ease-in-out;
+            -webkit-transition: all 0.7s ease-in-out;
+            -moz-transition: all 0.7s ease-in-out;
+            -ms-transition: all 0.7s ease-in-out;
+            -o-transition: all 0.7s ease-in-out;
         }
         .lower {
             transform: translate(45px, -30px);
             transition: 0.7s all ease-in-out;
+            -webkit-transition: all 0.7s ease-in-out;
+            -moz-transition: all 0.7s ease-in-out;
+            -ms-transition: all 0.7s ease-in-out;
+            -o-transition: all 0.7s ease-in-out;
         }
     }
     .feature-content {
