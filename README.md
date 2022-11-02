@@ -1,7 +1,7 @@
 ## Demo Link
 [https://z-flip4-clone.web.app/](https://z-flip4-clone.web.app/)
 
-Samsung Galaxy Z Flip4 랜딩 페이지 클론 프로젝트입니다.
+Samsung Galaxy Z Flip4 랜딩 페이지 클론 프로젝트입니다.  
 사이트 : [https://www.samsung.com/global/galaxy/galaxy-z-flip4/](https://www.samsung.com/global/galaxy/galaxy-z-flip4/)
 
 배포시 insecured fonts 이슈가 발생하여 다른 폰트로 대체하였습니다.  
