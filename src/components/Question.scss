@@ -53,6 +53,10 @@
                         width: 15px;
                         height: 8px;
                         transform: rotate(0);
+                        -moz-transform: rotate(0);
+                        -webkit-transform: rotate(0);
+                        -o-transform: rotate(0);
+                        -ms-transform: rotate(0);
                     }
                 }
             }
@@ -60,10 +64,18 @@
             button::after {
                 background-image: url("../assets/icon_arrow.jpg");
                 transform: rotate(180);
+                -moz-transform: rotate(180);
+                -webkit-transform: rotate(180);
+                -o-transform: rotate(180);
+                -ms-transform: rotate(180);
             }
 
             .item {
                 transform: translateY(20px);
+                -moz-transform: translateY(20px);
+                -webkit-transform: translateY(20px);
+                -o-transform: translateY(20px);
+                -ms-transform: translateY(20px);
                 opacity: 0;
                 transition: 0.3s all ease-in-out;
                 -webkit-transition: all 0.3s ease-in-out;
@@ -144,12 +156,20 @@
                         justify-content: center;
                         align-items: center;
                         transform: rotate(-180deg);
+                        -moz-transform: rotate(-180deg);
+                        -webkit-transform: rotate(-180deg);
+                        -o-transform: rotate(-180deg);
+                        -ms-transform: rotate(-180deg);
 
                         img {
                             margin-top: 0px;
                             width: 24px;
                             height: 13px;
                             transform: rotate(180deg);
+                            -moz-transform: rotate(180deg);
+                            -webkit-transform: rotate(180deg);
+                            -o-transform: rotate(180deg);
+                            -ms-transform: rotate(180deg);
                         }
                     }
                 }
@@ -157,10 +177,18 @@
                 button::after {
                     background-image: url("../assets/icon_arrow.jpg");
                     transform: rotate(180);
+                    -moz-transform: rotate(180);
+                    -webkit-transform: rotate(180);
+                    -o-transform: rotate(180);
+                    -ms-transform: rotate(180);
                 }
 
                 .item {
                     transform: translateY(30px);
+                    -moz-transform: translateY(30px);
+                    -webkit-transform: translateY(30px);
+                    -o-transform: translateY(30px);
+                    -ms-transform: translateY(30px);
                     opacity: 0;
                     transition: 0.3s all ease-in-out;
                     -webkit-transition: all 0.3s ease-in-out;
