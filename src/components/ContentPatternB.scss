@@ -30,6 +30,10 @@
             width: 94px;
             height: 239px;
             transform: translate(0, -55px);
+            -moz-transform: translate(0, -55px);
+            -webkit-transform: translate(0, -55px);
+            -o-transform: translate(0, -55px);
+            -ms-transform: translate(0, -55px);
         }
         .Cam {
             transition: 0.3s all ease-in-out;
@@ -40,6 +44,10 @@
             width: 94px;
             height: 292px;
             transform: translate(290px, 80px);
+            -moz-transform: translate(290px, 80px);
+            -webkit-transform: translate(290px, 80px);
+            -o-transform: translate(290px, 80px);
+            -ms-transform: translate(290px, 80px);
         }
         .Quick {
             transition: 0.3s all ease-in-out;
@@ -50,6 +58,10 @@
             width: 308px;
             height: 92px;
             transform: translate(10px, -80px);
+            -moz-transform: translate(10px, -80px);
+            -webkit-transform: translate(10px, -80px);
+            -o-transform: translate(10px, -80px);
+            -ms-transform: translate(10px, -80px);
         }
         .Shot {
             transition: 0.3s all ease-in-out;
@@ -60,6 +72,10 @@
             width: 243px;
             height: 87px;
             transform: translate(100px, 380px);
+            -moz-transform: translate(100px, 380px);
+            -webkit-transform: translate(100px, 380px);
+            -o-transform: translate(100px, 380px);
+            -ms-transform: translate(100px, 380px);
         }
         @include mobile {
             .flex-cam {
@@ -84,6 +100,10 @@
                     width: 215px;
                     height: 110px;
                     transform: translate(-35px, 270px);
+                    -moz-transform: translate(-35px, 270px);
+                    -webkit-transform: translate(-35px, 270px);
+                    -o-transform: translate(-35px, 270px);
+                    -ms-transform: translate(-35px, 270px);
                     border-radius: 15px;
                     -webkit-border-radius: 15px;
                     img {
@@ -172,6 +192,10 @@
                     width: 116px;
                     height: 290px;
                     transform: translate(-230px, -40px);
+                    -moz-transform: translate(-230px, -40px);
+                    -webkit-transform: translate(-230px, -40px);
+                    -o-transform: translate(-230px, -40px);
+                    -ms-transform: translate(-230px, -40px);
                 }
                 .Cam {
                     transition: 0.3s all ease-in-out;
@@ -182,6 +206,10 @@
                     width: 116px;
                     height: 364px;
                     transform: translate(260px, 260px);
+                    -moz-transform: translate(260px, 260px);
+                    -webkit-transform: translate(260px, 260px);
+                    -o-transform: translate(260px, 260px);
+                    -ms-transform: translate(260px, 260px);
                 }
                 .img-container {
                     position: relative;
@@ -212,11 +240,19 @@
                 width: 505px;
                 height: 150px;
                 transform: translate(-100px, -80px);
+                -moz-transform: translate(-100px, -80px);
+                -webkit-transform: translate(-100px, -80px);
+                -o-transform: translate(-100px, -80px);
+                -ms-transform: translate(-100px, -80px);
             }
             .Shot {
                 width: 391px;
                 height: 141px;
                 transform: translate(180px, 530px);
+                -moz-transform: translate(180px, 530px);
+                -webkit-transform: translate(180px, 530px);
+                -o-transform: translate(180px, 530px);
+                -ms-transform: translate(180px, 530px);
             }
             .quick-shot-image {
                 transition: 0.4s all ease;
@@ -225,6 +261,10 @@
                 -ms-transition: all 0.4s ease;
                 -o-transition: all 0.4s ease;
                 transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
             }
             .quick-shot-image {
                 transition: 0.3s all ease-in-out;
@@ -239,6 +279,10 @@
                     width: 300px;
                     height: 150px;
                     transform: translate(-40px, 363px);
+                    -moz-transform: translate(-40px, 363px);
+                    -webkit-transform: translate(-40px, 363px);
+                    -o-transform: translate(-40px, 363px);
+                    -ms-transform: translate(-40px, 363px);
                     border-radius: 15px;
                     -webkit-border-radius: 15px;
                     img {
@@ -286,6 +330,10 @@
                 border-radius: 50%;
                 -webkit-border-radius: 50%;
                 transform: translate(5vw, 22vw);
+                -moz-transform: translate(5vw, 22vw);
+                -webkit-transform: translate(5vw, 22vw);
+                -o-transform: translate(5vw, 22vw);
+                -ms-transform: translate(5vw, 22vw);
                 display: none;
                 img {
                     object-fit: cover;
