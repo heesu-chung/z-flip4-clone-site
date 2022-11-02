@@ -20,6 +20,7 @@
                     text-align: center;
                     font-family: $sssB;
                     border-radius: 15px;
+                    -webkit-border-radius: 15px;
                     .device {
                         min-height: 32px;
                         font-size: 8px;
@@ -79,7 +80,8 @@
 
                         text-align: center;
                         font-family: $sssB;
-                        border-radius: 8x;
+                        border-radius: 8px;
+                        -webkit-border-radius: 8px;
                         .device {
                             min-height: 50px;
                             font-size: 14px;
