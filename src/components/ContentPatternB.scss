@@ -61,6 +61,7 @@
                     height: 110px;
                     transform: translate(-35px, 270px);
                     border-radius: 15px;
+                    -webkit-border-radius: 15px;
                     img {
                         object-fit: cover;
                         object-position: 0 -30px;
@@ -191,6 +192,7 @@
                     height: 150px;
                     transform: translate(-40px, 363px);
                     border-radius: 15px;
+                    -webkit-border-radius: 15px;
                     img {
                         object-position: 0px -30px;
                         object-fit: cover;
@@ -234,6 +236,7 @@
                 width: 60px;
                 height: 60px;
                 border-radius: 50%;
+                -webkit-border-radius: 50%;
                 transform: translate(5vw, 22vw);
                 display: none;
                 img {
