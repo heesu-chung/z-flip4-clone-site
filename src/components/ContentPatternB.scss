@@ -23,24 +23,40 @@
 
         .Flex {
             transition: 0.3s all ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
             width: 94px;
             height: 239px;
             transform: translate(0, -55px);
         }
         .Cam {
             transition: 0.3s all ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
             width: 94px;
             height: 292px;
             transform: translate(290px, 80px);
         }
         .Quick {
             transition: 0.3s all ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
             width: 308px;
             height: 92px;
             transform: translate(10px, -80px);
         }
         .Shot {
             transition: 0.3s all ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
             width: 243px;
             height: 87px;
             transform: translate(100px, 380px);
@@ -49,10 +65,18 @@
             .flex-cam {
                 .flex-cam-image {
                     transition: 0.5s all ease-in-out;
+                    -webkit-transition: all 0.5s ease-in-out;
+                    -moz-transition: all 0.5s ease-in-out;
+                    -ms-transition: all 0.5s ease-in-out;
+                    -o-transition: all 0.5s ease-in-out;
                 }
             }
             .quick-shot-image {
                 transition: 0.3s all ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
                 .quick-shot-transform {
                     position: absolute;
                     overflow: hidden;
@@ -141,12 +165,20 @@
                 justify-content: center;
                 .Flex {
                     transition: 0.3s all ease-in-out;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -moz-transition: all 0.3s ease-in-out;
+                    -ms-transition: all 0.3s ease-in-out;
+                    -o-transition: all 0.3s ease-in-out;
                     width: 116px;
                     height: 290px;
                     transform: translate(-230px, -40px);
                 }
                 .Cam {
                     transition: 0.3s all ease-in-out;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -moz-transition: all 0.3s ease-in-out;
+                    -ms-transition: all 0.3s ease-in-out;
+                    -o-transition: all 0.3s ease-in-out;
                     width: 116px;
                     height: 364px;
                     transform: translate(260px, 260px);
@@ -157,11 +189,19 @@
                     display: block;
                     padding-bottom: 90px;
                     transition: 0.7s all ease-in-out;
+                    -webkit-transition: all 0.7s ease-in-out;
+                    -moz-transition: all 0.7s ease-in-out;
+                    -ms-transition: all 0.7s ease-in-out;
+                    -o-transition: all 0.7s ease-in-out;
                     img {
                     }
                 }
                 .flex-cam-image {
                     transition: 0.5s all ease-in-out;
+                    -webkit-transition: all 0.5s ease-in-out;
+                    -moz-transition: all 0.5s ease-in-out;
+                    -ms-transition: all 0.5s ease-in-out;
+                    -o-transition: all 0.5s ease-in-out;
                 }
             }
         }
@@ -180,10 +220,18 @@
             }
             .quick-shot-image {
                 transition: 0.4s all ease;
+                -webkit-transition: all 0.4s ease;
+                -moz-transition: all 0.4s ease;
+                -ms-transition: all 0.4s ease;
+                -o-transition: all 0.4s ease;
                 transform: rotate(90deg);
             }
             .quick-shot-image {
                 transition: 0.3s all ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
                 .quick-shot-transform {
                     position: absolute;
                     overflow: hidden;
