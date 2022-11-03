@@ -22,7 +22,7 @@ const ContentPatternE = ({
     const screenX = window.innerWidth;
     return (
         <section className="content-e">
-            {screenX < 1024 && (
+            {screenX < 768 && (
                 <div className="block feature-content">
                     <ContentTitle title={title} category={category} />
                     <Content content={content} alert={alert} />
@@ -33,13 +33,22 @@ const ContentPatternE = ({
                 </div>
             )}
             <div className="feature-image">
-                {screenX < 1024 && mainImage[0] === "IPX8" && (
+                {screenX < 768 && mainImage[0] === "IPX8" && (
                     <img
                         src={IPX8}
                         style={{ width: `${mainImageSize[0]}px` }}
                         alt="galaxy exterior"
                     />
                 )}
+                {screenX >= 768 &&
+                    screenX < 1024 &&
+                    mainImage[0] === "IPX8" && (
+                        <img
+                            src={IPX8}
+                            style={{ width: `425px` }}
+                            alt="galaxy exterior"
+                        />
+                    )}
                 {screenX >= 1024 && mainImage[0] === "IPX8" && (
                     <img
                         src={IPX8}
@@ -48,6 +57,17 @@ const ContentPatternE = ({
                     />
                 )}
             </div>
+            {screenX >= 768 && screenX < 1024 && (
+                <div className="block feature-content">
+                    <ContentTitle title={title} category={category} />
+
+                    <Content content={content} alert={alert} />
+                    <Button btnContent={btnContent} />
+                    {image && (
+                        <ContentImage image={image} imageSize={imageSize} />
+                    )}
+                </div>
+            )}
             {screenX >= 1024 && (
                 <div className="block feature-content">
                     <ContentTitle title={title} category={category} />

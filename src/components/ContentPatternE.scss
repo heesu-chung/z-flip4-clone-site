@@ -24,6 +24,34 @@
     }
 }
 
+@include tablet {
+    .content-e {
+        max-width: 688px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        .feature-image {
+            margin: 0;
+            flex: 1;
+            transform: translateX(-100px);
+            -moz-transform: translateX(-100px);
+            -webkit-transform: translateX(-100px);
+            -o-transform: translateX(-100px);
+            -ms-transform: translateX(-100px);
+        }
+        .feature-content {
+            margin-top: 85px;
+            margin-left: 0px;
+            flex: 1;
+            .contents {
+                width: 100%;
+            }
+        }
+    }
+}
+
 @include screen {
     .content-e {
         min-width: 988px;

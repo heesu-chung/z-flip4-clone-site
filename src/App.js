@@ -187,14 +187,14 @@ function App() {
                 mainImageSize={[370, 500]}
             />
 
-            {/* <ContentPatternE
+            <ContentPatternE
                 category="IPX8 WATER RESISTANCE"
                 title={["Still unafraid", "of water"]}
                 content={content[5]}
                 btnContent={false}
                 mainImage={["IPX8"]}
                 mainImageSize={[475, 655]}
-            /> */}
+            />
 
             {/* <ContentPatternA
                 category="SAMSUNG CARE+"
