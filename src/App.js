@@ -142,16 +142,16 @@ function App() {
                 mainImageSize={[]}
             />
 
-            {/* <ApparatusTransition screenX={screenX} /> */}
+            <ApparatusTransition screenX={screenX} />
 
-            {/* <ContentPatternA
+            <ContentPatternA
                 category="BESPOKE EDITION"
                 title={["Your Galaxy.", "Your Way."]}
                 content={content[1]}
                 btnContent={false}
                 mainImage={[]}
                 mainImageSize={[]}
-            /> */}
+            />
 
             {/* <ImageSlider screenX={screenX} /> */}
 

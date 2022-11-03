@@ -150,13 +150,29 @@ const ApparatusTransition = ({ screenX }) => {
     return (
         <section className="transition">
             <div className="front">
-                {screenX < 1024 && (
+                {screenX < 768 && (
                     <div className="front-set">
                         {/* <div className="front-blank" /> */}
                         <img src={PurpleFront} className="front-1" alt="" />
                         <img src={BlackFront} className="front-2" alt="" />
                         <img src={GoldFront} className="front-3" alt="" />
                         <img src={BlueFront} className="front-4" alt="" />
+                    </div>
+                )}
+                {screenX < 1024 && screenX >= 768 && (
+                    <div className="front-set">
+                        <img
+                            src={PurpleFrontScreen}
+                            className="front-1"
+                            alt=""
+                        />
+                        <img
+                            src={BlackFrontScreen}
+                            className="front-2"
+                            alt=""
+                        />
+                        <img src={GoldFrontScreen} className="front-3" alt="" />
+                        <img src={BlueFrontScreen} className="front-4" alt="" />
                     </div>
                 )}
                 {screenX >= 1024 && (
@@ -219,7 +235,7 @@ const ApparatusTransition = ({ screenX }) => {
                 </label>
 
                 <div className="image-container">
-                    {screenX < 1024 && (
+                    {screenX < 768 && (
                         <div className="desc-set">
                             <span className="desc desc-1">Bora Purple</span>
                             <span className="desc desc-2">Graphite</span>
@@ -249,6 +265,37 @@ const ApparatusTransition = ({ screenX }) => {
                                     alt=""
                                 />
                             </div>
+                        </div>
+                    )}
+                    {screenX < 1024 && screenX >= 768 && (
+                        <div className="desc-set">
+                            <span className="desc desc-1">Bora Purple</span>
+                            <img
+                                src={PurpleSideScreen}
+                                className="desc-image-1"
+                                alt=""
+                            />
+
+                            <span className="desc desc-2">Graphite</span>
+                            <img
+                                src={BlackSideScreen}
+                                className="desc-image-2"
+                                alt=""
+                            />
+
+                            <span className="desc desc-3">Pink Gold</span>
+                            <img
+                                src={GoldSideScreen}
+                                className="desc-image-3"
+                                alt=""
+                            />
+
+                            <span className="desc desc-4">Blue</span>
+                            <img
+                                src={BlueSideScreen}
+                                className="desc-image-4"
+                                alt=""
+                            />
                         </div>
                     )}
                     {screenX >= 1024 && (
