@@ -32,7 +32,8 @@
         flex-direction: row;
 
         .feature-image {
-            margin-left: -30px;
+            margin-top: 15px;
+            margin-left: -35px;
             flex: 1;
 
             img {
@@ -41,7 +42,7 @@
         }
         .feature-content {
             margin-top: 15px;
-            margin-left: 64px;
+            margin-left: 50px;
             flex: 1;
         }
     }
