@@ -99,7 +99,7 @@ const ContentPatternH = ({
                 setVideoActivate(false);
                 setPlay(false);
             }
-        } else if (screenX < 1024) {
+        } else if (screenX < 768) {
             if (scroll > 14400 && scroll < 15600) {
                 if (
                     quick &&

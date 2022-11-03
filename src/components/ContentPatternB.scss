@@ -243,24 +243,24 @@
         }
         .quick-shot {
             margin: 0 auto;
-            margin-bottom: 70px;
+            margin-bottom: 30px;
             .Quick {
-                width: 505px;
-                height: 150px;
-                transform: translate(-100px, -80px);
-                -moz-transform: translate(-100px, -80px);
-                -webkit-transform: translate(-100px, -80px);
-                -o-transform: translate(-100px, -80px);
-                -ms-transform: translate(-100px, -80px);
+                width: 337px;
+                height: 100px;
+                transform: translate(-120px, 0px);
+                -moz-transform: translate(-120px, 0px);
+                -webkit-transform: translate(-120px, 0px);
+                -o-transform: translate(-120px, 0px);
+                -ms-transform: translate(-120px, 0px);
             }
             .Shot {
-                width: 391px;
-                height: 141px;
-                transform: translate(180px, 530px);
-                -moz-transform: translate(180px, 530px);
-                -webkit-transform: translate(180px, 530px);
-                -o-transform: translate(180px, 530px);
-                -ms-transform: translate(180px, 530px);
+                width: 261px;
+                height: 94px;
+                transform: translate(120px, 400px);
+                -moz-transform: translate(120px, 400px);
+                -webkit-transform: translate(120px, 400px);
+                -o-transform: translate(120px, 400px);
+                -ms-transform: translate(120px, 400px);
             }
             .quick-shot-image {
                 transition: 0.4s all ease;
@@ -284,13 +284,14 @@
                     position: absolute;
                     overflow: hidden;
                     opacity: 1;
-                    width: 300px;
-                    height: 150px;
-                    transform: translate(-40px, 363px);
-                    -moz-transform: translate(-40px, 363px);
-                    -webkit-transform: translate(-40px, 363px);
-                    -o-transform: translate(-40px, 363px);
-                    -ms-transform: translate(-40px, 363px);
+                    width: 200px;
+                    height: 120px;
+                    transform: translate(-43px, 270px);
+
+                    -moz-transform: translate(-43px, 270px);
+                    -webkit-transform: translate(-43px, 270px);
+                    -o-transform: translate(-43px, 270px);
+                    -ms-transform: translate(-43px, 270px);
                     border-radius: 15px;
                     -webkit-border-radius: 15px;
                     img {

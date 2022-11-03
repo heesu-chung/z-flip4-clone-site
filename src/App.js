@@ -239,7 +239,7 @@ function App() {
                 mainImageSize={[357, 480]}
             />
 
-            {/* {screenX >= 1024 && <Entertainment />} */}
+            {screenX >= 768 && <Entertainment />}
 
             {/* <ContentPatternI
                 category="VIDEO CALL"
