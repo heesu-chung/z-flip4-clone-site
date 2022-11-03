@@ -229,7 +229,7 @@ function App() {
                 mainImageSize={[444, 600]}
             />
 
-            {/* <ContentPatternH
+            <ContentPatternH
                 category="QUICK SHOT"
                 title={["Enter your", "self-portrait", "era"]}
                 content={content[10]}
@@ -237,7 +237,7 @@ function App() {
                 btnContent={"CheckItOut"}
                 mainImage={["QuickShot"]}
                 mainImageSize={[357, 480]}
-            /> */}
+            />
 
             {/* {screenX >= 1024 && <Entertainment />} */}
 

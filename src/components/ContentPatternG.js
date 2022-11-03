@@ -51,7 +51,7 @@ const ContentPatternG = ({
                     cam.style.transform = `translate(260px, 760px)`;
                 }
             }
-        } else if (screenX < 1024) {
+        } else if (screenX < 768) {
             if (scroll > 13100) {
                 if (image1 && flex && cam) {
                     image1.style.transform = `scale(1) translate(0, 0px)`;
@@ -86,7 +86,7 @@ const ContentPatternG = ({
                         <span className="Cam">
                             <img src={Cam} alt="" />
                         </span>
-                        {screenX < 1024 && (
+                        {screenX < 768 && (
                             <div className="img-container i-1 flex-cam-image">
                                 <img
                                     src={FlexCamUpper}
@@ -95,6 +95,16 @@ const ContentPatternG = ({
                                 />
                             </div>
                         )}
+                        {screenX >= 768 && screenX < 1024 && (
+                            <div className="img-container i-1 flex-cam-image">
+                                <img
+                                    src={FlexCamUpper}
+                                    style={{ maxWidth: "457px" }}
+                                    alt=""
+                                />
+                            </div>
+                        )}
+
                         {screenX >= 1024 && (
                             <div className="img-container i-1 flex-cam-image">
                                 <img
@@ -106,12 +116,12 @@ const ContentPatternG = ({
                         )}
                     </div>
                 </div>
-                {screenX < 1024 && (
+                {screenX < 768 && (
                     <div className="block feature-title">
                         <ContentTitle title={title} category={category} />
                     </div>
                 )}
-                {screenX < 1024 && mainImage[0] === "FlexCam" && (
+                {screenX < 768 && mainImage[0] === "FlexCam" && (
                     <div className="img-container i-2">
                         <img
                             src={FlexCam}
@@ -122,7 +132,7 @@ const ContentPatternG = ({
                 )}
 
                 <div className="content-block">
-                    {screenX >= 1024 && (
+                    {screenX >= 768 && (
                         <div className="block feature-title">
                             <ContentTitle title={title} category={category} />
                         </div>
@@ -136,6 +146,17 @@ const ContentPatternG = ({
                     </div>
                 </div>
 
+                {screenX >= 768 &&
+                    screenX < 1024 &&
+                    mainImage[0] === "FlexCam" && (
+                        <div className="img-container i-2">
+                            <img
+                                src={FlexCam}
+                                style={{ maxWidth: "440px" }}
+                                alt=""
+                            />
+                        </div>
+                    )}
                 {screenX >= 1024 && mainImage[0] === "FlexCam" && (
                     <div className="img-container i-2">
                         <img
