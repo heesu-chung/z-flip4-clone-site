@@ -19,6 +19,23 @@
     }
 }
 
+@include tablet {
+    .titles {
+        .category {
+            width: 100%;
+            font-size: 11px;
+            line-height: 14px;
+            letter-spacing: 2.3px;
+            margin-bottom: 16px;
+        }
+        .title {
+            width: 90%;
+            font-size: 36px;
+            line-height: 43px;
+        }
+    }
+}
+
 @include screen {
     .titles {
         .category {
