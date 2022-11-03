@@ -17,6 +17,24 @@
     }
 }
 
+@include tablet {
+    .contents {
+        padding-bottom: 80px;
+        .content {
+            font-size: 15px;
+            line-height: 22px;
+            margin-top: 32px;
+            font-family: $so;
+        }
+        .alert {
+            font-size: 13px;
+            font-family: $so;
+            color: #575757;
+            margin-top: 22px;
+        }
+    }
+}
+
 @include screen {
     .contents {
         .content {
