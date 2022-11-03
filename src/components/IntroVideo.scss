@@ -13,6 +13,11 @@
             width: 60%;
             font-size: 34px;
             font-family: $sssB;
+            @include tablet {
+                width: 40%;
+                margin-top: 140px;
+                margin-bottom: 60px;
+            }
         }
         .video-container {
             display: flex;
@@ -20,6 +25,9 @@
             justify-content: center;
             .video-block {
                 width: 37.5%;
+                @include tablet {
+                    width: 264px;
+                }
                 display: flex;
                 flex-direction: column;
                 .video {
@@ -28,6 +36,12 @@
                     -webkit-border-radius: 10px;
                     overflow: hidden;
                     cursor: pointer;
+
+                    @include tablet {
+                        border-radius: 20px;
+                        -webkit-border-radius: 20px;
+                    }
+
                     &:hover {
                         .thumb-nail {
                             transition: 1.5s all ease-out;
@@ -63,6 +77,7 @@
                         -webkit-transform: translate(-50%, -50%);
                         -o-transform: translate(-50%, -50%);
                         -ms-transform: translate(-50%, -50%);
+
                         .youtube-btn {
                             object-fit: none;
                             object-position: 10px 6px;
@@ -90,6 +105,11 @@
                     font-family: $sssB;
                     font-size: 10px;
                     text-align: center;
+
+                    @include tablet {
+                        margin-top: 24px;
+                        font-size: 13px;
+                    }
                 }
             }
             .video-block:first-child {
@@ -187,6 +207,9 @@
             }
         }
     }
+}
+
+@include tablet {
 }
 
 @include screen {

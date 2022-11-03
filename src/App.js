@@ -124,9 +124,9 @@ function App() {
             <Header />
 
             <FrontCoverImg />
-            {/* <IntroVideo /> */}
+            <IntroVideo />
 
-            {/* <Quote /> */}
+            <Quote />
 
             {/* <OverviewNav screenX={screenX} navigation={navigation} /> */}
             {/* <Overview screenX={screenX} /> */}
