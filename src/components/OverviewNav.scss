@@ -26,6 +26,31 @@
     }
 }
 
+@include tablet {
+    .overview-nav {
+        text-align: center;
+        overflow: visible !important;
+        padding: 80px 0 120px;
+        ul {
+            li {
+                display: inline-block;
+                width: auto;
+                padding: 8px 12px 6px;
+                span {
+                    padding: 7px 14px 5px 14px;
+                    line-height: 20px;
+                    font-size: 15px;
+                    letter-spacing: 1.2px;
+                    font-family: $sssB;
+                    border-radius: 20px;
+                    -webkit-border-radius: 20px;
+                    border: 1px solid black;
+                }
+            }
+        }
+    }
+}
+
 @include screen {
     .overview-nav {
         text-align: center;
