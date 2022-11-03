@@ -178,14 +178,14 @@ function App() {
                 align={true}
             />
 
-            {/* <ContentPatternD
+            <ContentPatternD
                 category="EXTERIOR"
                 title={["Flippin' strong"]}
                 content={content[4]}
                 btnContent={false}
                 mainImage={["Exterior"]}
                 mainImageSize={[370, 500]}
-            /> */}
+            />
 
             {/* <ContentPatternE
                 category="IPX8 WATER RESISTANCE"

@@ -62,7 +62,7 @@ const ContentPatternD = ({
                     setGlassState(false);
                 }
             }
-        } else if (screenX < 1024) {
+        } else if (screenX < 768) {
             if (scroll > 7900 && scroll < 8500) {
                 if (upperGlass && lowerGlass && !glassState) {
                     setGlassState(true);
@@ -107,7 +107,7 @@ const ContentPatternD = ({
             </div>
 
             <div className="feature-image">
-                {screenX < 1024 && mainImage[0] === "Exterior" && (
+                {screenX < 768 && mainImage[0] === "Exterior" && (
                     <>
                         <img
                             src={Exterior}
@@ -129,6 +129,30 @@ const ContentPatternD = ({
                         />
                     </>
                 )}
+                {screenX >= 768 &&
+                    screenX < 1024 &&
+                    mainImage[0] === "Exterior" && (
+                        <>
+                            <img
+                                src={Exterior}
+                                className="exterior"
+                                style={{ width: `346px` }}
+                                alt="galaxy exterior"
+                            />
+                            <img
+                                src={Glass}
+                                className="glass upper"
+                                alt=""
+                                style={{ width: `344px` }}
+                            />
+                            <img
+                                src={Glass}
+                                className="glass lower"
+                                alt=""
+                                style={{ width: `344px` }}
+                            />
+                        </>
+                    )}
                 {screenX >= 1024 && mainImage[0] === "Exterior" && (
                     <>
                         <img
