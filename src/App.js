@@ -133,14 +133,14 @@ function App() {
 
             <TitleDesign title="DESIGN" subTitle="The phone that claps back" />
 
-            {/* <ContentPatternA
+            <ContentPatternA
                 category="colors"
                 title={["Meet the", "new neutrals"]}
                 content={content[0]}
                 btnContent={"SeeIn360"}
                 mainImage={[]}
                 mainImageSize={[]}
-            /> */}
+            />
 
             {/* <ApparatusTransition screenX={screenX} /> */}
 
