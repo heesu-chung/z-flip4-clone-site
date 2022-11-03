@@ -274,7 +274,7 @@ const Overview = ({ screenX }) => {
                     if (play) setPlay(!play);
                 }
             }
-        } else if (screenX < 1024) {
+        } else if (screenX < 768) {
             if (scroll >= 950 && scroll <= 2000) {
                 overviewContents.style.zIndex = "3";
             }

@@ -129,9 +129,9 @@ function App() {
             <Quote />
 
             <OverviewNav screenX={screenX} navigation={navigation} />
-            {/* <Overview screenX={screenX} /> */}
+            <Overview screenX={screenX} />
 
-            {/* <TitleDesign title="DESIGN" subTitle="The phone that claps back" /> */}
+            <TitleDesign title="DESIGN" subTitle="The phone that claps back" />
 
             {/* <ContentPatternA
                 category="colors"
