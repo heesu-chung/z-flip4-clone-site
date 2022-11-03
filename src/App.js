@@ -164,7 +164,7 @@ function App() {
                 image={["Fits"]}
             />
 
-            {/* <DurabilityImage screenX={screenX} id="durability" /> */}
+            <DurabilityImage screenX={screenX} id="durability" />
 
             {/* <ContentPatternC
                 category="MAIN SCREEN"

@@ -88,7 +88,7 @@ const DurabilityImage = ({ screenX }) => {
                     }px)`;
                 }
             }
-        } else if (screenX < 1024) {
+        } else if (screenX < 768) {
             if (scroll >= 5000 && scroll < 9200) {
                 if (image1) {
                     image1.style.transform = `translate(20px, ${
@@ -132,12 +132,7 @@ const DurabilityImage = ({ screenX }) => {
                     className="title"
                 />
                 <div className="image-container d-2">
-                    <img
-                        src={Durability2}
-                        alt=""
-                        className="durability-2"
-                        style={{ width: `${screenImageSize[1]}px` }}
-                    />
+                    <img src={Durability2} alt="" className="durability-2" />
                 </div>
                 <div className="image-container d-3">
                     <img src={Durability3} alt="" className="durability-3" />
