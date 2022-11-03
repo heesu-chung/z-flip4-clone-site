@@ -58,6 +58,48 @@
     }
 }
 
+@include tablet {
+    .category {
+        max-width: 688px;
+        padding-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        .menu {
+            .menu-title {
+                letter-spacing: 4px;
+                font-size: 14px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+            }
+            .dir {
+                background-color: black;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                width: 15px;
+                height: 15px;
+
+                img {
+                    object-fit: cover;
+                    width: 22px;
+                    height: 10px;
+                    transform: scale(0.5);
+                    -moz-transform: scale(0.5);
+                    -webkit-transform: scale(0.5);
+                    -o-transform: scale(0.5);
+                    -ms-transform: scale(0.5);
+                }
+            }
+        }
+        .feature-title {
+            font-size: 78px;
+            line-height: 1.2;
+        }
+        .small {
+            font-size: 52px;
+        }
+    }
+}
+
 @include screen {
     .category {
         width: calc(100% - 212px);
