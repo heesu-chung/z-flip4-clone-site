@@ -153,16 +153,17 @@ function App() {
                 mainImageSize={[]}
             />
 
-            {/* <ImageSlider screenX={screenX} /> */}
+            <ImageSlider screenX={screenX} />
 
-            {/* <ContentPatternB
+            <ContentPatternB
                 category="COMPACT SIZE"
                 title={["Fits", "all your fits"]}
                 content={content[2]}
                 btnContent={false}
                 alert={true}
                 image={["Fits"]}
-            /> */}
+            />
+
             {/* <DurabilityImage screenX={screenX} id="durability" /> */}
 
             {/* <ContentPatternC

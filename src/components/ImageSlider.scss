@@ -74,6 +74,80 @@
     }
 }
 
+@include tablet {
+    .btns-container {
+        position: absolute;
+        z-index: 5;
+        width: calc(100% - (100% - 778px));
+        margin: 0;
+        left: 50%;
+        transform: translate(-50%, 45px);
+        -moz-transform: translate(-50%, 45px);
+        -webkit-transform: translate(-50%, 45px);
+        -o-transform: translate(-50%, 45px);
+        -ms-transform: translate(-50%, 45px);
+
+        .btns {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .btn {
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                opacity: 0.6;
+            }
+            .left {
+                opacity: 0;
+            }
+        }
+    }
+    .slide-list {
+        width: calc(100% - ((100% - 688px) / 2));
+        margin-left: calc(((100% - 688px) / 2));
+        position: relative;
+        overflow-x: hidden;
+
+        padding-bottom: 80px;
+        ul {
+            transition: 0.5s all ease;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            width: 1800px;
+            display: flex;
+            flex-direction: row;
+            li {
+                width: 340px;
+                margin-right: 10px;
+                .slide-item {
+                }
+            }
+        }
+
+        .scroll-bar-container {
+            margin-top: 45px;
+            width: 100%;
+            height: 2px;
+            background: #d8d8d8;
+
+            .scroll-bar {
+                transition: 0.5s all ease;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -ms-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                height: 2px;
+                width: 60%;
+                background: #000;
+            }
+        }
+    }
+}
+
 @include screen {
     .btns-container {
         position: absolute;
