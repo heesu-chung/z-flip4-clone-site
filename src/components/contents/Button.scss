@@ -26,6 +26,33 @@
     }
 }
 
+@include tablet {
+    .btn {
+        position: relative;
+        width: auto;
+        min-height: 32px;
+        text-align: left;
+        margin-top: 24px;
+
+        .content {
+            border: 1px solid black;
+
+            padding: 10px 20px;
+            -webkit-border-radius: 8px;
+            border-radius: 8px;
+            text-transform: uppercase;
+
+            font-family: $so;
+            font-size: 11px;
+            font-weight: 700;
+            line-height: 11px;
+            letter-spacing: 2px;
+
+            cursor: pointer;
+        }
+    }
+}
+
 @include screen {
     .btn {
         height: 48px;
