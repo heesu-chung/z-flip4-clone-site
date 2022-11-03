@@ -196,7 +196,7 @@ function App() {
                 mainImageSize={[475, 655]}
             />
 
-            {/* <ContentPatternA
+            <ContentPatternA
                 category="SAMSUNG CARE+"
                 title={["Accidents can", "be forgiven"]}
                 content={content[6]}
@@ -205,8 +205,9 @@ function App() {
                 imageSize={[214, 238]}
                 mainImage={[]}
                 mainImageSize={[]}
-            /> */}
-            {/* <CameraImage screenX={screenX} id="camera" /> */}
+            />
+
+            <CameraImage screenX={screenX} id="camera" />
 
             {/* <ContentPatternF
                 category="MULTI-CAMERA SYSTEM"

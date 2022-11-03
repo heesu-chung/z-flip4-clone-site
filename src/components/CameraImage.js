@@ -71,7 +71,7 @@ const CameraImage = ({ screenX }) => {
                     image1.style.transform = `scale(1)`;
                 }
             }
-        } else if (screenX < 1024) {
+        } else if (screenX < 768) {
             if (scroll >= 9450 && scroll < 11500) {
                 if (image1) {
                     image1.style.transform = `scale(0.5)`;
