@@ -97,7 +97,7 @@ function App() {
     let screenX = window.innerWidth;
 
     const setScroll = useSetRecoilState(scrollValue);
-    const scroll = useRecoilValue(scrollValue);
+
     const onScroll = () => {
         setScroll(Math.floor(window.scrollY));
     };
@@ -124,48 +124,48 @@ function App() {
             <Header />
 
             <FrontCoverImg />
-            <IntroVideo />
+            {/* <IntroVideo /> */}
 
-            <Quote />
+            {/* <Quote /> */}
 
-            <OverviewNav screenX={screenX} navigation={navigation} />
-            <Overview screenX={screenX} />
+            {/* <OverviewNav screenX={screenX} navigation={navigation} /> */}
+            {/* <Overview screenX={screenX} /> */}
 
-            <TitleDesign title="DESIGN" subTitle="The phone that claps back" />
+            {/* <TitleDesign title="DESIGN" subTitle="The phone that claps back" /> */}
 
-            <ContentPatternA
+            {/* <ContentPatternA
                 category="colors"
                 title={["Meet the", "new neutrals"]}
                 content={content[0]}
                 btnContent={"SeeIn360"}
                 mainImage={[]}
                 mainImageSize={[]}
-            />
+            /> */}
 
-            <ApparatusTransition screenX={screenX} />
+            {/* <ApparatusTransition screenX={screenX} /> */}
 
-            <ContentPatternA
+            {/* <ContentPatternA
                 category="BESPOKE EDITION"
                 title={["Your Galaxy.", "Your Way."]}
                 content={content[1]}
                 btnContent={false}
                 mainImage={[]}
                 mainImageSize={[]}
-            />
+            /> */}
 
-            <ImageSlider screenX={screenX} />
+            {/* <ImageSlider screenX={screenX} /> */}
 
-            <ContentPatternB
+            {/* <ContentPatternB
                 category="COMPACT SIZE"
                 title={["Fits", "all your fits"]}
                 content={content[2]}
                 btnContent={false}
                 alert={true}
                 image={["Fits"]}
-            />
-            <DurabilityImage screenX={screenX} id="durability" />
+            /> */}
+            {/* <DurabilityImage screenX={screenX} id="durability" /> */}
 
-            <ContentPatternC
+            {/* <ContentPatternC
                 category="MAIN SCREEN"
                 title={["Holds up", "from flex", "to flat"]}
                 content={content[3]}
@@ -175,27 +175,27 @@ function App() {
                 image={["VDE", "BV"]}
                 imageSize={[84, 101, 108, 123]}
                 align={true}
-            />
+            /> */}
 
-            <ContentPatternD
+            {/* <ContentPatternD
                 category="EXTERIOR"
                 title={["Flippin' strong"]}
                 content={content[4]}
                 btnContent={false}
                 mainImage={["Exterior"]}
                 mainImageSize={[370, 500]}
-            />
+            /> */}
 
-            <ContentPatternE
+            {/* <ContentPatternE
                 category="IPX8 WATER RESISTANCE"
                 title={["Still unafraid", "of water"]}
                 content={content[5]}
                 btnContent={false}
                 mainImage={["IPX8"]}
                 mainImageSize={[475, 655]}
-            />
+            /> */}
 
-            <ContentPatternA
+            {/* <ContentPatternA
                 category="SAMSUNG CARE+"
                 title={["Accidents can", "be forgiven"]}
                 content={content[6]}
@@ -204,10 +204,10 @@ function App() {
                 imageSize={[214, 238]}
                 mainImage={[]}
                 mainImageSize={[]}
-            />
-            <CameraImage screenX={screenX} id="camera" />
+            /> */}
+            {/* <CameraImage screenX={screenX} id="camera" /> */}
 
-            <ContentPatternF
+            {/* <ContentPatternF
                 category="MULTI-CAMERA SYSTEM"
                 title={["Live your best", "nightlife"]}
                 content={[content[7], content[8]]}
@@ -215,9 +215,9 @@ function App() {
                 mainImage={["FlipCamera"]}
                 mainImageSize={[245, 504]}
                 screenX={screenX}
-            />
+            /> */}
 
-            <ContentPatternG
+            {/* <ContentPatternG
                 category="FLEXCAM"
                 title={["Go ahead,", "flex on them"]}
                 content={content[9]}
@@ -225,9 +225,9 @@ function App() {
                 btnContent={"CheckItOut"}
                 mainImage={["FlexCam"]}
                 mainImageSize={[444, 600]}
-            />
+            /> */}
 
-            <ContentPatternH
+            {/* <ContentPatternH
                 category="QUICK SHOT"
                 title={["Enter your", "self-portrait", "era"]}
                 content={content[10]}
@@ -235,11 +235,11 @@ function App() {
                 btnContent={"CheckItOut"}
                 mainImage={["QuickShot"]}
                 mainImageSize={[357, 480]}
-            />
+            /> */}
 
-            {screenX >= 1024 && <Entertainment />}
+            {/* {screenX >= 1024 && <Entertainment />} */}
 
-            <ContentPatternI
+            {/* <ContentPatternI
                 category="VIDEO CALL"
                 title={["Share", "with the squad"]}
                 align={true}
@@ -250,9 +250,9 @@ function App() {
                 mainImageSize={[350, 550]}
                 image={["GoogleMeet"]}
                 imageSize={[139, 175]}
-            />
+            /> */}
 
-            <ContentPatternH
+            {/* <ContentPatternH
                 category="FLEXCAM FOR SOCIAL"
                 title={["Give your", "feed a glow-", "up"]}
                 content={content[12]}
@@ -260,9 +260,9 @@ function App() {
                 btnContent={false}
                 mainImage={["SocialVideo"]}
                 mainImageSize={[357, 480]}
-            />
+            /> */}
 
-            <ContentPatternJ
+            {/* <ContentPatternJ
                 title={["Power", "to the pocket"]}
                 align={true}
                 content={[content[13], content[14]]}
@@ -271,33 +271,33 @@ function App() {
                 mainImage={["Battery"]}
                 mainImageSize={[410, 545]}
                 id="battery"
-            />
+            /> */}
 
-            <ContentPatternK
+            {/* <ContentPatternK
                 title="COVER SCREEN"
                 subTitle={["The window to your world"]}
                 screenX={screenX}
-            />
+            /> */}
 
-            <ContentPatternL
+            {/* <ContentPatternL
                 category="CUSTOM COVER SCREEN"
                 title={["Put your style", "on display"]}
                 content={content[15]}
                 btnContent={"CheckItOut"}
                 mainImage={["CustomImage"]}
                 mainImageSize={[444, 484]}
-            />
+            /> */}
 
-            <ContentPatternM
+            {/* <ContentPatternM
                 category="USEFUL COVER SCREEN"
                 title={["Glance, act", "and go"]}
                 content={content[16]}
                 alert={alert}
                 mainImage={["CoverScreen"]}
                 mainImageSize={[312, 484]}
-            />
+            /> */}
 
-            <ContentPatternN
+            {/* <ContentPatternN
                 category="GALAXY WATCH5"
                 title={["Better rest is", "all in the wrist"]}
                 content={content[17]}
@@ -305,11 +305,11 @@ function App() {
                 alert={true}
                 mainImage={["GalaxyWatch"]}
                 mainImageSize={[360, 1000]}
-            />
+            /> */}
 
-            <CameraEcosystem screenX={screenX} id="ecosystem" />
+            {/* <CameraEcosystem screenX={screenX} id="ecosystem" /> */}
 
-            <ContentPatternO
+            {/* <ContentPatternO
                 category="SMART SWITCH"
                 title={["Old phone,", "meet new", "phone"]}
                 content={content[18]}
@@ -317,29 +317,29 @@ function App() {
                 mainImage={["SmartSwitch"]}
                 mainImageSize={[312, 570]}
                 link={true}
-            />
+            /> */}
 
-            <ContentPatternA_sub
+            {/* <ContentPatternA_sub
                 category="GALAXY EXCELLENCE"
                 title={["Expect nothing", "less"]}
                 card={true}
                 mainImage={[]}
                 mainImageSize={[]}
-            />
+            /> */}
 
-            <ContentPatternP
+            {/* <ContentPatternP
                 category="ACCESSORIES"
                 title={["Finesse your Flip"]}
                 btnContent={"LearnMore"}
                 flex={true}
                 mainImage={["Accessories"]}
                 mainImageSize={[500, 1116]}
-            />
+            /> */}
 
-            <Question screenX={screenX} />
+            {/* <Question screenX={screenX} /> */}
 
-            <SectionBanners screenX={screenX} />
-            <FeatureDesc />
+            {/* <SectionBanners screenX={screenX} /> */}
+            {/* <FeatureDesc /> */}
         </>
     );
 }

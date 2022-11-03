@@ -117,6 +117,112 @@
     }
 }
 
+@include tablet {
+    .nav {
+        width: 100%;
+        position: fixed;
+        overflow: hidden;
+        background: white;
+        z-index: 500;
+        opacity: 0.9;
+        .upper-bar {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .logo-container {
+                display: none;
+            }
+            .product-container {
+                padding-left: 32px;
+                transform: translateY(6px);
+                -moz-transform: translateY(6px);
+                -webkit-transform: translateY(6px);
+                -o-transform: translateY(6px);
+                -ms-transform: translateY(6px);
+
+                .product {
+                    font-size: 20px;
+                    line-height: 60px;
+                    font-family: $sssB;
+                }
+                .arrow {
+                    margin-left: 13px;
+                    img {
+                        width: 23px;
+                        height: 23px;
+                        transform: translateY(5px);
+                        -moz-transform: translateY(5px);
+                        -webkit-transform: translateY(5px);
+                        -o-transform: translateY(5px);
+                        -ms-transform: translateY(5px);
+                    }
+                    cursor: pointer;
+                }
+            }
+            .menu-bar {
+                position: relative;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                margin-right: 20px;
+                .menu-bar-block {
+                    position: relative;
+                    overflow: hidden;
+
+                    width: 48px;
+                    height: 48px;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    .string {
+                        width: 26px;
+                        height: 2px;
+                        background: black;
+                        margin: 3.5px auto;
+                    }
+                }
+            }
+        }
+        .menu-dist-line {
+            width: 100%;
+            height: 1px;
+            margin: 0 auto;
+            background: #bbb;
+        }
+        .lower-bar {
+            height: 47px;
+
+            .selected-bar {
+                position: absolute;
+                width: 74px;
+                border-bottom: 2px solid #00b3e3;
+
+                transform: translate(3.8vw, -2px);
+                -moz-transform: translate(3.8vw, -2px);
+                -webkit-transform: translate(3.8vw, -2px);
+                -o-transform: translate(3.8vw, -2px);
+                -ms-transform: translate(3.8vw, -2px);
+            }
+            .select-link {
+                padding-left: 23px;
+                span {
+                    font-size: 13px;
+                    line-height: 47px;
+                    height: 40px;
+                    font-family: $sssB;
+                    padding: 0 8px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
 @include laptop {
     .nav {
         .upper-bar {

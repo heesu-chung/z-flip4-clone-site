@@ -27,6 +27,32 @@
     }
 }
 
+@include tablet {
+    .global-scroll-btn {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        top: 84vh;
+        left: 90.3vw;
+
+        .scroll-btn-container {
+            width: 48px;
+            height: 48px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            img {
+                object-fit: cover;
+                transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+            }
+        }
+    }
+}
+
 @include screen {
     .global-scroll-btn {
         width: 50px;
