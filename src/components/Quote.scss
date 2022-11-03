@@ -57,6 +57,65 @@
     }
 }
 
+@include tablet {
+    .quote {
+        margin-top: 112px;
+        padding: 0;
+        .about-wrap {
+            width: 650px;
+            margin: 0 auto;
+            ul {
+                display: flex;
+                flex-direction: row;
+
+                li {
+                    padding: 0 10px;
+                    .box-text {
+                        background-color: #fafafa;
+                        padding: 45px 30px 30px;
+                        min-height: 212px;
+
+                        text-align: center;
+                        font-family: $sssB;
+                        border-radius: 8px;
+                        -webkit-border-radius: 8px;
+                        .device {
+                            min-height: 50px;
+                            font-size: 14px;
+                            padding-bottom: 0;
+                            line-height: 1.5;
+                        }
+                        .text {
+                            min-height: 243px;
+                            font-size: 20px;
+                            line-height: 1.5;
+                        }
+
+                        .sub-text {
+                            display: block;
+                            // padding-bottom: 7px;
+                            font-size: 25px;
+                            line-height: 1.2;
+                        }
+                        .author {
+                            font-size: 14px;
+                            padding-bottom: 5px;
+                        }
+                    }
+                    .quote-notice {
+                        text-align: center;
+                        font-size: 14px;
+                        padding: 10px 16px;
+                        opacity: 0.9;
+                        font-family: $so;
+                        line-height: 1.4;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @include screen {
     .quote {
         .about-wrap {
