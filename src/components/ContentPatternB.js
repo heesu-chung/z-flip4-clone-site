@@ -20,23 +20,23 @@ const ContentPatternB = ({
     const screenX = window.innerWidth;
     return (
         <section className="content-b">
-            {screenX < 1024 && (
+            {screenX < 768 && (
                 <div className="block feature-title">
                     <ContentTitle title={title} category={category} />
                 </div>
             )}
-            {screenX < 1024 && image[0] === "Fits" && (
+            {screenX < 768 && image[0] === "Fits" && (
                 <div className="img-container">
                     <img src={Fits} style={{ maxWidth: "444px" }} alt="" />
                 </div>
             )}
-            {screenX >= 1024 && image[0] === "Fits" && (
+            {screenX >= 768 && image[0] === "Fits" && (
                 <div className="img-container">
                     <img src={Fits} alt="" style={{ maxWidth: "948px" }} />
                 </div>
             )}
             <div className="content-block">
-                {screenX >= 1024 && (
+                {screenX >= 768 && (
                     <div className="block feature-title">
                         <ContentTitle title={title} category={category} />
                     </div>
