@@ -166,7 +166,7 @@ function App() {
 
             <DurabilityImage screenX={screenX} id="durability" />
 
-            {/* <ContentPatternC
+            <ContentPatternC
                 category="MAIN SCREEN"
                 title={["Holds up", "from flex", "to flat"]}
                 content={content[3]}
@@ -176,7 +176,7 @@ function App() {
                 image={["VDE", "BV"]}
                 imageSize={[84, 101, 108, 123]}
                 align={true}
-            /> */}
+            />
 
             {/* <ContentPatternD
                 category="EXTERIOR"

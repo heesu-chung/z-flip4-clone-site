@@ -24,7 +24,7 @@ const ContentPatternC = ({
     const screenX = window.innerWidth;
     return (
         <section className="content-c">
-            {screenX < 1024 && (
+            {screenX < 768 && (
                 <div className="block">
                     <ContentTitle
                         title={title}
@@ -35,13 +35,18 @@ const ContentPatternC = ({
             )}
 
             <div className="feature-image">
-                {screenX < 1024 && mainImage[0] === "MainScreen" && (
+                {screenX < 768 && mainImage[0] === "MainScreen" && (
                     <img
                         src={MainScreen}
                         style={{ width: `${mainImageSize[0]}px` }}
                         alt="galaxy main screen"
                     />
                 )}
+                {screenX >= 768 &&
+                    screenX < 1024 &&
+                    mainImage[0] === "MainScreen" && (
+                        <img src={MainScreenLapTop} alt="galaxy main screen" />
+                    )}
                 {screenX >= 1024 && mainImage[0] === "MainScreen" && (
                     <img
                         src={MainScreenLapTop}
@@ -52,7 +57,7 @@ const ContentPatternC = ({
             </div>
 
             <div className="block feature-content">
-                {screenX >= 1024 && (
+                {screenX >= 768 && (
                     <ContentTitle title={title} category={category} />
                 )}
                 <Content content={content} alert={alert} />
