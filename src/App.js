@@ -209,7 +209,7 @@ function App() {
 
             <CameraImage screenX={screenX} id="camera" />
 
-            {/* <ContentPatternF
+            <ContentPatternF
                 category="MULTI-CAMERA SYSTEM"
                 title={["Live your best", "nightlife"]}
                 content={[content[7], content[8]]}
@@ -217,9 +217,9 @@ function App() {
                 mainImage={["FlipCamera"]}
                 mainImageSize={[245, 504]}
                 screenX={screenX}
-            /> */}
+            />
 
-            {/* <ContentPatternG
+            <ContentPatternG
                 category="FLEXCAM"
                 title={["Go ahead,", "flex on them"]}
                 content={content[9]}
@@ -227,7 +227,7 @@ function App() {
                 btnContent={"CheckItOut"}
                 mainImage={["FlexCam"]}
                 mainImageSize={[444, 600]}
-            /> */}
+            />
 
             {/* <ContentPatternH
                 category="QUICK SHOT"
