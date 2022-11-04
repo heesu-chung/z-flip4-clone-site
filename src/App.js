@@ -264,7 +264,7 @@ function App() {
                 mainImageSize={[357, 480]}
             />
 
-            {/* <ContentPatternJ
+            <ContentPatternJ
                 title={["Power", "to the pocket"]}
                 align={true}
                 content={[content[13], content[14]]}
@@ -273,13 +273,13 @@ function App() {
                 mainImage={["Battery"]}
                 mainImageSize={[410, 545]}
                 id="battery"
-            /> */}
+            />
 
-            {/* <ContentPatternK
+            <ContentPatternK
                 title="COVER SCREEN"
                 subTitle={["The window to your world"]}
                 screenX={screenX}
-            /> */}
+            />
 
             {/* <ContentPatternL
                 category="CUSTOM COVER SCREEN"

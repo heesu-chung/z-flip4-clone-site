@@ -22,7 +22,12 @@ const ContentBetterTogether = ({
                     />
                 </div>
             )}
-            {image === "SubWatch" && screenX >= 1024 && (
+            {image === "SubBattery" && screenX >= 768 && screenX < 1024 && (
+                <div className="image-container">
+                    <img src={SubBattery} style={{ width: `118px` }} alt="" />
+                </div>
+            )}
+            {image === "SubWatch" && screenX >= 768 && (
                 <div className="image-container">
                     <img
                         src={SubWatch}
@@ -34,7 +39,7 @@ const ContentBetterTogether = ({
             <div className="descs">
                 <p className="cate-title">Better together</p>
                 <p className="title">{title}</p>
-                {image === "SubBattery" && screenX < 1024 && (
+                {image === "SubBattery" && screenX < 768 && (
                     <div className="image-container">
                         <img
                             src={SubBattery}
@@ -43,7 +48,7 @@ const ContentBetterTogether = ({
                         />
                     </div>
                 )}
-                {image === "SubWatch" && screenX < 1024 && (
+                {image === "SubWatch" && screenX < 768 && (
                     <div className="image-container">
                         <img
                             src={SubWatch}

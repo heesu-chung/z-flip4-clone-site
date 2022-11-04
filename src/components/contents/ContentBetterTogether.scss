@@ -42,6 +42,42 @@
     }
 }
 
+@include tablet {
+    .better-together {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+
+        width: 90%;
+        .image-container {
+            margin-right: 20px;
+        }
+        .descs {
+            text-align: left;
+            padding-bottom: 5px;
+            .cate-title {
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+            .title {
+                font-size: 18px;
+                line-height: 23px;
+                margin: 0;
+            }
+            .desc {
+                font-size: 13px;
+                margin-top: 5px;
+            }
+            .links {
+                .link {
+                    font-size: 13px;
+                }
+                margin-top: 14px;
+            }
+        }
+    }
+}
+
 @include screen {
     .better-together {
         display: flex;

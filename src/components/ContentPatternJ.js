@@ -26,9 +26,18 @@ const ContentPatternJ = ({
     return (
         <section className="content-j">
             <div className="feature-image">
-                {screenX < 1024 && mainImage[0] === "Battery" && (
+                {screenX < 768 && mainImage[0] === "Battery" && (
                     <img src={Battery} alt="galaxy Battery" />
                 )}
+                {screenX >= 768 &&
+                    screenX < 1024 &&
+                    mainImage[0] === "Battery" && (
+                        <img
+                            src={Battery}
+                            style={{ width: `406px` }}
+                            alt="galaxy Battery"
+                        />
+                    )}
                 {screenX >= 1024 && mainImage[0] === "Battery" && (
                     <img
                         src={Battery}

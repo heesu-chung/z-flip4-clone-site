@@ -29,7 +29,34 @@
             }
         }
     }
-    .feature-menu {
+}
+
+@include tablet {
+    .content-j {
+        max-width: 688px;
+        padding: 80px 0px;
+        margin: 0 auto;
+
+        .feature-image {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 80px;
+        }
+        .feature-content {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            .titles {
+                .title {
+                }
+            }
+            .feature {
+                width: 100%;
+            }
+            .feature-others {
+                padding-left: 10px;
+            }
+        }
     }
 }
 
