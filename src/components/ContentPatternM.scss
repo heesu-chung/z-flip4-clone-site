@@ -23,6 +23,44 @@
     }
 }
 
+@include tablet {
+    .content-m {
+        max-width: 688px;
+        padding: 80px 0px;
+        margin: 0 auto;
+        transform: translateX(-15px);
+        -moz-transform: translateX(-15px);
+        -webkit-transform: translateX(-15px);
+        -o-transform: translateX(-15px);
+        -ms-transform: translateX(-15px);
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+
+        .feature-image {
+            margin: 0;
+            flex: 1;
+            transform: scale(0.95);
+            -moz-transform: scale(0.95);
+            -webkit-transform: scale(0.95);
+            -o-transform: scale(0.95);
+            -ms-transform: scale(0.95);
+        }
+        .feature-content {
+            width: 100%;
+            margin-top: 15px;
+            margin-left: 38px;
+            flex: 1;
+            .title {
+                width: 100%;
+            }
+            .category {
+                width: 100%;
+            }
+        }
+    }
+}
+
 @include screen {
     .content-m {
         width: calc(100% - 212px);

@@ -38,7 +38,7 @@ const ContentPatternM = ({
                     />
                 )}
             </div>
-            {screenX < 1024 && (
+            {screenX < 768 && (
                 <div className="block feature-content">
                     <ContentTitle title={title} category={category} />
                     <Content content={content} alert={alert} />
@@ -48,7 +48,7 @@ const ContentPatternM = ({
                     )}
                 </div>
             )}
-            {screenX >= 1024 && (
+            {screenX >= 768 && (
                 <div className="block feature-content">
                     <ContentTitle title={title} category={category} />
 
