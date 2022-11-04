@@ -71,7 +71,7 @@ const ContentPatternA = ({
                 cardContents.style.transform = `translateX(16vw)`;
                 cardContents.style.transition = `.3s all ease`;
             }
-        } else if (screenX < 1024 && leftBtn && rightBtn && contents) {
+        } else if (screenX < 768 && leftBtn && rightBtn && contents) {
             if (scroll === 0) {
                 leftBtn.style.cursor = "auto";
                 leftBtn.style.opacity = "0";

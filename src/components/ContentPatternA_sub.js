@@ -119,7 +119,7 @@ const ContentPatternA_sub = ({
             {card && (
                 <>
                     <div className="list-container">
-                        {screenX < 1024 && (
+                        {screenX < 768 && (
                             <div className="btns">
                                 <button
                                     className="btn left btn-left"
