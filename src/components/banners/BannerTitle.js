@@ -68,7 +68,7 @@ const BannerTitle = ({
 
                     {image !== "Banner4" && (
                         <div className="image-container">
-                            {image === "Banner1" && screenX < 1024 && (
+                            {image === "Banner1" && screenX < 768 && (
                                 <img
                                     src={Banner1}
                                     style={{
@@ -78,7 +78,7 @@ const BannerTitle = ({
                                     alt=""
                                 />
                             )}
-                            {image === "Banner2" && screenX < 1024 && (
+                            {image === "Banner2" && screenX < 768 && (
                                 <img
                                     src={Banner2}
                                     style={{
@@ -88,7 +88,7 @@ const BannerTitle = ({
                                     alt=""
                                 />
                             )}
-                            {image === "Banner3" && screenX < 1024 && (
+                            {image === "Banner3" && screenX < 768 && (
                                 <img
                                     src={Banner3}
                                     style={{
@@ -98,7 +98,7 @@ const BannerTitle = ({
                                     alt=""
                                 />
                             )}
-                            {image === "Banner1" && screenX >= 1024 && (
+                            {image === "Banner1" && screenX >= 768 && (
                                 <img
                                     src={BannerScreen1}
                                     style={{
@@ -107,7 +107,7 @@ const BannerTitle = ({
                                     alt=""
                                 />
                             )}
-                            {image === "Banner2" && screenX >= 1024 && (
+                            {image === "Banner2" && screenX >= 768 && (
                                 <img
                                     src={BannerScreen2}
                                     style={{
@@ -116,7 +116,7 @@ const BannerTitle = ({
                                     alt=""
                                 />
                             )}
-                            {image === "Banner3" && screenX >= 1024 && (
+                            {image === "Banner3" && screenX >= 768 && (
                                 <img
                                     src={BannerScreen3}
                                     style={{
@@ -129,7 +129,7 @@ const BannerTitle = ({
                     )}
                 </div>
             )}
-            {image === "Banner4" && screenX < 1024 && (
+            {image === "Banner4" && screenX < 768 && (
                 <div
                     className="intro-header banner-4"
                     style={{
@@ -162,7 +162,7 @@ const BannerTitle = ({
                         {desc && <p className="desc">{desc}</p>}
                         {button && <Button btnContent={button} />}
                     </div>
-                    {image === "Banner4" && screenX < 1024 && (
+                    {image === "Banner4" && screenX < 768 && (
                         <div
                             className="image-container"
                             style={{ position: "absolute" }}
@@ -177,7 +177,7 @@ const BannerTitle = ({
                     )}
                 </div>
             )}
-            {image === "Banner4" && screenX >= 1024 && (
+            {image === "Banner4" && screenX >= 768 && (
                 <div
                     className="intro-header banner-4"
                     style={{
@@ -209,7 +209,7 @@ const BannerTitle = ({
                         {desc && <p className="desc">{desc}</p>}
                         {button && <Button btnContent={button} />}
                     </div>
-                    {image === "Banner4" && screenX >= 1024 && (
+                    {image === "Banner4" && screenX >= 768 && (
                         <div className="image-container">
                             <img
                                 src={BannerScreen4}

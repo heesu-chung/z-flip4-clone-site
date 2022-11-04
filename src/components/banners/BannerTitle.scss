@@ -76,6 +76,78 @@
     }
 }
 
+@include tablet {
+    .intro-header {
+        width: calc(100% - 10px);
+        min-height: 38.9vw;
+        -webkit-border-radius: 2.8vw;
+        border-radius: 2.8vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .contents {
+            padding: 4.2vw 6vw;
+
+            .category {
+                margin: 0;
+                padding: 0;
+            }
+            .title {
+                margin: 0;
+                font-size: 23px;
+                line-height: 1.2;
+            }
+            .banner-3 {
+                font-size: 28px;
+            }
+            .btn {
+                margin-top: 24px;
+                .content {
+                    font-size: 12px;
+                    font-weight: 700;
+                    .btn-slider {
+                        border: none;
+                    }
+                }
+            }
+            .qr {
+                width: 127px;
+                height: 127px;
+            }
+        }
+        .image-container {
+            position: absolute;
+            img {
+                @include desktop {
+                    transform: scale(1.07);
+                    -moz-transform: scale(1.07);
+                    -webkit-transform: scale(1.07);
+                    -o-transform: scale(1.07);
+                    -ms-transform: scale(1.07);
+                }
+            }
+        }
+    }
+    .banner-4 {
+        .contents {
+            .btn {
+                .content {
+                    border: 1px solid white;
+                    .btn-slider {
+                        background: white;
+                    }
+                }
+                &:hover {
+                    .content {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @include screen {
     .intro-header {
         width: calc(100% - 10px);
