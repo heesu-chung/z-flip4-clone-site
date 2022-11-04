@@ -102,6 +102,119 @@
     }
 }
 
+@include tablet {
+    .question {
+        max-width: 688px;
+        margin: 0 auto;
+        .title {
+            font-size: 30px;
+            font-family: $sssB;
+            line-height: 1.02;
+            font-weight: 400;
+            padding-bottom: 30px;
+        }
+        .items {
+            height: auto;
+            .item-container {
+                height: 110px;
+                position: relative;
+                border-top: 1px solid #eee;
+                background: white;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                transition: 0.3s all ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                .btn-container {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    .btn-question {
+                        height: auto;
+                        position: relative;
+                        display: block;
+                        text-align: inherit;
+                        margin: 0;
+                        width: 100%;
+                        padding: 26px 80px 26px 0;
+
+                        font-size: 20px;
+                        line-height: 1.25;
+                        font-family: $so;
+                        font-weight: 700;
+                        cursor: pointer;
+                    }
+                    .arrow-block {
+                        width: 27px;
+                        padding: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transform: rotate(-180deg);
+                        -moz-transform: rotate(-180deg);
+                        -webkit-transform: rotate(-180deg);
+                        -o-transform: rotate(-180deg);
+                        -ms-transform: rotate(-180deg);
+
+                        img {
+                            margin-top: 0px;
+                            width: 24px;
+                            height: 13px;
+                            transform: rotate(180deg);
+                            -moz-transform: rotate(180deg);
+                            -webkit-transform: rotate(180deg);
+                            -o-transform: rotate(180deg);
+                            -ms-transform: rotate(180deg);
+                        }
+                    }
+                }
+
+                button::after {
+                    background-image: url("../assets/icon_arrow.jpg");
+                    transform: rotate(180deg);
+                    -moz-transform: rotate(180deg);
+                    -webkit-transform: rotate(180deg);
+                    -o-transform: rotate(180deg);
+                    -ms-transform: rotate(180deg);
+                }
+
+                .item {
+                    transform: translateY(30px);
+                    -moz-transform: translateY(30px);
+                    -webkit-transform: translateY(30px);
+                    -o-transform: translateY(30px);
+                    -ms-transform: translateY(30px);
+                    opacity: 0;
+                    transition: 0.3s all ease-in-out;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -moz-transition: all 0.3s ease-in-out;
+                    -ms-transition: all 0.3s ease-in-out;
+                    -o-transition: all 0.3s ease-in-out;
+                    .content {
+                        font-size: 15px;
+                        line-height: 1.44;
+                        max-width: 548px;
+                        font-family: $so;
+                        font-weight: 400;
+                    }
+                    .btn {
+                        margin-top: 24px;
+
+                        span {
+                            font-size: 13px;
+                            font-weight: 700;
+                        }
+                    }
+                    padding-bottom: 24px;
+                }
+            }
+        }
+    }
+}
+
 @include screen {
     .question {
         width: calc(100% - 252px);

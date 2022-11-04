@@ -338,7 +338,7 @@ function App() {
                 mainImageSize={[500, 1116]}
             />
 
-            {/* <Question screenX={screenX} /> */}
+            <Question screenX={screenX} />
 
             {/* <SectionBanners screenX={screenX} /> */}
             {/* <FeatureDesc /> */}
