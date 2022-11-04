@@ -69,6 +69,51 @@
     }
 }
 
+@include tablet {
+    .content-k {
+        .titles {
+            max-width: 688px;
+            margin: 0 auto;
+            padding: 0 0px 80px;
+            .category {
+                font-size: 11px;
+                letter-spacing: 3px;
+                margin-bottom: 32px;
+            }
+            .feature-title {
+                font-size: 78px;
+                line-height: 86px;
+            }
+        }
+        .cover-contents {
+            .screen-row {
+                margin-bottom: 20px;
+                .cover-image-container {
+                    width: 280px;
+                    margin-right: 20px;
+                    transition: 0.5s all ease;
+                    -webkit-transition: all 0.5s ease;
+                    -moz-transition: all 0.5s ease;
+                    -ms-transition: all 0.5s ease;
+                    -o-transition: all 0.5s ease;
+                    .cover-image {
+                        width: 280px;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .lower {
+                transform: translateX(-18%);
+                -moz-transform: translateX(-18%);
+                -webkit-transform: translateX(-18%);
+                -o-transform: translateX(-18%);
+                -ms-transform: translateX(-18%);
+            }
+        }
+    }
+}
+
 @include screen {
     .content-k {
         .titles {

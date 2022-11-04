@@ -81,7 +81,7 @@ const ContentPatternK = ({ title, subTitle, screenX }) => {
                     cover7.style.transform = `translateX(80%)`;
                 }
             }
-        } else if (screenX < 1024) {
+        } else if (screenX < 768) {
             if (scroll > 18700) {
                 if (
                     cover1 &&
@@ -157,7 +157,7 @@ const ContentPatternK = ({ title, subTitle, screenX }) => {
                 ))}
             </div>
 
-            {screenX < 1024 && (
+            {screenX < 768 && (
                 <div className="cover-contents">
                     <div className="screen-row">
                         <div className="cover-image-container cover1">
@@ -226,16 +226,11 @@ const ContentPatternK = ({ title, subTitle, screenX }) => {
                     </div>
                 </div>
             )}
-            {screenX >= 1024 && (
+            {screenX >= 768 && (
                 <div className="cover-contents">
                     <div className="screen-row upper">
                         <div className="cover-image-container cover3">
-                            <img
-                                src={Cover3}
-                                className="cover-image"
-                                alt=""
-                                style={{ width: "520px" }}
-                            />
+                            <img src={Cover3} className="cover-image" alt="" />
                         </div>
                         <div className="cover-image-container cover4">
                             <video
@@ -243,42 +238,21 @@ const ContentPatternK = ({ title, subTitle, screenX }) => {
                                 className="cover-image cover-video"
                                 muted
                                 alt=""
-                                style={{ width: "520px" }}
                             />
                         </div>
                         <div className="cover-image-container cover1">
-                            <img
-                                src={Cover1}
-                                className="cover-image"
-                                alt=""
-                                style={{ width: "520px" }}
-                            />
+                            <img src={Cover1} className="cover-image" alt="" />
                         </div>
                     </div>
                     <div className="screen-row lower">
                         <div className="cover-image-container cover6">
-                            <img
-                                src={Cover6}
-                                className="cover-image"
-                                alt=""
-                                style={{ width: "520px" }}
-                            />
+                            <img src={Cover6} className="cover-image" alt="" />
                         </div>
                         <div className="cover-image-container cover2">
-                            <img
-                                src={Cover2}
-                                className="cover-image"
-                                alt=""
-                                style={{ width: "520px" }}
-                            />
+                            <img src={Cover2} className="cover-image" alt="" />
                         </div>
                         <div className="cover-image-container cover7">
-                            <img
-                                src={Cover7}
-                                className="cover-image"
-                                alt=""
-                                style={{ width: "520px" }}
-                            />
+                            <img src={Cover7} className="cover-image" alt="" />
                         </div>
                     </div>
                 </div>
