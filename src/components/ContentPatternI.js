@@ -24,13 +24,22 @@ const ContentPatternI = ({
     return (
         <section className="content-i">
             <div className="feature-image">
-                {screenX < 1024 && mainImage[0] === "VideoCall" && (
+                {screenX < 768 && mainImage[0] === "VideoCall" && (
                     <img
                         src={VideoCall}
                         style={{ width: `${mainImageSize[0]}px` }}
                         alt="galaxy Video Call"
                     />
                 )}
+                {screenX >= 768 &&
+                    screenX < 1024 &&
+                    mainImage[0] === "VideoCall" && (
+                        <img
+                            src={VideoCall}
+                            style={{ width: `376px` }}
+                            alt="galaxy Video Call"
+                        />
+                    )}
                 {screenX >= 1024 && mainImage[0] === "VideoCall" && (
                     <img
                         src={VideoCall}

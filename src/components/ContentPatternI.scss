@@ -28,6 +28,36 @@
     }
 }
 
+@include tablet {
+    .content-i {
+        max-width: 688px;
+        padding: 80px 0px 60px;
+        margin: 0 auto;
+
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+
+        .feature-image {
+            margin: 0;
+
+            flex: 1;
+        }
+        .feature-content {
+            margin: 0;
+            margin-left: 40px;
+            flex: 1;
+            .titles {
+                .title {
+                    width: 100%;
+                }
+            }
+            .contents {
+            }
+        }
+    }
+}
+
 @include screen {
     .content-i {
         width: calc(100% - 212px);

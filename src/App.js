@@ -241,7 +241,7 @@ function App() {
 
             {screenX >= 768 && <Entertainment />}
 
-            {/* <ContentPatternI
+            <ContentPatternI
                 category="VIDEO CALL"
                 title={["Share", "with the squad"]}
                 align={true}
@@ -252,9 +252,9 @@ function App() {
                 mainImageSize={[350, 550]}
                 image={["GoogleMeet"]}
                 imageSize={[139, 175]}
-            /> */}
+            />
 
-            {/* <ContentPatternH
+            <ContentPatternH
                 category="FLEXCAM FOR SOCIAL"
                 title={["Give your", "feed a glow-", "up"]}
                 content={content[12]}
@@ -262,7 +262,7 @@ function App() {
                 btnContent={false}
                 mainImage={["SocialVideo"]}
                 mainImageSize={[357, 480]}
-            /> */}
+            />
 
             {/* <ContentPatternJ
                 title={["Power", "to the pocket"]}
