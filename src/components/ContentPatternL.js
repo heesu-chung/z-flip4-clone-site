@@ -22,7 +22,7 @@ const ContentPatternL = ({
     const screenX = window.innerWidth;
     return (
         <section className="content-d flex-end">
-            {screenX < 1024 && mainImage[0] === "CustomImage" && (
+            {screenX < 768 && mainImage[0] === "CustomImage" && (
                 <div className="feature-image">
                     <img src={CustomImage} alt="galaxy CustomImage" />
                 </div>
@@ -36,6 +36,13 @@ const ContentPatternL = ({
                 {image && <ContentImage image={image} imageSize={imageSize} />}
             </div>
 
+            {screenX >= 768 &&
+                screenX < 1024 &&
+                mainImage[0] === "CustomImage" && (
+                    <div className="feature-image">
+                        <img src={CustomImage} alt="galaxy CustomImage" />
+                    </div>
+                )}
             {screenX >= 1024 && mainImage[0] === "CustomImage" && (
                 <div className="feature-image">
                     <img

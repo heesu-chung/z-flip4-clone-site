@@ -281,23 +281,23 @@ function App() {
                 screenX={screenX}
             />
 
-            {/* <ContentPatternL
+            <ContentPatternL
                 category="CUSTOM COVER SCREEN"
                 title={["Put your style", "on display"]}
                 content={content[15]}
                 btnContent={"CheckItOut"}
                 mainImage={["CustomImage"]}
                 mainImageSize={[444, 484]}
-            /> */}
+            />
 
-            {/* <ContentPatternM
+            <ContentPatternM
                 category="USEFUL COVER SCREEN"
                 title={["Glance, act", "and go"]}
                 content={content[16]}
                 alert={alert}
                 mainImage={["CoverScreen"]}
                 mainImageSize={[312, 484]}
-            /> */}
+            />
 
             {/* <ContentPatternN
                 category="GALAXY WATCH5"
