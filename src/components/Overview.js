@@ -26,11 +26,20 @@ const Overview = ({ screenX }) => {
     let diff = 70;
 
     const navigation = [
-        12060, 13860, 19000, 5970, 2590, 12410, 18140, 25200, 7730, 3560,
+        12060, 13860, 19000, 5970, 2590, 12410, 18140, 25200, 7730, 3560, 12930,
+        15200, 20670, 6850, 3500,
     ];
 
-    screenX >= 1024 ? (scrollLoc = 2000) : (scrollLoc = 1300);
-    screenX >= 1024 ? (diff = 120) : (diff = 70);
+    if (screenX >= 1024) {
+        scrollLoc = 1800;
+        diff = 140;
+    } else if (screenX < 1024 && screenX >= 768) {
+        scrollLoc = 2000;
+        diff = 130;
+    } else if (screenX < 768) {
+        scrollLoc = 1300;
+        diff = 70;
+    }
 
     const listScrollAction = [
         scrollLoc,
@@ -44,59 +53,94 @@ const Overview = ({ screenX }) => {
     const onClick = (e) => {
         switch (e) {
             case 1:
-                screenX < 1024
-                    ? window.scrollTo({
-                          top: navigation[0],
-                          behavior: "smooth",
-                      })
-                    : window.scrollTo({
-                          top: navigation[5],
-                          behavior: "smooth",
-                      });
+                if (screenX < 768) {
+                    window.scrollTo({
+                        top: navigation[0],
+                        behavior: "smooth",
+                    });
+                } else if (screenX >= 768 && screenX < 1024) {
+                    window.scrollTo({
+                        top: navigation[10],
+                        behavior: "smooth",
+                    });
+                } else {
+                    window.scrollTo({
+                        top: navigation[5],
+                        behavior: "smooth",
+                    });
+                }
                 return;
             case 2:
-                screenX < 1024
-                    ? window.scrollTo({
-                          top: navigation[1],
-                          behavior: "smooth",
-                      })
-                    : window.scrollTo({
-                          top: navigation[6],
-                          behavior: "smooth",
-                      });
+                if (screenX < 768) {
+                    window.scrollTo({
+                        top: navigation[1],
+                        behavior: "smooth",
+                    });
+                } else if (screenX >= 768 && screenX < 1024) {
+                    window.scrollTo({
+                        top: navigation[11],
+                        behavior: "smooth",
+                    });
+                } else {
+                    window.scrollTo({
+                        top: navigation[6],
+                        behavior: "smooth",
+                    });
+                }
                 return;
             case 3:
-                screenX < 1024
-                    ? window.scrollTo({
-                          top: navigation[2],
-                          behavior: "smooth",
-                      })
-                    : window.scrollTo({
-                          top: navigation[7],
-                          behavior: "smooth",
-                      });
+                if (screenX < 768) {
+                    window.scrollTo({
+                        top: navigation[2],
+                        behavior: "smooth",
+                    });
+                } else if (screenX >= 768 && screenX < 1024) {
+                    window.scrollTo({
+                        top: navigation[12],
+                        behavior: "smooth",
+                    });
+                } else {
+                    window.scrollTo({
+                        top: navigation[7],
+                        behavior: "smooth",
+                    });
+                }
                 return;
             case 4:
-                screenX < 1024
-                    ? window.scrollTo({
-                          top: navigation[3],
-                          behavior: "smooth",
-                      })
-                    : window.scrollTo({
-                          top: navigation[8],
-                          behavior: "smooth",
-                      });
+                if (screenX < 768) {
+                    window.scrollTo({
+                        top: navigation[3],
+                        behavior: "smooth",
+                    });
+                } else if (screenX >= 768 && screenX < 1024) {
+                    window.scrollTo({
+                        top: navigation[13],
+                        behavior: "smooth",
+                    });
+                } else {
+                    window.scrollTo({
+                        top: navigation[8],
+                        behavior: "smooth",
+                    });
+                }
                 return;
             case 5:
-                screenX < 1024
-                    ? window.scrollTo({
-                          top: navigation[4],
-                          behavior: "smooth",
-                      })
-                    : window.scrollTo({
-                          top: navigation[9],
-                          behavior: "smooth",
-                      });
+                if (screenX < 768) {
+                    window.scrollTo({
+                        top: navigation[4],
+                        behavior: "smooth",
+                    });
+                } else if (screenX >= 768 && screenX < 1024) {
+                    window.scrollTo({
+                        top: navigation[14],
+                        behavior: "smooth",
+                    });
+                } else {
+                    window.scrollTo({
+                        top: navigation[9],
+                        behavior: "smooth",
+                    });
+                }
                 return;
             default:
                 return;
@@ -274,6 +318,7 @@ const Overview = ({ screenX }) => {
                     if (play) setPlay(!play);
                 }
             }
+        } else if (screenX >= 768 && screenX < 1024) {
         } else if (screenX < 768) {
             if (scroll >= 950 && scroll <= 2000) {
                 overviewContents.style.zIndex = "3";
