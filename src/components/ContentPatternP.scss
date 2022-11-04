@@ -19,6 +19,28 @@
         justify-content: center;
     }
 }
+@include tablet {
+    .content-p {
+        max-width: 688px;
+        margin: 0 auto;
+
+        padding: 80px 0px;
+        display: flex;
+        flex-direction: column;
+        .block {
+            flex: 1;
+        }
+        .feature-title {
+            margin: 0;
+        }
+        .feature-desc {
+            padding-left: 10px;
+            .contents {
+                padding-bottom: 0;
+            }
+        }
+    }
+}
 
 @include screen {
     .content-p {

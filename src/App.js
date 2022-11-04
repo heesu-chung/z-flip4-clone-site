@@ -329,14 +329,14 @@ function App() {
                 mainImageSize={[]}
             />
 
-            {/* <ContentPatternP
+            <ContentPatternP
                 category="ACCESSORIES"
                 title={["Finesse your Flip"]}
                 btnContent={"LearnMore"}
                 flex={true}
                 mainImage={["Accessories"]}
                 mainImageSize={[500, 1116]}
-            /> */}
+            />
 
             {/* <Question screenX={screenX} /> */}
 
