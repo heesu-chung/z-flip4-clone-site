@@ -299,7 +299,7 @@ function App() {
                 mainImageSize={[312, 484]}
             />
 
-            {/* <ContentPatternN
+            <ContentPatternN
                 category="GALAXY WATCH5"
                 title={["Better rest is", "all in the wrist"]}
                 content={content[17]}
@@ -307,11 +307,11 @@ function App() {
                 alert={true}
                 mainImage={["GalaxyWatch"]}
                 mainImageSize={[360, 1000]}
-            /> */}
+            />
 
-            {/* <CameraEcosystem screenX={screenX} id="ecosystem" /> */}
+            <CameraEcosystem screenX={screenX} id="ecosystem" />
 
-            {/* <ContentPatternO
+            <ContentPatternO
                 category="SMART SWITCH"
                 title={["Old phone,", "meet new", "phone"]}
                 content={content[18]}
@@ -319,7 +319,7 @@ function App() {
                 mainImage={["SmartSwitch"]}
                 mainImageSize={[312, 570]}
                 link={true}
-            /> */}
+            />
 
             {/* <ContentPatternA_sub
                 category="GALAXY EXCELLENCE"

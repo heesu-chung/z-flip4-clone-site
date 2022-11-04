@@ -26,19 +26,15 @@ const ContentPatternN = ({
     return (
         <section className="content-n">
             <div className="feature-image">
-                {screenX < 1024 && mainImage[0] === "GalaxyWatch" && (
+                {screenX < 768 && mainImage[0] === "GalaxyWatch" && (
                     <img
                         src={GalaxyWatch}
                         style={{ width: `${mainImageSize[0]}px` }}
                         alt="GalaxyWatch"
                     />
                 )}
-                {screenX >= 1024 && mainImage[0] === "GalaxyWatch" && (
-                    <img
-                        src={GalaxyWatch}
-                        style={{ width: `${mainImageSize[1]}px` }}
-                        alt="GalaxyWatch"
-                    />
+                {screenX >= 768 && mainImage[0] === "GalaxyWatch" && (
+                    <img src={GalaxyWatch} alt="GalaxyWatch" />
                 )}
             </div>
 
