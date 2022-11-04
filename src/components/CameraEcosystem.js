@@ -81,7 +81,7 @@ const CameraEcosystem = ({ screenX }) => {
                     }px)`;
                 }
             }
-        } else if (screenX < 1024) {
+        } else if (screenX < 768) {
             if (scroll >= 22400 && scroll < 23600) {
                 if (image1 && image2 && image3) {
                     image1.style.transform = `translate(5vw, ${
