@@ -340,8 +340,8 @@ function App() {
 
             <Question screenX={screenX} />
 
-            {/* <SectionBanners screenX={screenX} /> */}
-            {/* <FeatureDesc /> */}
+            <SectionBanners screenX={screenX} />
+            <FeatureDesc />
         </>
     );
 }

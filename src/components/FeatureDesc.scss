@@ -28,6 +28,16 @@ section {
     }
 }
 
+@include tablet {
+    section {
+        padding: 42px 0 40px;
+        .section {
+            max-width: 720px !important;
+            margin: 0 auto;
+        }
+    }
+}
+
 @include screen {
     section {
         padding: 42px 0 40px;
