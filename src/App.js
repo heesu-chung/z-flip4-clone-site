@@ -321,13 +321,13 @@ function App() {
                 link={true}
             />
 
-            {/* <ContentPatternA_sub
+            <ContentPatternA_sub
                 category="GALAXY EXCELLENCE"
                 title={["Expect nothing", "less"]}
                 card={true}
                 mainImage={[]}
                 mainImageSize={[]}
-            /> */}
+            />
 
             {/* <ContentPatternP
                 category="ACCESSORIES"

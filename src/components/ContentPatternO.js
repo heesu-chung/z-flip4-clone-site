@@ -36,11 +36,7 @@ const ContentPatternO = ({
             </div>
             {screenX < 1024 && mainImage[0] === "SmartSwitch" && (
                 <div className="feature-image">
-                    <img
-                        src={SmartSwitch}
-                        style={{ width: `${mainImageSize[0]}px` }}
-                        alt="galaxy Smart Switch"
-                    />
+                    <img src={SmartSwitch} alt="galaxy Smart Switch" />
                 </div>
             )}
             {screenX >= 1024 && mainImage[0] === "SmartSwitch" && (
