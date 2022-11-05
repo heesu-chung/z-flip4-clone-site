@@ -71,6 +71,27 @@ const CameraImage = ({ screenX }) => {
                     image1.style.transform = `scale(1)`;
                 }
             }
+        } else if (screenX >= 768 && screenX < 1024) {
+            if (scroll >= 9450 && scroll < 12500) {
+                if (image1) {
+                    image1.style.transform = `scale(0.75)`;
+                }
+
+                if (title) {
+                    title.style.transform = `translateY(${
+                        -50 + (scroll - 9450) * 0.03
+                    }px)`;
+                }
+                if (image3) {
+                    image3.style.transform = `translate(0% ,${
+                        100 - (scroll - 9450) * 0.06
+                    }px)`;
+                }
+            } else if (scroll < 9450) {
+                if (image1) {
+                    image1.style.transform = `scale(1)`;
+                }
+            }
         } else if (screenX < 768) {
             if (scroll >= 9450 && scroll < 11500) {
                 if (image1) {
