@@ -319,6 +319,29 @@ const Overview = ({ screenX }) => {
                 }
             }
         } else if (screenX >= 768 && screenX < 1024) {
+            if (scroll >= 2700 && scroll <= 3700) {
+                overviewContents.style.zIndex = "3";
+            }
+
+            if (
+                scroll >= 2700 &&
+                scroll <= 3700 &&
+                transformLeft &&
+                transformRight
+            ) {
+                transformLeft.style.transform = `scaleX(0)`;
+                transformRight.style.transform = `scaleX(0)`;
+                if (!play) {
+                    video.play();
+                    setPlay(!play);
+                }
+            } else {
+                if (transformLeft && transformRight) {
+                    transformLeft.style.transform = `scaleX(1)`;
+                    transformRight.style.transform = `scaleX(1)`;
+                    if (play) setPlay(!play);
+                }
+            }
         } else if (screenX < 768) {
             if (scroll >= 950 && scroll <= 2000) {
                 overviewContents.style.zIndex = "3";
