@@ -51,6 +51,23 @@ const ContentPatternG = ({
                     cam.style.transform = `translate(260px, 760px)`;
                 }
             }
+        } else if (screenX >= 768 && screenX < 1024) {
+            if (scroll > 14100) {
+                if (image1 && flex && cam) {
+                    image1.style.transform = `scale(1) translate(0, 0px)`;
+                    setTimeout(() => {
+                        flex.style.transform = `translate(-210px, -20px)`;
+                        cam.style.transform = `translate(230px, 270px)`;
+                    }, 200);
+                }
+            } else {
+                if (image1 && flex && cam) {
+                    image1.style.transform = `scale(4) translate(0, 150px)`;
+
+                    flex.style.transform = `translate(-210px, -540px)`;
+                    cam.style.transform = `translate(230px, 760px)`;
+                }
+            }
         } else if (screenX < 768) {
             if (scroll > 13100) {
                 if (image1 && flex && cam) {
