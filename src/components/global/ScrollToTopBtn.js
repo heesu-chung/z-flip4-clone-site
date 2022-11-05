@@ -26,7 +26,7 @@ const ScrollToTopBtn = () => {
     };
 
     useEffect(() => {
-        if (screenX < 1024 && container && arrow) {
+        if (screenX < 768 && container && arrow) {
             arrow.style.transition = `.3s all ease`;
             container.style.transition = `.3s all ease`;
             if (scroll < 150 && active) {
@@ -52,7 +52,7 @@ const ScrollToTopBtn = () => {
                     arrow.style.transform = `rotate(0deg)`;
                 }, 300);
             }
-        } else if (screenX >= 1024 && container && arrow) {
+        } else if (screenX >= 768 && container && arrow) {
             arrow.style.transition = `.3s all ease`;
             container.style.transition = `.3s all ease`;
             container.style.transform = `translate(0, 0)`;
