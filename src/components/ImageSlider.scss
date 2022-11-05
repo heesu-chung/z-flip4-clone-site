@@ -178,10 +178,11 @@
         }
     }
     .slide-list {
-        width: calc(100% - 106px);
+        width: calc(100vw - 140px);
         position: relative;
         overflow-x: hidden;
-        margin-left: 106px;
+
+        margin-left: 120px;
         padding-bottom: 80px;
         ul {
             transition: 0.5s all ease;

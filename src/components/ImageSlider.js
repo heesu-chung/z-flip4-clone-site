@@ -35,6 +35,16 @@ const ImageSlider = ({ screenX }) => {
         }
     };
 
+    let imgDiff = [];
+    let barDiff = [];
+    if (screenX >= 768 && screenX < 1024) {
+        imgDiff = [0, -30.7, -56.4];
+        barDiff = [0, 34, 68];
+    } else if (screenX >= 1024 && screenX < 1441) {
+        imgDiff = [0, -19.7, -36.4];
+        barDiff = [0, 34, 68];
+    }
+
     useEffect(() => {
         if (screenX >= 1441) {
             if (scroll === 0 && leftBtn && rightBtn) {
@@ -69,8 +79,8 @@ const ImageSlider = ({ screenX }) => {
                 rightBtn.style.opacity = "0.6";
                 leftBtn.style.cursor = "auto";
                 if (container && scrollBar) {
-                    container.style.transform = `translateX(${0}%)`;
-                    scrollBar.style.transform = `translateX(${0}%)`;
+                    container.style.transform = `translateX(${imgDiff[0]}%)`;
+                    scrollBar.style.transform = `translateX(${barDiff[0]}%)`;
                 }
             } else if (scroll === 1 && leftBtn && rightBtn) {
                 leftBtn.style.opacity = "0.6";
@@ -78,16 +88,16 @@ const ImageSlider = ({ screenX }) => {
                 leftBtn.style.cursor = "pointer";
                 rightBtn.style.cursor = "pointer";
                 if (container && scrollBar) {
-                    container.style.transform = `translateX(${-19.7}%)`;
-                    scrollBar.style.transform = `translateX(${34}%)`;
+                    container.style.transform = `translateX(${imgDiff[1]}%)`;
+                    scrollBar.style.transform = `translateX(${barDiff[1]}%)`;
                 }
             } else if (scroll === 2 && leftBtn && rightBtn) {
                 leftBtn.style.opacity = "0.6";
                 rightBtn.style.opacity = "0";
                 rightBtn.style.cursor = "auto";
                 if (container && scrollBar) {
-                    container.style.transform = `translateX(${-36.4}%)`;
-                    scrollBar.style.transform = `translateX(${68}%)`;
+                    container.style.transform = `translateX(${imgDiff[2]}%)`;
+                    scrollBar.style.transform = `translateX(${barDiff[2]}%)`;
                 }
             }
         } else if (screenX < 768) {
@@ -140,7 +150,7 @@ const ImageSlider = ({ screenX }) => {
         <>
             <div className="btns-container">
                 <div className="btns">
-                    {screenX >= 1024 && (
+                    {screenX >= 768 && (
                         <>
                             <button
                                 className="btn left"
@@ -156,7 +166,7 @@ const ImageSlider = ({ screenX }) => {
                             </button>
                         </>
                     )}
-                    {screenX < 1024 && (
+                    {screenX < 768 && (
                         <>
                             <button
                                 className="btn left"
