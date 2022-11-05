@@ -140,7 +140,7 @@ const ContentPatternH = ({
                 }
             }
 
-            if (scroll > 22000) {
+            if (scroll > 18000) {
                 if (socialVideo && !videoActivate) {
                     setVideoActivate(true);
                     setPlay(true);
