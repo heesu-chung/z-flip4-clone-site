@@ -99,6 +99,57 @@ const ContentPatternH = ({
                 setVideoActivate(false);
                 setPlay(false);
             }
+        } else if (screenX >= 768 && screenX < 1024) {
+            if (scroll > 15850 && scroll < 17050) {
+                if (
+                    quick &&
+                    shot &&
+                    quickShotImage &&
+                    quickTransform &&
+                    !activate
+                ) {
+                    setActivate(true);
+                    quickShotImage.style.transform = `rotate(0)`;
+                    quickTransform.style.transform = `rotate(90deg)`;
+                    quickTransform.style.objectPosition = `-40px 20px`;
+                    quickTransform.style.transition = " 0.3s all ease-in-out";
+                    setTimeout(() => {
+                        quick.style.transform = `translate(${
+                            -120 - diff
+                        }px, 0px)`;
+                        shot.style.transform = `translate(${
+                            120 + diff
+                        }px, 400px)`;
+                        quickTransform.style.transform = `rotate(90deg) scale(0.7)`;
+                    }, 500);
+                    quick.style.transition = `0.5s all ease-in`;
+                    shot.style.transition = `0.5s all ease-in`;
+                }
+            } else {
+                if (quick && shot && quickShotImage && quickTransform) {
+                    setActivate(false);
+                    quickShotImage.style.transform = `rotate(90deg)`;
+                    quick.style.transform = `translate(-120px, 0px)`;
+                    shot.style.transform = `translate(120px, 400px)`;
+                    quick.style.transition = `none`;
+                    shot.style.transition = `none`;
+
+                    quickTransform.style.transition = "none";
+                    quickTransform.style.transform = `rotate(0deg)`;
+                    quickTransform.style.objectPosition = `0 -30px`;
+                }
+            }
+
+            if (scroll > 22000) {
+                if (socialVideo && !videoActivate) {
+                    setVideoActivate(true);
+                    setPlay(true);
+                    socialVideoContent.play();
+                }
+            } else {
+                setVideoActivate(false);
+                setPlay(false);
+            }
         } else if (screenX < 768) {
             if (scroll > 14400 && scroll < 15600) {
                 if (
