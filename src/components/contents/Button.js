@@ -14,7 +14,7 @@ const Button = ({ btnContent, navigation, screenX }) => {
                 } else if (screenX >= 768 && screenX < 1024) {
                     window.scrollTo({
                         top: navigation[10],
-                        behavior: "smooth",
+                        behavior: "auto",
                     });
                 } else {
                     window.scrollTo({
@@ -32,7 +32,7 @@ const Button = ({ btnContent, navigation, screenX }) => {
                 } else if (screenX >= 768 && screenX < 1024) {
                     window.scrollTo({
                         top: navigation[11],
-                        behavior: "smooth",
+                        behavior: "auto",
                     });
                 } else {
                     window.scrollTo({
@@ -50,7 +50,7 @@ const Button = ({ btnContent, navigation, screenX }) => {
                 } else if (screenX >= 768 && screenX < 1024) {
                     window.scrollTo({
                         top: navigation[12],
-                        behavior: "smooth",
+                        behavior: "auto",
                     });
                 } else {
                     window.scrollTo({
@@ -68,7 +68,7 @@ const Button = ({ btnContent, navigation, screenX }) => {
                 } else if (screenX >= 768 && screenX < 1024) {
                     window.scrollTo({
                         top: navigation[13],
-                        behavior: "smooth",
+                        behavior: "auto",
                     });
                 } else {
                     window.scrollTo({
@@ -86,7 +86,7 @@ const Button = ({ btnContent, navigation, screenX }) => {
                 } else if (screenX >= 768 && screenX < 1024) {
                     window.scrollTo({
                         top: navigation[14],
-                        behavior: "smooth",
+                        behavior: "auto",
                     });
                 } else {
                     window.scrollTo({
