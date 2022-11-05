@@ -37,151 +37,92 @@ const Question = ({ screenX }) => {
     const arrow4 = document.querySelector(".a4");
     const arrow5 = document.querySelector(".a5");
     const arrow6 = document.querySelector(".a6");
+
+    let scrollUp = [];
+    let scrollDown = 110;
+
+    if (screenX < 768) {
+        scrollUp = [315, 225, 310, 255, 255, 275];
+        scrollDown = 90;
+    } else if (screenX >= 768 && screenX < 1024) {
+        scrollUp = [300, 230, 280, 260, 255, 255];
+        scrollDown = 110;
+    } else {
+        scrollUp = [300, 220, 300, 250, 250, 270];
+        scrollDown = 110;
+    }
+
     useEffect(() => {
-        if (screenX >= 1024) {
-            if (first && container1 && item1 && container1 && arrow1) {
-                item1.style.transform = `translate(0px, 0px)`;
-                item1.style.opacity = `1`;
-                container1.style.height = `300px`;
-                arrow1.style.transform = `rotate(0deg)`;
-            } else if (!first && container1 && item1 && container1 && arrow1) {
-                item1.style.transform = `translate(0px, 30px)`;
-                item1.style.opacity = `0`;
-                container1.style.height = `110px`;
-                arrow1.style.transform = `rotate(-180deg)`;
-            }
+        if (first && container1 && item1 && container1 && arrow1) {
+            item1.style.transform = `translate(0px, 0px)`;
+            item1.style.opacity = `1`;
+            container1.style.height = `${scrollUp[0]}px`;
+            arrow1.style.transform = `rotate(0deg)`;
+        } else if (!first && container1 && item1 && container1 && arrow1) {
+            item1.style.transform = `translate(0px, 30px)`;
+            item1.style.opacity = `0`;
+            container1.style.height = `${scrollDown}px`;
+            arrow1.style.transform = `rotate(-180deg)`;
+        }
 
-            if (second && item2 && container2 && arrow2) {
-                item2.style.transform = `translate(0px, 0px)`;
-                item2.style.opacity = `1`;
-                container2.style.height = `220px`;
-                arrow2.style.transform = `rotate(0deg)`;
-            } else if (!second && item2 && container2 && arrow2) {
-                item2.style.transform = `translate(0px, 30px)`;
-                item2.style.opacity = `0`;
-                container2.style.height = `110px`;
-                arrow2.style.transform = `rotate(-180deg)`;
-            }
+        if (second && item2 && container2 && arrow2) {
+            item2.style.transform = `translate(0px, 0px)`;
+            item2.style.opacity = `1`;
+            container2.style.height = `${scrollUp[1]}px`;
+            arrow2.style.transform = `rotate(0deg)`;
+        } else if (!second && item2 && container2 && arrow2) {
+            item2.style.transform = `translate(0px, 30px)`;
+            item2.style.opacity = `0`;
+            container2.style.height = `${scrollDown}px`;
+            arrow2.style.transform = `rotate(-180deg)`;
+        }
 
-            if (third && item3 && container3 && arrow3) {
-                item3.style.transform = `translate(0px, 0px)`;
-                item3.style.opacity = `1`;
-                container3.style.height = `300px`;
-                arrow3.style.transform = `rotate(0deg)`;
-            } else if (!third && item3 && container3 && arrow3) {
-                item3.style.transform = `translate(0px, 30px)`;
-                item3.style.opacity = `0`;
-                container3.style.height = `110px`;
-                arrow3.style.transform = `rotate(-180deg)`;
-            }
+        if (third && item3 && container3 && arrow3) {
+            item3.style.transform = `translate(0px, 0px)`;
+            item3.style.opacity = `1`;
+            container3.style.height = `${scrollUp[2]}px`;
+            arrow3.style.transform = `rotate(0deg)`;
+        } else if (!third && item3 && container3 && arrow3) {
+            item3.style.transform = `translate(0px, 30px)`;
+            item3.style.opacity = `0`;
+            container3.style.height = `${scrollDown}px`;
+            arrow3.style.transform = `rotate(-180deg)`;
+        }
 
-            if (fourth && item4 && container4 && arrow4) {
-                item4.style.transform = `translate(0px, 0px)`;
-                item4.style.opacity = `1`;
-                container4.style.height = `250px`;
-                arrow4.style.transform = `rotate(0deg)`;
-            } else if (!fourth && item4 && container4 && arrow4) {
-                item4.style.transform = `translate(0px, 30px)`;
-                item4.style.opacity = `0`;
-                container4.style.height = `110px`;
-                arrow4.style.transform = `rotate(-180deg)`;
-            }
+        if (fourth && item4 && container4 && arrow4) {
+            item4.style.transform = `translate(0px, 0px)`;
+            item4.style.opacity = `1`;
+            container4.style.height = `${scrollUp[3]}px`;
+            arrow4.style.transform = `rotate(0deg)`;
+        } else if (!fourth && item4 && container4 && arrow4) {
+            item4.style.transform = `translate(0px, 30px)`;
+            item4.style.opacity = `0`;
+            container4.style.height = `${scrollDown}px`;
+            arrow4.style.transform = `rotate(-180deg)`;
+        }
 
-            if (fifth && item5 && container5 && arrow5) {
-                item5.style.transform = `translate(0px, 0px)`;
-                item5.style.opacity = `5`;
-                container5.style.height = `250px`;
-                arrow5.style.transform = `rotate(0deg)`;
-            } else if (!fifth && item5 && container5 && arrow5) {
-                item5.style.transform = `translate(0px, 30px)`;
-                item5.style.opacity = `0`;
-                container5.style.height = `110px`;
-                arrow5.style.transform = `rotate(-180deg)`;
-            }
+        if (fifth && item5 && container5 && arrow5) {
+            item5.style.transform = `translate(0px, 0px)`;
+            item5.style.opacity = `5`;
+            container5.style.height = `${scrollUp[4]}px`;
+            arrow5.style.transform = `rotate(0deg)`;
+        } else if (!fifth && item5 && container5 && arrow5) {
+            item5.style.transform = `translate(0px, 30px)`;
+            item5.style.opacity = `0`;
+            container5.style.height = `${scrollDown}px`;
+            arrow5.style.transform = `rotate(-180deg)`;
+        }
 
-            if (sixth && item6 && container6 && arrow6) {
-                item6.style.transform = `translate(0px, 0px)`;
-                item6.style.opacity = `1`;
-                container6.style.height = `270px`;
-                arrow6.style.transform = `rotate(0deg)`;
-            } else if (!sixth && item6 && container6 && arrow6) {
-                item6.style.transform = `translate(0px, 30px)`;
-                item6.style.opacity = `0`;
-                container6.style.height = `110px`;
-                arrow6.style.transform = `rotate(-180deg)`;
-            }
-        } else if (screenX < 1024) {
-            if (first && container1 && item1 && container1 && arrow1) {
-                item1.style.transform = `translate(0px, 0px)`;
-                item1.style.opacity = `1`;
-                container1.style.height = `315px`;
-                arrow1.style.transform = `rotate(180deg)`;
-            } else if (!first && container1 && item1 && container1 && arrow1) {
-                item1.style.transform = `translate(0px, 20px)`;
-                item1.style.opacity = `0`;
-                container1.style.height = `90px`;
-                arrow1.style.transform = `rotate(0deg)`;
-            }
-
-            if (second && item2 && container2 && arrow2) {
-                item2.style.transform = `translate(0px, 0px)`;
-                item2.style.opacity = `1`;
-                container2.style.height = `255px`;
-                arrow2.style.transform = `rotate(180deg)`;
-            } else if (!second && item2 && container2 && arrow2) {
-                item2.style.transform = `translate(0px, 20px)`;
-                item2.style.opacity = `0`;
-                container2.style.height = `90px`;
-                arrow2.style.transform = `rotate(0deg)`;
-            }
-
-            if (third && item3 && container3 && arrow3) {
-                item3.style.transform = `translate(0px, 0px)`;
-                item3.style.opacity = `1`;
-                container3.style.height = `310px`;
-                arrow3.style.transform = `rotate(180deg)`;
-            } else if (!third && item3 && container3 && arrow3) {
-                item3.style.transform = `translate(0px, 20px)`;
-                item3.style.opacity = `0`;
-                container3.style.height = `90px`;
-                arrow3.style.transform = `rotate(0deg)`;
-            }
-
-            if (fourth && item4 && container4 && arrow4) {
-                item4.style.transform = `translate(0px, 0px)`;
-                item4.style.opacity = `1`;
-                container4.style.height = `255px`;
-                arrow4.style.transform = `rotate(180deg)`;
-            } else if (!fourth && item4 && container4 && arrow4) {
-                item4.style.transform = `translate(0px, 20px)`;
-                item4.style.opacity = `0`;
-                container4.style.height = `90px`;
-                arrow4.style.transform = `rotate(0deg)`;
-            }
-
-            if (fifth && item5 && container5 && arrow5) {
-                item5.style.transform = `translate(0px, 0px)`;
-                item5.style.opacity = `5`;
-                container5.style.height = `255px`;
-                arrow5.style.transform = `rotate(180deg)`;
-            } else if (!fifth && item5 && container5 && arrow5) {
-                item5.style.transform = `translate(0px, 20px)`;
-                item5.style.opacity = `0`;
-                container5.style.height = `90px`;
-                arrow5.style.transform = `rotate(0deg)`;
-            }
-
-            if (sixth && item6 && container6 && arrow6) {
-                item6.style.transform = `translate(0px, 0px)`;
-                item6.style.opacity = `1`;
-                container6.style.height = `275px`;
-                arrow6.style.transform = `rotate(180deg)`;
-            } else if (!sixth && item6 && container6 && arrow6) {
-                item6.style.transform = `translate(0px, 20px)`;
-                item6.style.opacity = `0`;
-                container6.style.height = `90px`;
-                arrow6.style.transform = `rotate(0deg)`;
-            }
+        if (sixth && item6 && container6 && arrow6) {
+            item6.style.transform = `translate(0px, 0px)`;
+            item6.style.opacity = `1`;
+            container6.style.height = `${scrollUp[5]}px`;
+            arrow6.style.transform = `rotate(0deg)`;
+        } else if (!sixth && item6 && container6 && arrow6) {
+            item6.style.transform = `translate(0px, 30px)`;
+            item6.style.opacity = `0`;
+            container6.style.height = `${scrollDown}px`;
+            arrow6.style.transform = `rotate(-180deg)`;
         }
     }, [first, second, third, fourth, fifth, sixth]);
 
