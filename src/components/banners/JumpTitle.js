@@ -1,5 +1,7 @@
+/* styles */
 import "./JumpTitle.scss";
 
+/* assets */
 import Banner1 from "../../assets/banner_1.png";
 import Banner2 from "../../assets/banner_2.png";
 import Banner3 from "../../assets/banner_3.png";

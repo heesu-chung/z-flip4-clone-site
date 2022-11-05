@@ -34,7 +34,11 @@ const ContentPatternN = ({
                     />
                 )}
                 {screenX >= 768 && mainImage[0] === "GalaxyWatch" && (
-                    <img src={GalaxyWatch} alt="GalaxyWatch" />
+                    <img
+                        src={GalaxyWatch}
+                        style={{ width: `${mainImageSize[1]}px` }}
+                        alt="GalaxyWatch"
+                    />
                 )}
             </div>
 

@@ -246,9 +246,9 @@
     .transition {
         width: calc(100% - 212px);
         min-width: 988px;
-        @include desktop {
-            max-width: 988px;
-        }
+
+        max-width: 988px;
+
         margin: 0 auto;
         display: flex;
         flex-direction: row;
