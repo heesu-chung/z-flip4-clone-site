@@ -6,59 +6,94 @@ const Button = ({ btnContent, navigation, screenX }) => {
     const onNavigate = (e) => {
         switch (e) {
             case 1:
-                screenX < 1024
-                    ? window.scrollTo({
-                          top: navigation[0],
-                          behavior: "smooth",
-                      })
-                    : window.scrollTo({
-                          top: navigation[5],
-                          behavior: "smooth",
-                      });
+                if (screenX < 768) {
+                    window.scrollTo({
+                        top: navigation[0],
+                        behavior: "smooth",
+                    });
+                } else if (screenX >= 768 && screenX < 1024) {
+                    window.scrollTo({
+                        top: navigation[10],
+                        behavior: "smooth",
+                    });
+                } else {
+                    window.scrollTo({
+                        top: navigation[5],
+                        behavior: "smooth",
+                    });
+                }
                 return;
             case 2:
-                screenX < 1024
-                    ? window.scrollTo({
-                          top: navigation[1],
-                          behavior: "smooth",
-                      })
-                    : window.scrollTo({
-                          top: navigation[6],
-                          behavior: "smooth",
-                      });
+                if (screenX < 768) {
+                    window.scrollTo({
+                        top: navigation[1],
+                        behavior: "smooth",
+                    });
+                } else if (screenX >= 768 && screenX < 1024) {
+                    window.scrollTo({
+                        top: navigation[11],
+                        behavior: "smooth",
+                    });
+                } else {
+                    window.scrollTo({
+                        top: navigation[6],
+                        behavior: "smooth",
+                    });
+                }
                 return;
             case 3:
-                screenX < 1024
-                    ? window.scrollTo({
-                          top: navigation[2],
-                          behavior: "smooth",
-                      })
-                    : window.scrollTo({
-                          top: navigation[7],
-                          behavior: "smooth",
-                      });
+                if (screenX < 768) {
+                    window.scrollTo({
+                        top: navigation[2],
+                        behavior: "smooth",
+                    });
+                } else if (screenX >= 768 && screenX < 1024) {
+                    window.scrollTo({
+                        top: navigation[12],
+                        behavior: "smooth",
+                    });
+                } else {
+                    window.scrollTo({
+                        top: navigation[7],
+                        behavior: "smooth",
+                    });
+                }
                 return;
             case 4:
-                screenX < 1024
-                    ? window.scrollTo({
-                          top: navigation[3],
-                          behavior: "smooth",
-                      })
-                    : window.scrollTo({
-                          top: navigation[8],
-                          behavior: "smooth",
-                      });
+                if (screenX < 768) {
+                    window.scrollTo({
+                        top: navigation[3],
+                        behavior: "smooth",
+                    });
+                } else if (screenX >= 768 && screenX < 1024) {
+                    window.scrollTo({
+                        top: navigation[13],
+                        behavior: "smooth",
+                    });
+                } else {
+                    window.scrollTo({
+                        top: navigation[8],
+                        behavior: "smooth",
+                    });
+                }
                 return;
             case 5:
-                screenX < 1024
-                    ? window.scrollTo({
-                          top: navigation[4],
-                          behavior: "smooth",
-                      })
-                    : window.scrollTo({
-                          top: navigation[9],
-                          behavior: "smooth",
-                      });
+                if (screenX < 768) {
+                    window.scrollTo({
+                        top: navigation[4],
+                        behavior: "smooth",
+                    });
+                } else if (screenX >= 768 && screenX < 1024) {
+                    window.scrollTo({
+                        top: navigation[14],
+                        behavior: "smooth",
+                    });
+                } else {
+                    window.scrollTo({
+                        top: navigation[9],
+                        behavior: "smooth",
+                    });
+                }
                 return;
             default:
                 return;
