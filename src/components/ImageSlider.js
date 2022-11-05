@@ -63,7 +63,7 @@ const ImageSlider = ({ screenX }) => {
                     scrollBar.style.transform = `translateX(${67}%)`;
                 }
             }
-        } else if (screenX >= 1024 && screenX <= 1440) {
+        } else if (screenX >= 768 && screenX <= 1440) {
             if (scroll === 0 && leftBtn && rightBtn) {
                 leftBtn.style.opacity = "0";
                 rightBtn.style.opacity = "0.6";
@@ -90,7 +90,7 @@ const ImageSlider = ({ screenX }) => {
                     scrollBar.style.transform = `translateX(${68}%)`;
                 }
             }
-        } else if (screenX < 1024) {
+        } else if (screenX < 768) {
             if (scroll === 0 && leftBtn && rightBtn) {
                 leftBtn.style.opacity = "0";
                 rightBtn.style.opacity = "0.6";
