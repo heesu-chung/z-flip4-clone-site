@@ -81,6 +81,60 @@ const ContentPatternK = ({ title, subTitle, screenX }) => {
                     cover7.style.transform = `translateX(80%)`;
                 }
             }
+        } else if (screenX >= 768 && screenX < 1024) {
+            if (scroll > 20450) {
+                if (
+                    cover1 &&
+                    cover2 &&
+                    cover3 &&
+                    cover4 &&
+                    cover6 &&
+                    cover7 &&
+                    coverVideo
+                ) {
+                    setTimeout(() => {
+                        cover3.style.transition = `.6s all ease`;
+                        cover6.style.transition = `.7s all ease`;
+                        cover2.style.transition = `.7s all ease`;
+
+                        cover4.style.transition = `.5s all ease-out`;
+                        cover1.style.transition = `.7s all ease`;
+                        cover7.style.transition = `.8s all ease`;
+
+                        cover3.style.transform = `translateX(0)`;
+                        cover6.style.transform = `translateX(0)`;
+                        cover2.style.transform = `translateX(0)`;
+
+                        cover4.style.transform = `translateX(0)`;
+                        cover1.style.transform = `translateX(0)`;
+                        cover7.style.transform = `translateX(0)`;
+                    }, 100);
+
+                    if (!videoActivate) {
+                        setVideoActivate(true);
+                        coverVideo.play();
+                    }
+                }
+            } else {
+                if (cover1 && cover2 && cover3 && cover4 && cover6 && cover7) {
+                    setVideoActivate(false);
+                    cover3.style.transition = `none`;
+                    cover6.style.transition = `none`;
+                    cover2.style.transition = `none`;
+
+                    cover4.style.transition = `none`;
+                    cover1.style.transition = `none`;
+                    cover7.style.transition = `none`;
+
+                    cover3.style.transform = `translateX(-80%)`;
+                    cover6.style.transform = `translateX(-80%)`;
+                    cover2.style.transform = `translateX(-80%)`;
+
+                    cover4.style.transform = `translateX(80%)`;
+                    cover1.style.transform = `translateX(80%)`;
+                    cover7.style.transform = `translateX(80%)`;
+                }
+            }
         } else if (screenX < 768) {
             if (scroll > 18700) {
                 if (
