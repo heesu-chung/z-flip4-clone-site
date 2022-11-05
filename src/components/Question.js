@@ -13,7 +13,8 @@ const Question = ({ screenX }) => {
     const [sixth, setSixth] = useState(false);
 
     const navigation = [
-        2935, 10390, 18070, 19060, 5970, 4070, 12630, 24360, 25150, 7730,
+        2935, 10390, 18070, 19060, 5970, 4070, 12630, 24360, 25150, 7730, 3920,
+        10017, 20000, 20700, 6900,
     ];
 
     const container1 = document.querySelector(".item-container-1");
