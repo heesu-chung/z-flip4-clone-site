@@ -117,9 +117,9 @@ function App() {
 
     return (
         <>
-            <div className="scroll">
+            {/* <div className="scroll">
                 <span>{scroll}</span>
-            </div>
+            </div> */}
             {/* <CheckModal /> */}
             <ScrollToTopBtn />
             <Header />
