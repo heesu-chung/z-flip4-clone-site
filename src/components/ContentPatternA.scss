@@ -179,7 +179,7 @@
     }
 
     .content-excellence {
-        height: 3100px;
+        height: 2500px;
 
         .content-container {
             max-width: 688px;
@@ -243,13 +243,14 @@
 
             .card-contents {
                 width: 300%;
-                transform: translateX(3vw);
-                -moz-transform: translateX(3vw);
-                -webkit-transform: translateX(3vw);
-                -o-transform: translateX(3vw);
-                -ms-transform: translateX(3vw);
+
+                transform: translateX(calc((100vw - 688px) / 2 - 20px));
+                -moz-transform: translateX(calc((100vw - 688px) / 2 - 20px));
+                -webkit-transform: translateX(calc((100vw - 688px) / 2 - 20px));
+                -o-transform: translateX(calc((100vw - 688px) / 2 - 20px));
+                -ms-transform: translateX(calc((100vw - 688px) / 2 - 20px));
                 margin: 0 auto;
-                padding: 0 20px;
+                padding: 0 0px;
 
                 display: flex;
                 flex-direction: row;
@@ -586,11 +587,11 @@
 
             .card-contents {
                 width: 300%;
-                transform: translateX(16vw);
-                -moz-transform: translateX(16vw);
-                -webkit-transform: translateX(16vw);
-                -o-transform: translateX(16vw);
-                -ms-transform: translateX(16vw);
+                transform: translateX(calc((100vw - 988px) / 2 - 20px));
+                -moz-transform: translateX(calc((100vw - 988px) / 2 - 20px));
+                -webkit-transform: translateX(calc((100vw - 988px) / 2 - 20px));
+                -o-transform: translateX(calc((100vw - 988px) / 2 - 20px));
+                -ms-transform: translateX(calc((100vw - 988px) / 2 - 20px));
                 margin: 0 auto;
                 padding: 0 20px;
 

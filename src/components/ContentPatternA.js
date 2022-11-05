@@ -65,10 +65,34 @@ const ContentPatternA = ({
                 listContainer.style.top = "9vw";
 
                 cardContents.style.transform = `translateX(${
-                    screenX * 0.16 - (scrollVal - 32500) * 0.95
+                    (screenX - 988) / 2 - (scrollVal - 32500) * 0.95
                 }px)`;
-            } else if (scrollVal <= 32500 && listContainer && cardContents) {
-                cardContents.style.transform = `translateX(16vw)`;
+            }
+            if (scrollVal <= 32500 && listContainer && cardContents) {
+                cardContents.style.transform = `translateX(${
+                    (screenX - 988) / 2
+                })`;
+                cardContents.style.transition = `.3s all ease`;
+            }
+        }
+        if (screenX >= 768 && screenX < 1024) {
+            if (
+                scrollVal > 25960 &&
+                scrollVal < 27600 &&
+                listContainer &&
+                cardContents
+            ) {
+                listContainer.style.position = "sticky";
+                listContainer.style.top = "13vw";
+
+                cardContents.style.transform = `translateX(${
+                    (screenX - 688) / 2 - (scrollVal - 25960) * 0.95
+                }px)`;
+            }
+            if (scrollVal <= 25960 && listContainer && cardContents) {
+                cardContents.style.transform = `translateX(${
+                    (screenX - 688) / 2
+                })`;
                 cardContents.style.transition = `.3s all ease`;
             }
         } else if (screenX < 768 && leftBtn && rightBtn && contents) {
