@@ -64,9 +64,9 @@
     .content-j {
         width: calc(100% - 212px);
         min-width: 988px;
-        @include desktop {
-            max-width: 988px;
-        }
+
+        max-width: 988px;
+
         padding: 120px 20px;
         margin: 0 auto;
 

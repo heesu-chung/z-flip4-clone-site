@@ -104,10 +104,6 @@
     .category {
         width: calc(100% - 212px);
         padding-left: 20px;
-        @include laptop {
-            width: 988px;
-            padding: 0 20px;
-        }
 
         display: flex;
         flex-direction: column;
