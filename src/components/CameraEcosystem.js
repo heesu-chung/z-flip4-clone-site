@@ -81,6 +81,20 @@ const CameraEcosystem = ({ screenX }) => {
                     }px)`;
                 }
             }
+        } else if (screenX >= 768 && screenX < 1024) {
+            if (scroll >= 23400 && scroll < 25400) {
+                if (image1 && image2 && image3) {
+                    image1.style.transform = `translate(10vw,${
+                        -1 * (scroll - 23400) * 0.04
+                    }px)`;
+                    image2.style.transform = `translate(55vw,${
+                        300 + (scroll - 23400) * 0.04
+                    }px)`;
+                    image3.style.transform = `translate(22vw,${
+                        650 + -1 * (scroll - 23400) * 0.04
+                    }px)`;
+                }
+            }
         } else if (screenX < 768) {
             if (scroll >= 22400 && scroll < 23600) {
                 if (image1 && image2 && image3) {
